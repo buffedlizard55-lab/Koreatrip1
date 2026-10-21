@@ -4,9 +4,9 @@ Session: arena-9c9accaa (final integration session). Started 2026-10-21 UTC.
 
 | Task | Status | Owner | File scope |
 |---|---|---|---|
-| Official-source research, itinerary preservation and flags | in progress | arena-9c9accaa | data.js, SOURCES.md |
-| Responsive static dashboard and category pages | in progress | arena-9c9accaa | index.html, styles.css, app.js, README.md |
-| Tests, Pages deployment and integration | in progress | arena-9c9accaa | tests/, .github/workflows/, COORDINATION.md |
+| Official-source research, itinerary preservation and flags | needs review | arena-9c9accaa | data.js, SOURCES.md |
+| Responsive static dashboard and category pages | done | arena-9c9accaa | index.html, styles.css, app.js, README.md |
+| Tests, Pages deployment and integration | done | arena-9c9accaa | tests/, COORDINATION.md |
 
 No existing tasks or other claims were present. This session owns final integration. The environment requires the fixed branch arena/9c9accaa-koreatrip1; no session branches will be created. Only this session's scoped files will be changed. Unverified entries will be published as needs review, not silently filled in.
 
@@ -182,3 +182,14 @@ Last updated: 2026-10-21 (post-merge)
 ## Second concurrent merge resolved — 2026-10-21
 
 PR #6 merged while #7 integration was in progress, advancing main to 1fe2d25. The first #7 merge attempt correctly refused due to the new conflict; nothing was force-merged. Merged updated main locally. Preserved all docs/ companion pages unchanged, preserved PR #6 root index source and README in prior-site/pr6-*, kept this session's active root dashboard, and cross-linked docs/index.html from Sources. Combined README documents both. No other session files deleted. Default rebase's attempted historical replay was aborted intact; subsequent pulls use --rebase=merges to retain the explicit integration history.
+
+
+## Final publication record — arena-9c9accaa
+
+- PR #7: https://github.com/buffedlizard55-lab/Koreatrip1/pull/7 — MERGED 2026-10-21 07:50:44 UTC, merge commit `2f9035ab5aa1c7bc651a5f302b0d0dfdce0fdfe4`.
+- GitHub Pages build `1301996585` for that exact merge commit: **built**, verified via Pages builds API. No deployment error reported.
+- Live URL: https://buffedlizard55-lab.github.io/Koreatrip1/ . Retrieved published landing page (cache-busted with merge SHA), confirmed title “Trip overview · Korea, together,” all nine daily links and 62-entry count. Retrieved live transport and review pages; source-linked tables rendered correctly, including unresolved-year flag and blank unconfirmed fields.
+- Final tests: **7/7 Node tests pass**, including archived-page internal links and conflict-marker scan. Desktop/mobile Chromium smoke checks rerun after BOTH concurrent integration merges; all pass (1440px and 390px). Search, empty state and invalid day fallback pass; no JavaScript errors or document-level horizontal overflow.
+- All current UI tasks done. All research gaps are **needs review** on the published `review.html`; no incomplete row is labeled fully verified. No user review or manual entry required for publication.
+- Existing session data/assets, `legacy/`, complete earlier root snapshot (`prior-site/`) and the concurrent `docs/` companion site are retained. Other-session historical “in progress” statuses above are preserved verbatim and are not current task statuses for arena-9c9accaa.
+- This record is published in a documentation-only follow-up PR so deployment confirmation is retained on main as requested.
