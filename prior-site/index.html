@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Trip dashboard · Korea Trip 2026</title>
+<meta name="description" content="Korea trip plan for two adult travelers, 1–9 Nov 2026: itinerary, transit, hours and verification status with official sources.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="index" data-base=".">
+<header class="site"><div class="wrap topbar">
+  <a class="brand" href="index.html">🇰🇷 Korea Trip 2026</a>
+  <nav class="menu" aria-label="Main"><a href="index.html" aria-current="page">Home</a><a href="itinerary.html">Itinerary</a><a href="entries.html">All entries</a><a href="transit.html">Transit</a><a href="hours.html">Hours & locations</a><a href="flagged.html">Flagged for Review</a><a href="sources.html">Sources</a></nav>
+</div></header>
+<main class="wrap">
+  <h1>Trip dashboard</h1>
+  <p class="lede">Your 9-day Korea plan at a glance. Every entry from the brief is listed with its verification status, a source link, and any irregularities to review. Nothing is marked verified unless an official source confirmed it.</p>
+  <div class="cards">
+  <div class="card"><div class="num" id="n-entries">–</div><div class="lbl">entries checked</div></div>
+  <div class="card"><div class="num" id="n-verified">–</div><div class="lbl">verified (official)</div></div>
+  <div class="card"><div class="num" id="n-partial">–</div><div class="lbl">corrected / partial</div></div>
+  <div class="card"><div class="num" id="n-unverified">–</div><div class="lbl">unverified (blank)</div></div>
+  <div class="card"><div class="num" id="n-flags">–</div><div class="lbl">rows flagged</div></div>
+  <div class="card"><div class="num" id="n-irr">–</div><div class="lbl">irregularities</div></div>
+</div>
+<div class="two">
+  <a class="card" href="itinerary.html"><h3>📅 Day-by-day itinerary</h3><p class="lede" style="margin:6px 0 0">Each day with its entries, statuses and links.</p></a>
+  <a class="card" href="entries.html"><h3>📋 All entries</h3><p class="lede" style="margin:6px 0 0">Searchable table with filters for status and category.</p></a>
+  <a class="card" href="transit.html"><h3>🚆 Transit</h3><p class="lede" style="margin:6px 0 0">Airport train, airport bus, cable car, KTX, taxis.</p></a>
+  <a class="card" href="hours.html"><h3>🕒 Hours & locations</h3><p class="lede" style="margin:6px 0 0">Verified store and venue hours, with unverified rows left blank.</p></a>
+  <a class="card" href="flagged.html"><h3>⚑ Flagged for Review</h3><p class="lede" style="margin:6px 0 0">Irregularities and unverified items, with source links.</p></a>
+  <a class="card" href="sources.html"><h3>🔗 Sources</h3><p class="lede" style="margin:6px 0 0">Every official and press link used, with what it supports.</p></a>
+</div>
+<div class="notice"><strong>How to read status:</strong> <span class="pill s-verified">Verified</span> official source confirms it ·
+<span class="pill s-corrected">Corrected</span> official source differs · <span class="pill s-partial">Partially verified</span> part confirmed ·
+<span class="pill s-unverified">Unverified</span> no official source, value left blank · <span class="pill s-calculated">Calculated</span> from calendar.</div>
+
+  <div id="main-body"><p class="lede">Loading…</p></div>
+</main>
+<footer class="wrap">
+  Two adult travelers · 1–9 Nov 2026 · Data as of <span id="asof">2026-10-21</span> · Blank values are not verified.
+  Sources are linked on every row. Repo: <a href="https://github.com/buffedlizard55-lab/Koreatrip1">buffedlizard55-lab/Koreatrip1</a>.
+</footer>
+<script src="assets/app.js"></script>
+</body>
+</html>
