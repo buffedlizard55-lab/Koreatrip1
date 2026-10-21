@@ -231,3 +231,9 @@ PR #6 merged while #7 integration was in progress, advancing main to 1fe2d25. Th
 - Post-merge integrity: root dashboard, `field-guide/`, `docs/`, `prior-site/`, `legacy/` all untouched (0 deletions vs pre-merge main; existing Node tests 7/7 pass on the merged tree; 78 HTML files with 0 broken internal links).
 - All tasks for session `1fd4f7b3` are **done**. Open items are non-blocking and published for owner review on `verified-guide/flagged.html`: confirm the Day 2 ↔ Day 3 swap, fill Days 7–8, add flight details and post-Busan plans, recheck Crystal Jade and the small Instagram-only venues, and look up the specific KTX train on Korail.
 - This record is published via a documentation-only follow-up PR from `arena/1fd4f7b3-koreatrip1` so the deployment confirmation is retained on `main` (same pattern as session `9c9accaa`).
+
+## Arena session `e16088dc` — source-audit integration
+
+- Initial claim was made on the fixed branch from the initial repository state (commit `1781c22`, which contained only `README.md`); the claim was pushed before implementation.
+- Main advanced through concurrent site PRs, including PR #10's `/field-guide/` companion. To avoid another duplicate dashboard, this session is scoped to adding verified venue/source corrections to the existing guide while preserving all root, `docs/`, `field-guide/`, and `verified-guide/` work.
+- Integration is in progress on `arena/e16088dc-koreatrip1`; final tests, PR/merge status and Pages deployment will be recorded here.
