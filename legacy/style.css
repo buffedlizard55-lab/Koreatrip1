@@ -1,0 +1,44 @@
+/* Korea Trip — clean, mobile-first itinerary dashboard */
+:root{--navy:#0b1f3a;--gold:#c5a065;--cream:#f8f5f0;--ink:#1a1a2e;--muted:#6c6c7f;--line:#e3ddd0;--accent:#2a4f7c;}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans","Noto Sans KR",sans-serif;color:var(--ink);background:var(--cream);line-height:1.55;}
+img{max-width:100%;height:auto;display:block}
+.container{max-width:980px;margin:0 auto;padding:0 18px}
+.header{background:linear-gradient(165deg,#0b1f3a 0%,#16325b 70%,#0f2640 100%);color:#fff;padding:52px 0 36px;}
+.header h1{font-size:clamp(1.8rem,4.5vw,3.1rem);line-height:1.15;font-weight:800;letter-spacing:-0.02em;text-wrap:balance;}
+.header .subtitle{color:#dde3ec;font-size:1.05rem;margin-top:8px;opacity:.92}
+.header .meta{color:#c9bfa0;font-size:.9rem;margin-top:12px;}
+.nav-wrap{position:sticky;top:0;z-index:100;background:rgba(11,31,58,.97);backdrop-filter:saturate(140%) blur(6px);border-bottom:1px solid rgba(197,160,101,.35);}
+.nav{display:flex;gap:10px;overflow-x:auto;padding:10px 0;scrollbar-width:none;}
+.nav::-webkit-scrollbar{display:none}
+.nav a{flex:0 0 auto;background:rgba(255,255,255,.08);color:#f4ecd8;border:1px solid rgba(197,160,101,.35);padding:7px 12px;border-radius:999px;font-size:.9rem;text-decoration:none;font-weight:600;transition:.15s;}
+.nav a:hover,.nav a.active{background:rgba(197,160,101,.18);border-color:var(--gold);color:#fff;}
+main{padding:28px 0 48px}
+.section{margin-bottom:36px;}
+.section h2{font-size:1.35rem;color:var(--navy);border-left:5px solid var(--gold);padding-left:12px;margin-bottom:12px;letter-spacing:-0.01em;text-wrap:balance;}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:0 1px 0 rgba(0,0,0,.03),0 8px 24px rgba(11,31,58,.05);}
+.card h3{font-size:1.05rem;color:var(--navy);margin-bottom:8px;}
+.card .meta-small{color:var(--muted);font-size:.85rem;}
+table{width:100%;border-collapse:collapse;font-size:.92rem;}
+thead th{background:var(--navy);color:#fff;text-align:left;padding:10px 12px;font-weight:600;font-size:.85rem;letter-spacing:.02em;}
+tbody td{padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top;}
+tbody tr:hover{background:#f5f1eb}
+tbody td:first-child{font-weight:600;color:var(--navy);white-space:nowrap;}
+a{color:var(--accent);text-decoration:underline;text-underline-offset:3px;}
+a:hover{color:var(--navy)}
+.label{display:inline-block;padding:2px 8px;border-radius:999px;font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;}
+.label.ok{background:#e7f2e9;color:#1b5e2f}
+.label.flag{background:#fceee6;color:#8b2f0f}
+.label.unverified{background:#f3f0e8;color:#6e5f1d}
+.grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:18px}
+.hero-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin-top:14px}
+.hero-grid .card{padding:16px}
+.tag{font-size:.75rem;color:var(--muted);margin-top:4px}
+.note-box{background:#eae5d7;border-left:4px solid var(--gold);padding:14px 16px;border-radius:0 10px 10px 0;color:#3a3228;font-size:.95rem}
+.note-box strong{color:var(--navy)}
+.source-link{font-size:.82rem;color:var(--muted);word-break:break-word}
+.footer{background:var(--navy);color:#dde3ec;padding:36px 0;font-size:.9rem;margin-top:12px}
+.footer a{color:#c5a065}
+@media (max-width:720px){.nav{gap:8px}.nav a{padding:6px 10px;font-size:.85rem}.header{padding:36px 0 28px}table{font-size:.86rem}tbody td,thead th{padding:8px 10px}}
+</style>
