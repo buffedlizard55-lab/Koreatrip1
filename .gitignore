@@ -1,0 +1,6 @@
+# Generated static site and local checks
+/site/
+__pycache__/
+*.py[cod]
+.venv/
+.DS_Store
