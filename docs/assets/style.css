@@ -1,0 +1,62 @@
+:root{
+  --ink:#16213a; --muted:#5b6b8c; --bg:#f4f6fb; --card:#fff; --line:#e2e8f4;
+  --red:#e03131; --blue:#1b3a6b; --teal:#0ca678; --amber:#f59e0b; --amber-bg:#fff8e6;
+  --green-bg:#e6fcf5; --red-bg:#fff5f5; --radius:14px;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans",sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+a{color:#175fe3}
+header.top{background:linear-gradient(135deg,#0b2a5b,#175fe3 60%,#0ca678);color:#fff;padding:26px 18px 20px}
+header.top .wrap{max-width:1080px;margin:auto}
+header.top h1{margin:0 0 4px;font-size:1.7rem}
+header.top p{margin:0;opacity:.9;font-size:.95rem}
+.kr{font-size:.82em;color:var(--muted);font-weight:400}
+nav.tabs{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line);overflow-x:auto;-webkit-overflow-scrolling:touch}
+nav.tabs .wrap{max-width:1080px;margin:auto;display:flex;gap:2px;padding:0 8px;min-width:max-content}
+nav.tabs a{padding:12px 12px;text-decoration:none;color:var(--ink);font-weight:600;font-size:.9rem;border-bottom:3px solid transparent;white-space:nowrap}
+nav.tabs a.active{border-color:var(--red);color:var(--blue)}
+main{max-width:1080px;margin:auto;padding:18px 14px 60px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px;margin:0 0 16px;box-shadow:0 1px 3px rgba(11,42,91,.05)}
+.card h2{margin:0 0 8px;font-size:1.15rem}
+.card h3{margin:14px 0 6px;font-size:1rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px}
+.daycard{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:14px;text-decoration:none;color:var(--ink);display:block}
+.daycard:hover{border-color:#b8c8e8}
+.daycard .d{font-size:.78rem;font-weight:700;letter-spacing:.04em;color:#fff;background:var(--blue);display:inline-block;padding:2px 9px;border-radius:999px;margin-bottom:8px}
+.daycard.alert .d{background:var(--red)}
+.daycard.travel .d{background:var(--teal)}
+.daycard h3{margin:0 0 4px;font-size:1rem}
+.daycard p{margin:0;font-size:.86rem;color:var(--muted)}
+.alertbox{border-radius:var(--radius);padding:14px 16px;margin:0 0 16px;border:1px solid}
+.alertbox.crit{background:var(--red-bg);border-color:#ffc9c9}
+.alertbox.warn{background:var(--amber-bg);border-color:#ffe8a3}
+.alertbox.ok{background:var(--green-bg);border-color:#b2f2bb}
+.alertbox h2{margin:0 0 6px;font-size:1.05rem}
+.badge{display:inline-block;padding:1px 8px;border-radius:999px;font-size:.72rem;font-weight:700;white-space:nowrap}
+.b-verified{background:#d3f9d8;color:#1e7e34}
+.b-unverified{background:#ffe8a3;color:#8a5a00}
+.b-wrong{background:#ffc9c9;color:#b02a30}
+.b-missing{background:#e7eaf3;color:#44557a}
+.b-info{background:#dbe9ff;color:#175fe3}
+.tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:10px;background:#fff}
+table{border-collapse:collapse;width:100%;font-size:.88rem;min-width:640px}
+th,td{padding:9px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{background:#eef3fb;font-size:.8rem;letter-spacing:.02em}
+tr:last-child td{border-bottom:none}
+td .src{font-size:.8rem}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 12px}
+.filters input[type=search]{flex:1;min-width:180px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;font-size:.95rem}
+.filters select{padding:10px;border:1px solid var(--line);border-radius:10px;font-size:.9rem;background:#fff}
+.legend{font-size:.85rem;color:var(--muted);margin:6px 0 14px}
+.timeline{list-style:none;margin:0;padding:0}
+.timeline li{display:flex;gap:12px;padding:10px 0;border-bottom:1px dashed var(--line)}
+.timeline li:last-child{border-bottom:none}
+.timeline .t{flex:0 0 74px;font-weight:700;color:var(--blue);font-size:.85rem;padding-top:2px}
+.timeline .x{font-size:.92rem}
+.small{font-size:.84rem;color:var(--muted)}
+.kpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
+.kpi div{background:#eef3fb;border-radius:10px;padding:12px;text-align:center}
+.kpi b{display:block;font-size:1.3rem;color:var(--blue)}
+footer{max-width:1080px;margin:auto;padding:0 14px 40px;color:var(--muted);font-size:.82rem}
+@media (max-width:560px){header.top h1{font-size:1.35rem}.timeline .t{flex-basis:62px}table{min-width:560px}}
+@media print{nav.tabs,.filters{display:none}body{background:#fff}.card{box-shadow:none}}
