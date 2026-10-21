@@ -94,11 +94,12 @@
       "id": "gwangjang_sunday",
       "tier": "correction",
       "topic": "Markets",
-      "title": "Gwangjang food and retail have different Sunday rules",
-      "finding": "Retail is listed closed Sundays; the food street is listed open all year. Their hours also differ.",
-      "action": "For the optional open Day 8 (Sunday), expect food street only; move any retail browse to a non-Sunday visit, such as Tuesday Day 3.",
+      "title": "Gwangjang sections have different Sunday rules",
+      "finding": "The general retail market and Guie Shopping Street are listed closed Sundays; the food alley is listed open year-round. Hours differ: retail 09:00–18:00, food alley 09:00–23:00, Guie 10:00–19:00.",
+      "action": "For the optional open Day 8 (Sunday), expect food alley only; move any retail browse to a non-Sunday visit, such as Tuesday Day 3.",
       "sources": [
-        "gwangjang"
+        "gwangjang",
+        "visitseoul_gwangjang"
       ],
       "source_role": "evidence"
     },
@@ -382,15 +383,15 @@
     },
     {
       "id": "hanjungsun",
-      "tier": "merchant",
-      "topic": "Restaurant",
-      "title": "Hanjungsun",
-      "finding": "Current business location and opening times unverified.",
-      "action": "Confirm against a specific official business listing.",
+      "tier": "correction",
+      "topic": "Seongsu restaurant / dessert",
+      "title": "Hanjungsun has a current Visit Seoul listing",
+      "finding": "Visit Seoul (edited 2026-09-01) lists Hanjungsun at 1F, 43-1 Yeonmujang-gil, every day 10:30–22:00, and describes it as takeout-only with no dine-in tables. This is a tourism listing, not a reservation or same-day guarantee.",
+      "action": "Use the listed address and takeaway format; recheck the live listing before visiting. Menu and queue conditions are not verified.",
       "sources": [
-        "seoul_directory"
+        "hanjungsun"
       ],
-      "source_role": "context_only"
+      "source_role": "evidence"
     },
     {
       "id": "uri_wang",
@@ -466,15 +467,16 @@
     },
     {
       "id": "blue_elephant",
-      "tier": "merchant",
+      "tier": "discrepancy",
       "topic": "Seongsu retail",
-      "title": "Blue Elephant Seongsu",
-      "finding": "Operator page could not be read past a browser challenge; hours and address remain unverified here.",
-      "action": "Confirm directly on an accessible current operator listing.",
+      "title": "Blue Elephant has two distinct Seongsu listings",
+      "finding": "Earlier direct checks of the official operator pages showed a Flagship Store at 2F–3F, 13 Yeonmujang-gil (12:00–22:00) and Space Seongsu at 53 Yeonmujang-gil (10:00–22:00). The original notes do not identify which branch; a repeat check on 2026-10-21 returned a browser challenge, so no branch is assigned.",
+      "action": "Confirm the exact branch with the traveler and recheck its operator page before routing; do not choose between two locations by inference.",
       "sources": [
-        "seongsu_street"
+        "blue_elephant_flagship",
+        "blue_elephant_space"
       ],
-      "source_role": "context_only"
+      "source_role": "evidence"
     },
     {
       "id": "eternalog",
@@ -493,10 +495,11 @@
       "tier": "merchant",
       "topic": "Retail",
       "title": "Olive Young D176",
-      "finding": "The operator D176 detail was unreadable here. The separate Myeongdong Town branch is officially listed at 53 Myeong-dong-gil, but that does not verify D176.",
-      "action": "Do not substitute the Town store address for D176; confirm the exact branch.",
+      "finding": "Olive Young D176 itself remains unverified. The separate Myeongdong Global/Town branch is listed at 53 Myeongdong-gil with 10:00–22:30 hours; the operator warns those hours can change. Do not substitute that branch for D176.",
+      "action": "Do not substitute the Global/Town store for D176; confirm the exact branch.",
       "sources": [
-        "oliveyoung_town"
+        "oliveyoung_town",
+        "oliveyoung_myeongdong_global"
       ],
       "source_role": "context_only"
     },

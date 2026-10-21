@@ -54,12 +54,14 @@
         {"period": "Morning café option", "place": "onion_seongsu", "why": "A branch named in the notes. Weekday hours agree across officials; weekend opening is disputed and left unverified.", "optional": true},
         {"period": "Late morning", "place": "ader", "why": "Use the official Seongsu Space address, not another ADERERROR shop format.", "optional": true},
         {"period": "Midday", "place": "jayeondo", "why": "Takeaway salt bread; the tourism listing mentions queues and batch baking.", "optional": true},
+        {"period": "Meal / dessert option", "place": "hanjungsun", "why": "Visit Seoul lists a takeout-only Seongsu dessert shop at 43-1 Yeonmujang-gil; no dine-in tables.", "optional": true},
         {"period": "Afternoon browse", "place": "musinsa", "why": "MUSINSA STANDARD's official Seongsu store listing.", "optional": true},
+        {"period": "Beauty-store option", "place": "oliveyoung_n_seongsu", "why": "VisitKorea lists the specific N Seongsu branch; it is not the unverified Myeongdong D176 store.", "optional": true},
         {"period": "Afternoon browse", "place": "marge", "why": "Use the current 13 Yeonmujang 11-gil flagship address.", "optional": true},
         {"period": "Separate transfer", "place": "ddp", "why": "Dongdaemun Design Plaza is reached by Line 2; exhibitions have their own hours and admission.", "optional": true}
       ],
-      "return": {"text": "From Seongsu or Dongdaemun History & Culture Park take Line 2 toward Euljiro 1-ga and walk to Stanford. The unsupported Seongsu dining and photo-booth candidates remain on the review page.", "sources": ["seoul_metro", "stanford", "ddp_access"]},
-      "note": "This day includes the original DDP idea but not the incorrect idea that DDP is in Seongsu. Neither Rain Report Croissant's current Seongsu operation nor the unverified restaurant shortlist is asserted.",
+      "return": {"text": "From Seongsu or Dongdaemun History & Culture Park take Line 2 toward Euljiro 1-ga and walk to Stanford. Hanjungsun and Olive Young N Seongsu have specific tourism-listing addresses; other unverified merchant and photo-booth candidates remain on the review page.", "sources": ["seoul_metro", "stanford", "ddp_access"]},
+      "note": "This day includes the original DDP idea but not the incorrect idea that DDP is in Seongsu. Hanjungsun and Olive Young N Seongsu now have specific official tourism listings; the separate Rain Report Croissant and other unresolved shortlist items remain unasserted.",
       "flags": ["ddp_location", "rain_seongsu", "merchant_list", "marge_address", "onion_weekend_hours"]
     },
     {

@@ -18,6 +18,7 @@ ALLOWED_HOSTS = {
     "ddp.or.kr", "www.nseoultower.co.kr", "www.cablecar.co.kr", "guide.michelin.com", "m.starfield.co.kr",
     "www.adererror.com", "global.margesherwood.com", "locations.musinsa.com", "www.lotteshopping.com",
     "www.shinsegae.com", "www.stanford-hotel.com", "www.lottehotel.com", "www.korail.com",
+    "myeongdongtown.oliveyoung.com", "en.blueelephant.co",
     "www.seoulmetro.co.kr", "www2.humetro.busan.kr", "www.airportrailroad.com", "www.bluelinepark.com",
 }
 
@@ -72,6 +73,13 @@ def validate_data() -> set[str]:
     require(by_id["haeundae_beach"]["hours"] is None, "Ambiguous beach listing hours must stay blank")
     require("weekend opening unverified" in by_id["onion_seongsu"]["hours"], "Conflicting Onion weekend hour must remain flagged")
     require("Bib Gourmand" in by_id["kyoja"]["note"] and "starred" not in by_id["kyoja"]["note"], "Michelin distinction changed")
+    require(by_id["hanjungsun"]["address"] == "1F, 43-1 Yeonmujang-gil, Seongdong-gu, Seoul" and by_id["hanjungsun"]["hours"] == "10:30–22:00" and by_id["hanjungsun"]["days"] == "Daily", "Hanjungsun must match its current Visit Seoul listing")
+    require(by_id["oliveyoung_n_seongsu"]["address"] == "13 Yeonmujang 7-gil, Seongdong-gu, Seoul" and by_id["oliveyoung_n_seongsu"]["hours"] == "10:00–22:00", "Olive Young N Seongsu must retain its exact KTO branch details")
+    require("Guie Shopping Street 10:00–19:00" in by_id["gwangjang"]["hours"] and "closed Sundays" in by_id["gwangjang"]["days"], "Gwangjang section schedules must remain distinct")
+    require("oliveyoung_myeongdong_global" in by_id["oliveyoung_town"]["sources"], "Myeongdong Global needs its direct operator source")
+    review_by_id = {x["id"]: x for x in review}
+    require(review_by_id["hanjungsun"]["source_role"] == "evidence" and review_by_id["hanjungsun"]["tier"] == "correction", "Hanjungsun's sourced listing and caveats must remain visible for review")
+    require(review_by_id["blue_elephant"]["source_role"] == "evidence" and review_by_id["blue_elephant"]["tier"] == "discrepancy", "Blue Elephant's unresolved official branch conflict must remain flagged")
     for item in review:
         check_sources(item, "review item")
         require(item["source_role"] in {"evidence", "context_only"}, f"No source role: {item['id']}")
@@ -80,6 +88,7 @@ def validate_data() -> set[str]:
         if item["tier"] == "merchant":
             require(item["source_role"] == "context_only", f"Unverified merchant wrongly marked proven: {item['id']}")
     require(days[1]["stops"][0]["place"] == "gyeongbokgung" and days[2]["stops"][0]["place"] == "cablecar", "Palace Tuesday-closure correction must remain explicit")
+    require({"hanjungsun", "oliveyoung_n_seongsu"} <= {stop["place"] for stop in days[3]["stops"]}, "Officially listed Seongsu restaurant and shop should be available on Day 4")
     require(days[5]["stops"][0]["place"] == "insadong", "Source outline keeps Ikseon/Insadong on Day 6")
     require(days[6]["city"] == "Seoul" and days[7]["city"] == "Seoul", "Original Days 7–8 must remain in Seoul")
     require(all(stop["optional"] for day in days[6:8] for stop in day["stops"]), "Source outline leaves Days 7–8 open")
