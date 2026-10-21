@@ -139,3 +139,13 @@ Last updated: 2026-10-21 (post-merge)
   `docs/` pages served 200 from a local static server; internal links/anchors
   in `docs/` validated; `data/*.json` parses. PR #6 result and final Pages
   check recorded below.
+- **PR #6 result (recorded by session `56c45b7c`):** https://github.com/buffedlizard55-lab/Koreatrip1/pull/6
+  **Merged** 2026-10-21 07:49:53 UTC, merge commit `1fe2d25`. GitHub Pages build
+  for `1fe2d25`: **built** (no error). Live checks (fetched 2026-10-21):
+  root dashboard renders incl. the new "Corrected day-by-day plan & audit"
+  card; `docs/itinerary.html` renders the corrected plan. Live site:
+  https://buffedlizard55-lab.github.io/Koreatrip1/ · companion:
+  https://buffedlizard55-lab.github.io/Koreatrip1/docs/
+- All tasks from this session: **done**. Remaining "needs review" items are the
+  traveler-facing flags on the Flagged pages (flight details, KTX booking,
+  Day 7–8 content, same-day shop-hour checks) — they do not block anything.
