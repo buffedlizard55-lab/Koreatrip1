@@ -375,6 +375,22 @@
       ]
     },
     {
+      "id": "hanjungsun",
+      "name": "Hanjungsun",
+      "category": "food",
+      "city": "Seoul",
+      "area": "Seongsu",
+      "address": "1F, 43-1 Yeonmujang-gil, Seongdong-gu, Seoul",
+      "hours": "10:30–22:00",
+      "days": "Daily",
+      "access": "Line 2 · Seongsu Station, Exit 4; Visit Seoul lists 243 m",
+      "price": null,
+      "note": "Visit Seoul describes this as takeout-only with no dine-in tables. Listing edited 2026-09-01; menu, queue and future-day availability are not guaranteed.",
+      "sources": [
+        "hanjungsun"
+      ]
+    },
+    {
       "id": "onion_seongsu",
       "name": "Cafe Onion Seongsu",
       "category": "food",
@@ -398,13 +414,14 @@
       "city": "Seoul",
       "area": "Jongno",
       "address": "88 Changgyeonggung-ro, Jongno-gu, Seoul",
-      "hours": "Retail 09:00–18:00; food street 09:00–23:00",
-      "days": "Retail closed Sundays; food street year-round",
+      "hours": "General market 09:00–18:00; food alley 09:00–23:00; Guie Shopping Street 10:00–19:00",
+      "days": "General retail and Guie Shopping Street closed Sundays; food alley listed year-round",
       "access": "Line 2 · Euljiro 4-ga; then walk to market area",
       "price": null,
-      "note": "The Sunday food street is not evidence the Sunday retail market is open.",
+      "note": "The market has distinct retail, food-alley and Guie Shopping Street schedules. Do not apply food-alley hours to retail or infer a general 02:00 closing time.",
       "sources": [
         "gwangjang",
+        "visitseoul_gwangjang",
         "seoul_metro"
       ]
     },
@@ -477,17 +494,18 @@
     },
     {
       "id": "oliveyoung_town",
-      "name": "Olive Young Myeongdong Town Store",
+      "name": "Olive Young Myeongdong Global / Town Store",
       "category": "shopping",
       "city": "Seoul",
       "area": "Myeongdong",
-      "address": "53 Myeong-dong-gil, Jung-gu, Seoul",
+      "address": "53 Myeongdong-gil, Jung-gu, Seoul",
       "hours": "10:00–22:30",
-      "days": "Year-round in VisitKorea listing",
-      "access": "Myeongdong shopping district; Line 4 · Myeongdong Station",
+      "days": "Business days, Saturdays, Sundays and holidays listed",
+      "access": "Line 4 · Myeongdong Exit 8 / Line 2 · Euljiro 1-ga Exit 5",
       "price": null,
-      "note": "The source identifies Myeongdong Town, NOT the unverified D176 location. Recheck the current store page near travel.",
+      "note": "The official branch page warns that hours can change with store conditions. This exact Global/Town branch is distinct from the unverified D176 entry.",
       "sources": [
+        "oliveyoung_myeongdong_global",
         "oliveyoung_town",
         "myeongdong"
       ]
@@ -523,6 +541,22 @@
       "note": "Operator-listed fashion flagship.",
       "sources": [
         "musinsa"
+      ]
+    },
+    {
+      "id": "oliveyoung_n_seongsu",
+      "name": "Olive Young N Seongsu",
+      "category": "shopping",
+      "city": "Seoul",
+      "area": "Seongsu",
+      "address": "13 Yeonmujang 7-gil, Seongdong-gu, Seoul",
+      "hours": "10:00–22:00",
+      "days": "Monday–Sunday (VisitKorea listing)",
+      "access": "Seongsu shopping area; confirm the walk from the selected station exit",
+      "price": null,
+      "note": "VisitKorea identifies this specific N Seongsu branch; do not substitute its details for Olive Young D176. Recheck the live listing before travel.",
+      "sources": [
+        "oliveyoung_n_seongsu"
       ]
     },
     {
