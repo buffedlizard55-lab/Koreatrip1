@@ -64,7 +64,9 @@ Blank verified fields = not confirmed. "Flagged" = listed on the **Flagged for R
 - PR #1: https://github.com/buffedlizard55-lab/Koreatrip1/pull/1 (`arena/b86112b5-koreatrip1` → `main`). **Merged** 2026-10-21 07:43:32 UTC, merge commit `bda5bc8`.
 - PR #3 (other session, `arena/d730bd96-koreatrip1`) was merged 07:44:06 UTC on top of PR #1. Its conflict-resolution commit `6f9004d` left **conflict markers** in `index.html`, `flagged.html`, and `sources.html` on `main`. Those pages were broken on `main` (see incident below).
 - PR #2 (`arena/3c8e45cf-koreatrip1`, another session) was closed without merge.
-- Fix: see the incident section below (PR #4 from this branch).
+- PR #4 (`arena/b86112b5-koreatrip1` → `main`): fixes the conflict markers and moves the other session's day pages to `legacy/`. **Merged** 2026-10-21 07:46:02 UTC, merge commit `0c5101b`.
+- Pages: build for `0c5101b` status **built** (checked 2026-10-21). Live URL checks (fetched): dashboard `index.html` renders with the counts above; `data/trip.json` served; `legacy/day3.html` shows the legacy banner.
+- Also noted in the legacy Day 3 page (not corrected there, since it is another session's draft): it says "Nov 3, 2006 was a Tuesday", but the trip is in 2026. Its verification notes cite non-official guide sites for Cafe Onion Anguk and the tea house hours. Treat those as unverified.
 - Pages source: `main` / `/` (site files at repo root). Pages source could not be changed to `/docs` (HTTP 403 for this token).
 
 ## Incident: broken `main` after parallel merges (T4, 2026-10-21)
