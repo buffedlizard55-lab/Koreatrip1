@@ -798,3 +798,7 @@ Observed: Context / review starting point only; no venue-specific claim verified
 - MARGESHERWOOD directory was subsequently retrieved directly (chunk 4), confirming the flagship address and hours.
 - Visit Busan directory successfully retrieved and redirected to its English home page. It remains context-only, not market-specific evidence.
 - External sites may redirect, require browser interaction or change content; no claim is made that all external links will always be accessible.
+
+## Parallel-session evidence discrepancy
+
+The previous main snapshot is preserved in `prior-site/`. Its dataset assumes travel year 2026 and records different child admission rules for Gyeongbokgung. This session's direct retrieval of Royal Palaces and Tombs Center E702000000 explicitly states free ages 18 and below and ages 65 and above. Current rows follow that source and leave travel year unresolved. Prior research is not represented as reverified or included in current counts. See COORDINATION.md for conflict resolution and retained historical log.
