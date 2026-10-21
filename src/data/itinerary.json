@@ -108,7 +108,7 @@
       ],
       "return": {"text": "From Jagalchi or Toseong, take Metro Line 1 to Busan Station. Book a suitable KTX to Seoul Station; to reach Stanford, use Seoul Metro Line 1 to City Hall and Line 2 to Euljiro 1-ga. A Nov 8 Seoul room is not confirmed and must not be assumed available.", "sources": ["busan_metro", "korail", "visitkorea_rail", "seoul_metro", "stanford"]},
       "note": "The suggested Sunday return avoids relying on an unverified Busan-to-airport same-day transfer. It is a proposal only: train departure, baggage arrangements and Seoul overnight all remain unresolved.",
-      "flags": ["train_booking", "return_hotel", "bag_storage", "dates"]
+      "flags": ["train_booking", "return_hotel", "bag_storage", "jagalchi_closure", "dates"]
     },
     {
       "number": 9, "date": "2026-11-09", "city": "Seoul → airport", "title": "Leave with a buffer", "subtitle": "Keep the departure day open until the flight is known.", "theme": "DEPARTURE DAY", "hotel": "stanford", "overnight": "Departure · flight unconfirmed",
