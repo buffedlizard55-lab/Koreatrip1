@@ -235,7 +235,14 @@ PR #6 merged while #7 integration was in progress, advancing main to 1fe2d25. Th
 ## Arena session `e16088dc` — source-audit integration
 
 - Initial claim was made on the fixed branch from the initial repository state (commit `1781c22`, which contained only `README.md`); the claim was pushed before implementation.
-- Rebased on main after concurrent PRs #10–#12; latest integration point is `9966d6a`. Both `/field-guide/` and `/verified-guide/` are already present, so this session intentionally discarded its redundant parallel-site draft and preserved all existing root, `docs/`, `field-guide/`, and `verified-guide/` work.
+- Rebased on main after concurrent PRs #10–#12 at `9966d6a`. Both `/field-guide/` and `/verified-guide/` were already present, so this session intentionally discarded its redundant parallel-site draft and preserved all existing root, `docs/`, `field-guide/`, and `verified-guide/` work. PR #13 later merged this session's data-only improvements to `/field-guide/` at `dc24774`.
 - Added official-source records and guide entries for Hanjungsun and Olive Young N Seongsu; upgraded Olive Young Myeongdong Town to the operator's Global branch page; separated Gwangjang's general retail, food-alley and Guie Shopping Street schedules; confirmed the Namsan Cable Car runs 365 days/year; and documented the two Blue Elephant Seongsu listings while leaving the requested branch unassigned. Unverified D176, Eternalog, Solsot and other values remain blank/on review.
 - Current ledger: 39 place rows, 64 registered source URLs and 46 review findings. `python3 scripts/check.py --build --out field-guide` passes (18 pages, 199 source-linked data rows, 1,045 links/assets checked); `node --test tests/site.test.cjs` passes 7/7; JSON parsing, Python compilation and `git diff --check` pass. Local preview paths return HTTP 200.
-- Root `index.html`, root `data/trip.json`, `docs/`, `prior-site/`, and the other open PR's files are outside this session's edits. PR creation, merge, Pages build and direct live checks are pending.
+- Root `index.html`, root `data/trip.json`, `docs/`, `prior-site/`, and `verified-guide/` remain outside this session's edits.
+
+### Final publication record — arena/e16088dc
+
+- PR #13: https://github.com/buffedlizard55-lab/Koreatrip1/pull/13 — **MERGED 2026-10-21 08:25:34 UTC**, merge commit `dc24774c8072035567d83153ebb62a9904536ca4`.
+- Field-guide validation run `39569170055` for the merge commit: **success**. GitHub Pages build `1302065060` / run `39569169287` for the same commit: **built/deployed**, no deployment error.
+- Direct live checks (cache-busted with merge SHA) confirmed the Field Guide dashboard, Day 4, Food & Markets, Shopping, Flagged for Review and Source Shelf at https://buffedlizard55-lab.github.io/Koreatrip1/field-guide/. Hanjungsun and Olive Young N Seongsu render on the Seongsu day/category tables; the D176 distinction, Gwangjang section hours and two-branch Blue Elephant review appear with source links.
+- Non-blocking traveler decisions remain visible on Flagged for Review: trip year/bookings, D176 identity, unresolved Blue Elephant branch, Eternalog/Solsot and other named candidates, and the open Days 7–8. Unsupported values remain blank. Root site and all other companion guides are preserved.
