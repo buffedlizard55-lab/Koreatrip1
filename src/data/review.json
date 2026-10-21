@@ -1,40 +1,577 @@
 {
-  "intro": "These items are published for post-publication review, not held back for approval. An official 'context only' link points to an operator or city directory but does NOT verify the specific unverified claim. Missing addresses, hours, prices and bookings are intentionally left blank.",
+  "intro": "These items are published for post-publication review, not held back for approval. The source outline ends with Day 9 arrival in Busan; the earlier experimental Friday–Sunday Busan/Seoul-return draft has been withdrawn. An official 'context only' link points to an operator or city directory but does NOT verify the specific unverified claim. Missing addresses, hours, prices and bookings are intentionally left blank.",
   "items": [
-    {"id":"dates","tier":"priority","topic":"Calendar","title":"Trip year conflicts with weekday labels","finding":"Notes include ‘Nov 2, 2006’ while the Sunday-to-Monday sequence fits Nov 1–9, 2026. Year 2026 is used only as a working layout, not a confirmed travel date.","action":"Confirm actual year and all nine dates before making time-sensitive plans. Nov 9 closure advice applies only if 2026 is intended.","sources":["palace_hours","lotte"],"source_role":"context_only"},
-    {"id":"original_text","tier":"priority","topic":"Itinerary provenance","title":"Full original schedule is not available","finding":"The saved repository contains no complete day-by-day source itinerary; identifiable venues and date clues survived. The displayed day assignments are an editorial proposal.","action":"Compare with the original nine-day plan if available; do not interpret this site's ordering as a reproduced reservation or traveler instruction.","sources":["seoul_directory","busan_directory"],"source_role":"context_only"},
-    {"id":"flights","tier":"priority","topic":"Transport","title":"Flights and airport terminal unverified","finding":"No airline, flight numbers, times, airports or terminal details were found. Incheon ground routes are conditional examples.","action":"Confirm the arrival/departure airport and terminal and build a real check-in/security buffer; do not rely on the published AREX onboard time as an airport transfer total.","sources":["arex","stanford"],"source_role":"context_only"},
-    {"id":"hotels","tier":"priority","topic":"Lodging","title":"Named hotels are not confirmed reservations","finding":"Stanford Myeongdong and L7 Haeundae publish addresses and check-in rules, but no traveler reservation or stay dates were supplied.","action":"Verify hotel bookings, dates, bed setup and arrival arrangements independently.","sources":["stanford","l7"],"source_role":"context_only"},
-    {"id":"return_hotel","tier":"priority","topic":"Lodging","title":"Sunday Seoul return night is unconfirmed","finding":"The proposed Nov 8 Busan→Seoul return depends on an unverified Seoul room. Stanford's same-day luggage policy is not an overnight-storage or room guarantee.","action":"Confirm Sunday return accommodation or adjust return and departure route.","sources":["stanford","korail"],"source_role":"context_only"},
-    {"id":"train_booking","tier":"priority","topic":"Rail","title":"KTX travel is a route, not a ticket","finding":"The Seoul–Busan rail corridor and booking channels are published, but no departure, fare, seat or purchased ticket is verified for either leg.","action":"Check current KORAIL inventory and book suitable trains only once real travel dates are known.","sources":["korail","visitkorea_rail"],"source_role":"evidence"},
-    {"id":"bag_storage","tier":"priority","topic":"Lodging","title":"Busan checkout-day baggage is unresolved","finding":"L7 publishes an 11:00 checkout but no baggage-storage terms were verified. The optional Gamcheon hillside detour is awkward with luggage.","action":"Ask the hotel or skip Gamcheon and head to the station with bags.","sources":["l7","gamcheon"],"source_role":"context_only"},
-    {"id":"palace_tuesday","tier":"correction","topic":"Hours","title":"Move the Tuesday palace stop","finding":"The palace operator lists Gyeongbokgung closed on ordinary Tuesdays; November visiting hours are 09:00–17:00, last entry 16:00.","action":"The proposed plan places it on Monday Nov 2. Recheck any holiday exception and the actual year.","sources":["palace_hours"],"source_role":"evidence"},
-    {"id":"bukchon_rules","tier":"correction","topic":"Access","title":"Bukchon is a residential red zone","finding":"Tourist access to restricted streets is limited to 10:00–17:00; an evening residential photo stop is not appropriate.","action":"Visit quietly in the afternoon and follow local signage.","sources":["bukchon"],"source_role":"evidence"},
-    {"id":"gwangjang_sunday","tier":"correction","topic":"Markets","title":"Gwangjang food and retail have different Sunday rules","finding":"Retail is listed closed Sundays; the food street is listed open all year. Their hours also differ.","action":"If Sunday is essential, expect food street only; proposed retail browse is Tuesday.","sources":["gwangjang"],"source_role":"evidence"},
-    {"id":"ddp_location","tier":"correction","topic":"Geography","title":"DDP is in Dongdaemun, not Seongsu","finding":"The operator calls it Dongdaemun Design Plaza and places it at Dongdaemun History & Culture Park Station.","action":"Use Line 2 to Dongdaemun History & Culture Park Exit 1; keep Seongsu shopping on its own day.","sources":["ddp_overview","ddp_access"],"source_role":"evidence"},
-    {"id":"rain_seongsu","tier":"correction","topic":"Cafés","title":"Do not substitute one Rain Report branch for another","finding":"Visit Seoul lists Rain Report Rainbow in Ikseon-dong. The separate Seongsu Rain Report Croissant site has not been verified as currently operating.","action":"The proposed route uses the officially listed Ikseon café. Do not route to Seongsu Croissant without fresh operator confirmation.","sources":["rain_rainbow"],"source_role":"context_only"},
-    {"id":"michelin_label","tier":"correction","topic":"Dining","title":"Myeongdong Kyoja is not a verified starred restaurant","finding":"The MICHELIN Guide lists Myeongdong Kyoja as Bib Gourmand, not Michelin-starred.","action":"Use ‘Bib Gourmand’ in recommendations and do not claim a star.","sources":["michelin_kyoja"],"source_role":"evidence"},
-    {"id":"lotte_closed","tier":"correction","topic":"Shopping","title":"Lotte Main lists Mon Nov 9, 2026 closed","finding":"The operator's current branch calendar explicitly marks Nov 9 as a closure. Shinsegae Main's calendar currently does not mark that day closed.","action":"Do not schedule Lotte Main on the proposed departure Monday; Shinsegae is a conditional alternative only if flights permit. Recheck both calendars.","sources":["lotte","shinsegae"],"source_role":"evidence"},
-    {"id":"marge_address","tier":"correction","topic":"Shopping","title":"MARGESHERWOOD address changed in source directories","finding":"The current brand directory lists its Seoul flagship at 13 Yeonmujang 11-gil; an older contact page is no longer available.","action":"Use the current official store page and reconfirm before travel.","sources":["marge"],"source_role":"evidence"},
-    {"id":"korail_window","tier":"discrepancy","topic":"Rail","title":"Official sources disagree on when KTX tickets open","finding":"KORAIL says 07:00 two months before departure; VisitKorea's train guide says tickets usually open one month before.","action":"Prefer the current train operator and verify booking inventory before relying on the window.","sources":["korail","visitkorea_rail"],"source_role":"evidence"},
-    {"id":"blueline_fare","tier":"discrepancy","topic":"Attractions","title":"Blueline operator fare pages conflict","finding":"The operator's main fare page and Sky Capsule subpage list different two-person capsule fares. A current purchasable fare is not verified.","action":"Leave the site price blank; use the live official booking checkout. Scenic rail tickets have not been booked.","sources":["blueline_price_current","blueline_price_conflict","blueline_booking"],"source_role":"evidence"},
-    {"id":"jagalchi_closure","tier":"discrepancy","topic":"Markets","title":"Jagalchi fifth-Tuesday closure conflicts","finding":"Visit Busan's Jagalchi attraction listing says closed first, third and fifth Tuesdays; its 2026 downtown walk says first and third. The market's closing-day field is intentionally blank here.","action":"Check with the market before any Tuesday visit. The proposed visit is Sunday and is unaffected by this specific discrepancy.","sources":["jagalchi","biff"],"source_role":"evidence"},
-    {"id":"drone_schedule","tier":"priority","topic":"Events","title":"Saturday drone show is not date-specific confirmation","finding":"Visit Busan gives the usual winter Saturday 19:00/21:00 pattern, not a guaranteed show on Nov 7, 2026.","action":"Check the district's live event schedule and weather cancellation on the actual visit day.","sources":["drone"],"source_role":"context_only"},
-    {"id":"merchant_list","tier":"priority","topic":"Unverified shortlist","title":"Individual venues need their own official pages","finding":"Names in the surviving research notes were not supported by current merchant-specific official addresses, hours and prices. They are not routed as confirmed stops.","action":"See the unverified shortlist below; keep unsupported fields blank until a business operator or public tourism listing confirms each exact location.","sources":["seoul_directory","busan_directory"],"source_role":"context_only"},
-    {"id":"pig_restaurant_2","tier":"merchant","topic":"Seoul restaurant","title":"Pig Restaurant 2","finding":"Exact business, address and hours unverified; no meal booking confirmed.","action":"Find a current operator listing before adding it to a day.","sources":["seoul_directory"],"source_role":"context_only"},
-    {"id":"hongojib","tier":"merchant","topic":"Restaurant","title":"Hongojib","finding":"Exact address, hours, menu and city unverified.","action":"Confirm the exact venue with an official business page.","sources":["seoul_directory"],"source_role":"context_only"},
-    {"id":"sookhee","tier":"merchant","topic":"Seoul bar","title":"Myeongdong Sookhee","finding":"Venue-specific hours, location and reservation terms unverified.","action":"Confirm directly with a current operator page.","sources":["myeongdong"],"source_role":"context_only"},
-    {"id":"solsot","tier":"merchant","topic":"Seoul restaurant","title":"Solsot Seongsu","finding":"No current operator-backed branch address, hours or menu established.","action":"Verify the exact Seongsu branch before recommending it.","sources":["seongsu_street"],"source_role":"context_only"},
-    {"id":"far_ben","tier":"merchant","topic":"Café","title":"Cafe Far Ben","finding":"Current address and opening times unverified.","action":"Look for a current operator listing.","sources":["seoul_directory"],"source_role":"context_only"},
-    {"id":"hanjungsun","tier":"merchant","topic":"Restaurant","title":"Hanjungsun","finding":"Current business location and opening times unverified.","action":"Confirm against a specific official business listing.","sources":["seoul_directory"],"source_role":"context_only"},
-    {"id":"uri_wang","tier":"merchant","topic":"Restaurant","title":"Uri Wang Galbitang","finding":"Precise address, hours and menu price unverified.","action":"Confirm against a specific official business listing.","sources":["seoul_directory"],"source_role":"context_only"},
-    {"id":"soul_market","tier":"merchant","topic":"Market / shop","title":"Soul Market","finding":"Exact location and operating hours unverified.","action":"Locate a current official merchant record.","sources":["seoul_directory"],"source_role":"context_only"},
-    {"id":"chuncheongol","tier":"merchant","topic":"Restaurant","title":"Chuncheongol Dakgalbi","finding":"Exact location, menu and hours unverified.","action":"Verify the exact branch with an operator or public tourism listing.","sources":["seoul_directory"],"source_role":"context_only"},
-    {"id":"favorite_ikseon","tier":"merchant","topic":"Ikseon café","title":"Favorite of Ikseon","finding":"Business-specific hours and exact address unverified.","action":"Do not confuse general Ikseon-dong area information with business verification.","sources":["ikseon"],"source_role":"context_only"},
-    {"id":"brandy","tier":"merchant","topic":"Retail","title":"Brandy Melville","finding":"A current Seoul branch, address and hours were not established from an operator source.","action":"Confirm whether the branch exists before routing to it.","sources":["seoul_directory"],"source_role":"context_only"},
-    {"id":"break_silence","tier":"merchant","topic":"Retail / café","title":"Break Silence","finding":"Precise business identity, address and hours unverified.","action":"Identify the exact venue and current operator page.","sources":["seoul_directory"],"source_role":"context_only"},
-    {"id":"blue_elephant","tier":"merchant","topic":"Seongsu retail","title":"Blue Elephant Seongsu","finding":"Operator page could not be read past a browser challenge; hours and address remain unverified here.","action":"Confirm directly on an accessible current operator listing.","sources":["seongsu_street"],"source_role":"context_only"},
-    {"id":"eternalog","tier":"merchant","topic":"Seongsu photo booth","title":"Eternalog","finding":"Operator homepage did not expose a usable current branch address or hours.","action":"Check the operator's current branch notice before a visit.","sources":["seongsu_street"],"source_role":"context_only"},
-    {"id":"oliveyoung_d176","tier":"merchant","topic":"Retail","title":"Olive Young D176","finding":"Store-specific hours and address were not readable from the retrieved operator page.","action":"Use an up-to-date operator store detail before scheduling this exact branch.","sources":["seoul_directory"],"source_role":"context_only"}
+    {
+      "id": "dates",
+      "tier": "priority",
+      "topic": "Calendar",
+      "title": "Trip year conflicts with weekday labels",
+      "finding": "Notes include ‘Nov 2, 2006’ while the Sunday-to-Monday sequence fits Nov 1–9, 2026. Year 2026 is used only as a working layout, not a confirmed travel date.",
+      "action": "Confirm actual year and all nine dates before making time-sensitive plans. Nov 9 closure advice applies only if 2026 is intended.",
+      "sources": [
+        "palace_hours",
+        "lotte"
+      ],
+      "source_role": "context_only"
+    },
+    {
+      "id": "original_text",
+      "tier": "priority",
+      "topic": "Itinerary provenance",
+      "title": "Structured outline exists; verbatim brief does not",
+      "finding": "A concurrently merged data/trip.json transcribes the submitted nine-day outline and 74 claim rows. It puts the Seoul→Busan KTX on Day 9, Itaewon only as a Day 7 heading, and no activities on Day 8. The verbatim brief is not stored.",
+      "action": "Preserve this documented sequence; label the palace-day swap and empty-day suggestions as editorial. Compare with the original verbatim notes if available.",
+      "sources": [
+        "seoul_directory",
+        "busan_directory"
+      ],
+      "source_role": "context_only"
+    },
+    {
+      "id": "flights",
+      "tier": "priority",
+      "topic": "Transport",
+      "title": "SFO→ICN note is not a booked flight",
+      "finding": "The submitted notes name SFO→ICN around Oct 31/Nov 1, but do not give a verified booking, airline, flight number, times or terminal.",
+      "action": "Confirm the actual flight and arrival terminal before relying on any Incheon ground route. No onward flight after the Day 9 Busan arrival is supplied.",
+      "sources": [
+        "arex",
+        "stanford"
+      ],
+      "source_role": "context_only"
+    },
+    {
+      "id": "hotels",
+      "tier": "priority",
+      "topic": "Lodging",
+      "title": "Named hotels are not confirmed reservations",
+      "finding": "Stanford Myeongdong and L7 Haeundae publish addresses and check-in/out policies; no traveler reservation or room dates were supplied.",
+      "action": "Confirm the Seoul stay through Day 9 checkout and the Busan check-in/night independently.",
+      "sources": [
+        "stanford",
+        "l7"
+      ],
+      "source_role": "context_only"
+    },
+    {
+      "id": "train_booking",
+      "tier": "priority",
+      "topic": "Rail",
+      "title": "KTX travel is a route, not a ticket",
+      "finding": "The submitted final day travels Seoul Station→Busan Station, but no specific KTX departure, journey time, fare, seat or purchased ticket is established.",
+      "action": "Book a suitable train only after confirming the real travel date. Do not repeat the submitted 45-minute boarding rule or 2h45 ride time as verified.",
+      "sources": [
+        "korail",
+        "visitkorea_rail"
+      ],
+      "source_role": "context_only"
+    },
+    {
+      "id": "palace_tuesday",
+      "tier": "correction",
+      "topic": "Hours",
+      "title": "Move the Tuesday palace stop",
+      "finding": "The palace operator lists Gyeongbokgung closed on ordinary Tuesdays; November visiting hours are 09:00–17:00, last entry 16:00.",
+      "action": "Proposed swap: visit the palace on Mon Nov 2 (Day 2) and move the originally Monday Namsan/Myeongdong ideas to Tue Nov 3. Recheck the actual year and holiday exceptions.",
+      "sources": [
+        "palace_hours"
+      ],
+      "source_role": "evidence"
+    },
+    {
+      "id": "bukchon_rules",
+      "tier": "correction",
+      "topic": "Access",
+      "title": "Bukchon is a residential red zone",
+      "finding": "Tourist access to restricted streets is limited to 10:00–17:00; an evening residential photo stop is not appropriate.",
+      "action": "Visit quietly in the afternoon and follow local signage.",
+      "sources": [
+        "bukchon"
+      ],
+      "source_role": "evidence"
+    },
+    {
+      "id": "gwangjang_sunday",
+      "tier": "correction",
+      "topic": "Markets",
+      "title": "Gwangjang food and retail have different Sunday rules",
+      "finding": "Retail is listed closed Sundays; the food street is listed open all year. Their hours also differ.",
+      "action": "For the optional open Day 8 (Sunday), expect food street only; move any retail browse to a non-Sunday visit, such as Tuesday Day 3.",
+      "sources": [
+        "gwangjang"
+      ],
+      "source_role": "evidence"
+    },
+    {
+      "id": "ddp_location",
+      "tier": "correction",
+      "topic": "Geography",
+      "title": "DDP is in Dongdaemun, not Seongsu",
+      "finding": "The operator calls it Dongdaemun Design Plaza and places it at Dongdaemun History & Culture Park Station.",
+      "action": "Keep Seongsu on Day 4 and take a separate Line 2 ride to Dongdaemun History & Culture Park Exit 1 if adding DDP.",
+      "sources": [
+        "ddp_overview",
+        "ddp_access"
+      ],
+      "source_role": "evidence"
+    },
+    {
+      "id": "rain_seongsu",
+      "tier": "correction",
+      "topic": "Cafés",
+      "title": "Do not substitute one Rain Report branch for another",
+      "finding": "Visit Seoul lists Rain Report Rainbow in Ikseon-dong. The separate Seongsu Rain Report Croissant site has not been verified as currently operating.",
+      "action": "Only the officially listed Ikseon-dong Rainbow branch is a Day 6 café option. Do not route to Seongsu Croissant without fresh operator confirmation.",
+      "sources": [
+        "rain_rainbow"
+      ],
+      "source_role": "context_only"
+    },
+    {
+      "id": "michelin_label",
+      "tier": "correction",
+      "topic": "Dining",
+      "title": "Myeongdong Kyoja is not a verified starred restaurant",
+      "finding": "The MICHELIN Guide lists Myeongdong Kyoja as Bib Gourmand, not Michelin-starred.",
+      "action": "Use ‘Bib Gourmand’ in recommendations and do not claim a star.",
+      "sources": [
+        "michelin_kyoja"
+      ],
+      "source_role": "evidence"
+    },
+    {
+      "id": "lotte_closed",
+      "tier": "correction",
+      "topic": "Shopping",
+      "title": "Lotte Main lists Mon Nov 9, 2026 closed",
+      "finding": "The operator's current branch calendar explicitly marks Nov 9 as a closure. Shinsegae Main's calendar currently does not mark that day closed.",
+      "action": "The original Day 9 is a rail travel day, not a Lotte shopping day. Use an earlier Myeongdong visit or a conditional different branch, and recheck calendars.",
+      "sources": [
+        "lotte",
+        "shinsegae"
+      ],
+      "source_role": "evidence"
+    },
+    {
+      "id": "marge_address",
+      "tier": "correction",
+      "topic": "Shopping",
+      "title": "MARGESHERWOOD address changed in source directories",
+      "finding": "The current brand directory lists its Seoul flagship at 13 Yeonmujang 11-gil; an older contact page is no longer available.",
+      "action": "Use the current official store page and reconfirm before travel.",
+      "sources": [
+        "marge"
+      ],
+      "source_role": "evidence"
+    },
+    {
+      "id": "korail_window",
+      "tier": "discrepancy",
+      "topic": "Rail",
+      "title": "Official sources disagree on when KTX tickets open",
+      "finding": "KORAIL says 07:00 two months before departure; VisitKorea's train guide says tickets usually open one month before.",
+      "action": "Prefer the current train operator and verify booking inventory before relying on the window.",
+      "sources": [
+        "korail",
+        "visitkorea_rail"
+      ],
+      "source_role": "evidence"
+    },
+    {
+      "id": "blueline_fare",
+      "tier": "discrepancy",
+      "topic": "Attractions",
+      "title": "Blueline operator fare pages conflict",
+      "finding": "The operator's main fare page and Sky Capsule subpage list different two-person capsule fares. A current purchasable fare is not verified.",
+      "action": "Leave the site price blank; use the live official booking checkout. Scenic rail tickets have not been booked.",
+      "sources": [
+        "blueline_price_current",
+        "blueline_price_conflict",
+        "blueline_booking"
+      ],
+      "source_role": "evidence"
+    },
+    {
+      "id": "jagalchi_closure",
+      "tier": "discrepancy",
+      "topic": "Markets",
+      "title": "Jagalchi fifth-Tuesday closure conflicts",
+      "finding": "Visit Busan's Jagalchi attraction listing says closed first, third and fifth Tuesdays; its 2026 downtown walk says first and third. The market's closing-day field is intentionally blank here.",
+      "action": "Jagalchi is only an unassigned extension after Day 9. Confirm its closing rule before any later Busan visit; no visit day is scheduled.",
+      "sources": [
+        "jagalchi",
+        "biff"
+      ],
+      "source_role": "evidence"
+    },
+    {
+      "id": "drone_schedule",
+      "tier": "priority",
+      "topic": "Events",
+      "title": "Gwangalli show is an unassigned Busan extension",
+      "finding": "A usual winter Saturday 19:00/21:00 pattern is not a confirmed 2026 event. The supplied Day 7 is in Seoul, and the nine-day outline first reaches Busan on Day 9.",
+      "action": "Do not show a Nov 7 Busan event as a scheduled stop. Check the real later Busan stay and district calendar if extending the trip.",
+      "sources": [
+        "drone",
+        "itaewon_area"
+      ],
+      "source_role": "context_only"
+    },
+    {
+      "id": "merchant_list",
+      "tier": "priority",
+      "topic": "Unverified shortlist",
+      "title": "Individual venues need their own official pages",
+      "finding": "Several named restaurants, shops and services in the structured source outline have no usable current venue-specific official address, hours or price. They are not routed as confirmed stops.",
+      "action": "See individual unverified rows below; require exact business/operator confirmation before adding an address or time.",
+      "sources": [
+        "seoul_directory",
+        "busan_directory"
+      ],
+      "source_role": "context_only"
+    },
+    {
+      "id": "open_days",
+      "tier": "priority",
+      "topic": "Itinerary",
+      "title": "Days 7 and 8 have no submitted activities",
+      "finding": "The structured outline gives Day 7 only the Itaewon heading and no Day 8 plan. District wayfinding and optional market alternatives on the field guide are editorial, not traveler-provided stops.",
+      "action": "Keep both days flexible; confirm any desired activities only against current official venue pages.",
+      "sources": [
+        "itaewon_area",
+        "seoul_directory"
+      ],
+      "source_role": "context_only"
+    },
+    {
+      "id": "after_trip",
+      "tier": "priority",
+      "topic": "Continuation",
+      "title": "Travel after Day 9 Busan arrival is not supplied",
+      "finding": "The nine-day submitted outline ends with KTX to Busan, L7 Haeundae and a market/beach option. It does not specify a return Seoul room, return train, flight home or length of Busan stay.",
+      "action": "Plan onward lodging and departure separately; do not treat this itinerary as a return-to-airport schedule.",
+      "sources": [
+        "l7",
+        "korail"
+      ],
+      "source_role": "context_only"
+    },
+    {
+      "id": "haeundae_hours",
+      "tier": "priority",
+      "topic": "Beach access",
+      "title": "Haeundae listing hours lack a clear scope",
+      "finding": "Visit Busan lists 09:00–18:00 for Haeundae Beach but does not clearly say whether those hours govern public beach access, facilities or tourism services. The access-hours field is intentionally blank.",
+      "action": "If visiting after Day 9 arrival, verify any desired facilities and seasonal restrictions separately. Do not treat the listed hours as a ban on a shoreline walk.",
+      "sources": [
+        "haeundae_beach"
+      ],
+      "source_role": "context_only"
+    },
+    {
+      "id": "gangnam_time",
+      "tier": "priority",
+      "topic": "Transit",
+      "title": "Submitted 47-minute COEX ride not verified",
+      "finding": "The Seoul Metro and mall sources support Line 2 and Samseong exits, not the suggested door-to-door duration.",
+      "action": "Leave the duration unverified; check live route and accessibility before departure.",
+      "sources": [
+        "seoul_metro",
+        "coex"
+      ],
+      "source_role": "context_only"
+    },
+    {
+      "id": "guard_event",
+      "tier": "priority",
+      "topic": "Events",
+      "title": "Royal guard ceremony for the visit date unconfirmed",
+      "finding": "A 2025 palace-operator notice listed 10:00 and 14:00 changes and weather cancellations. It is not a date-specific November 2026 schedule.",
+      "action": "Check the current palace program rather than promising a performance during the proposed Monday visit.",
+      "sources": [
+        "royal_guard_2025",
+        "palace_hours"
+      ],
+      "source_role": "context_only"
+    },
+    {
+      "id": "jayeondo_day6",
+      "tier": "correction",
+      "topic": "Cafés",
+      "title": "Day 6 Jayeondo branch not established in Ikseon",
+      "finding": "The submitted Day 6 mentions Jayeondo Saltbread & House, but the official Seongsu listing establishes only 56-1 Yeonmujang-gil for the branch used here. No Ikseon Jayeondo branch or submitted price is verified.",
+      "action": "Keep the sourced Seongsu branch on Day 4; leave the Day 6 branch identity and original dollar estimate unverified.",
+      "sources": [
+        "jayeondo",
+        "ikseon"
+      ],
+      "source_role": "context_only"
+    },
+    {
+      "id": "onion_weekend_hours",
+      "tier": "discrepancy",
+      "topic": "Cafés",
+      "title": "Cafe Onion Seongsu weekend opening conflicts",
+      "finding": "The operator directory lists weekend/holiday opening at 10:00; Visit Seoul lists 09:00. Weekday 08:00–22:00 and branch address agree.",
+      "action": "Publish only the agreed weekday hours and 22:00 closing; leave weekend opening unverified until rechecked with the café.",
+      "sources": [
+        "onion_stores",
+        "onion_seongsu"
+      ],
+      "source_role": "evidence"
+    },
+    {
+      "id": "pig_restaurant_2",
+      "tier": "merchant",
+      "topic": "Seoul restaurant",
+      "title": "Pig Restaurant 2",
+      "finding": "Exact business, address and hours unverified; no meal booking confirmed.",
+      "action": "Find a current operator listing before adding it to a day.",
+      "sources": [
+        "seoul_directory"
+      ],
+      "source_role": "context_only"
+    },
+    {
+      "id": "hongojib",
+      "tier": "merchant",
+      "topic": "Restaurant",
+      "title": "Hongojib",
+      "finding": "Exact address, hours, menu and city unverified.",
+      "action": "Confirm the exact venue with an official business page.",
+      "sources": [
+        "seoul_directory"
+      ],
+      "source_role": "context_only"
+    },
+    {
+      "id": "sookhee",
+      "tier": "merchant",
+      "topic": "Seoul bar",
+      "title": "Myeongdong Sookhee",
+      "finding": "Venue-specific hours, location and reservation terms unverified.",
+      "action": "Confirm directly with a current operator page.",
+      "sources": [
+        "myeongdong"
+      ],
+      "source_role": "context_only"
+    },
+    {
+      "id": "solsot",
+      "tier": "merchant",
+      "topic": "Seoul restaurant",
+      "title": "Solsot Seongsu",
+      "finding": "No current operator-backed branch address, hours or menu established.",
+      "action": "Verify the exact Seongsu branch before recommending it.",
+      "sources": [
+        "seongsu_street"
+      ],
+      "source_role": "context_only"
+    },
+    {
+      "id": "far_ben",
+      "tier": "merchant",
+      "topic": "Café",
+      "title": "Cafe Far Ben",
+      "finding": "Current address and opening times unverified.",
+      "action": "Look for a current operator listing.",
+      "sources": [
+        "seoul_directory"
+      ],
+      "source_role": "context_only"
+    },
+    {
+      "id": "hanjungsun",
+      "tier": "merchant",
+      "topic": "Restaurant",
+      "title": "Hanjungsun",
+      "finding": "Current business location and opening times unverified.",
+      "action": "Confirm against a specific official business listing.",
+      "sources": [
+        "seoul_directory"
+      ],
+      "source_role": "context_only"
+    },
+    {
+      "id": "uri_wang",
+      "tier": "merchant",
+      "topic": "Restaurant",
+      "title": "Uri Wang Galbitang",
+      "finding": "Precise address, hours and menu price unverified.",
+      "action": "Confirm against a specific official business listing.",
+      "sources": [
+        "seoul_directory"
+      ],
+      "source_role": "context_only"
+    },
+    {
+      "id": "soul_market",
+      "tier": "merchant",
+      "topic": "Market / shop",
+      "title": "Soul Market",
+      "finding": "Exact location and operating hours unverified.",
+      "action": "Locate a current official merchant record.",
+      "sources": [
+        "seoul_directory"
+      ],
+      "source_role": "context_only"
+    },
+    {
+      "id": "chuncheongol",
+      "tier": "merchant",
+      "topic": "Restaurant",
+      "title": "Chuncheongol Dakgalbi",
+      "finding": "Exact location, menu and hours unverified.",
+      "action": "Verify the exact branch with an operator or public tourism listing.",
+      "sources": [
+        "seoul_directory"
+      ],
+      "source_role": "context_only"
+    },
+    {
+      "id": "favorite_ikseon",
+      "tier": "merchant",
+      "topic": "Ikseon café",
+      "title": "Favorite of Ikseon",
+      "finding": "Business-specific hours and exact address unverified.",
+      "action": "Do not confuse general Ikseon-dong area information with business verification.",
+      "sources": [
+        "ikseon"
+      ],
+      "source_role": "context_only"
+    },
+    {
+      "id": "brandy",
+      "tier": "merchant",
+      "topic": "Retail",
+      "title": "Brandy Melville",
+      "finding": "A current Seoul branch, address and hours were not established from an operator source.",
+      "action": "Confirm whether the branch exists before routing to it.",
+      "sources": [
+        "seoul_directory"
+      ],
+      "source_role": "context_only"
+    },
+    {
+      "id": "break_silence",
+      "tier": "merchant",
+      "topic": "Retail / café",
+      "title": "Break Silence",
+      "finding": "Precise business identity, address and hours unverified.",
+      "action": "Identify the exact venue and current operator page.",
+      "sources": [
+        "seoul_directory"
+      ],
+      "source_role": "context_only"
+    },
+    {
+      "id": "blue_elephant",
+      "tier": "merchant",
+      "topic": "Seongsu retail",
+      "title": "Blue Elephant Seongsu",
+      "finding": "Operator page could not be read past a browser challenge; hours and address remain unverified here.",
+      "action": "Confirm directly on an accessible current operator listing.",
+      "sources": [
+        "seongsu_street"
+      ],
+      "source_role": "context_only"
+    },
+    {
+      "id": "eternalog",
+      "tier": "merchant",
+      "topic": "Seongsu photo booth",
+      "title": "Eternalog",
+      "finding": "Operator homepage did not expose a usable current branch address or hours.",
+      "action": "Check the operator's current branch notice before a visit.",
+      "sources": [
+        "seongsu_street"
+      ],
+      "source_role": "context_only"
+    },
+    {
+      "id": "oliveyoung_d176",
+      "tier": "merchant",
+      "topic": "Retail",
+      "title": "Olive Young D176",
+      "finding": "The operator D176 detail was unreadable here. The separate Myeongdong Town branch is officially listed at 53 Myeong-dong-gil, but that does not verify D176.",
+      "action": "Do not substitute the Town store address for D176; confirm the exact branch.",
+      "sources": [
+        "oliveyoung_town"
+      ],
+      "source_role": "context_only"
+    },
+    {
+      "id": "chwihyang",
+      "tier": "merchant",
+      "topic": "Ikseon dining",
+      "title": "Chwihyang",
+      "finding": "Exact restaurant and submitted pork-belly rose pasta description have no operator-backed location, hours or menu price here.",
+      "action": "Check a current exact-branch official listing before routing it.",
+      "sources": [
+        "ikseon"
+      ],
+      "source_role": "context_only"
+    },
+    {
+      "id": "crystal_jade",
+      "tier": "merchant",
+      "topic": "Department-store dining",
+      "title": "Crystal Jade at Shinsegae",
+      "finding": "The purported Shinsegae basement location and business hours were not confirmed from a current store directory.",
+      "action": "Check Shinsegae's current tenant directory and the restaurant's operator.",
+      "sources": [
+        "shinsegae"
+      ],
+      "source_role": "context_only"
+    },
+    {
+      "id": "myeongdong_night_market",
+      "tier": "merchant",
+      "topic": "Street food",
+      "title": "Myeongdong night food stalls",
+      "finding": "District listing does not establish a single start/end time or availability for every evening stall.",
+      "action": "Treat street food as a walk-by option, not a scheduled market with fixed hours.",
+      "sources": [
+        "myeongdong"
+      ],
+      "source_role": "context_only"
+    },
+    {
+      "id": "caricature",
+      "tier": "merchant",
+      "topic": "Seongsu experience",
+      "title": "Seongsu caricature / drawing stop",
+      "finding": "No named operator or venue address appears in the submitted notes; no appointment or price can be verified.",
+      "action": "Identify a specific operator before routing or quoting a price.",
+      "sources": [
+        "seongsu_street"
+      ],
+      "source_role": "context_only"
+    },
+    {
+      "id": "unnamed_tea_house",
+      "tier": "merchant",
+      "topic": "Jongno dining",
+      "title": "Unspecified traditional tea house",
+      "finding": "No exact venue is named; generalized noon-to-evening hours are not business-specific evidence.",
+      "action": "Pick a named tea house with an official listing before scheduling it.",
+      "sources": [
+        "insadong"
+      ],
+      "source_role": "context_only"
+    },
+    {
+      "id": "beauty_stores",
+      "tier": "merchant",
+      "topic": "Myeongdong retail",
+      "title": "Unspecified beauty brand stores",
+      "finding": "A district guide confirms beauty shops but not a common 10:00–22:00 schedule for all brands.",
+      "action": "Check each named store separately; the sourced Olive Young Myeongdong Town listing is a different exact store.",
+      "sources": [
+        "myeongdong",
+        "oliveyoung_town"
+      ],
+      "source_role": "context_only"
+    }
   ]
 }

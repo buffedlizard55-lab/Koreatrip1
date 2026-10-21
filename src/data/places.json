@@ -1,36 +1,628 @@
 {
   "places": [
-    {"id":"gyeongbokgung","name":"Gyeongbokgung Palace","category":"sights","city":"Seoul","area":"Jongno","address":"161 Sajik-ro, Jongno-gu, Seoul","hours":"Nov–Dec 09:00–17:00; last entry 16:00","days":"Closed Tuesdays*","access":"Line 3 · Gyeongbokgung, Exit 5","price":"₩3,000 / adult","note":"*A public holiday on Tuesday changes the closure day. The Monday placement is a proposed correction, not a reservation.","sources":["palace_hours","palace_location"]},
-    {"id":"bukchon","name":"Bukchon Hanok Village","category":"sights","city":"Seoul","area":"Jongno","address":"37 Gyedong-gil, Jongno-gu, Seoul","hours":"Tourist access in restricted areas 10:00–17:00","days":"Daily","access":"Line 3 · Anguk, Exit 3","price":null,"note":"A lived-in neighborhood. Keep voices low, do not photograph inside homes, and obey red-zone signs.","sources":["bukchon"]},
-    {"id":"insadong","name":"Insa-dong street","category":"sights","city":"Seoul","area":"Jongno","address":"39-1 Insadong-gil, Jongno-gu, Seoul","hours":null,"days":null,"access":"Line 3 · Anguk; or Lines 1/3/5 · Jongno 3-ga","price":null,"note":"Public street; individual galleries, cafés and shops set their own hours.","sources":["insadong"]},
-    {"id":"ikseon","name":"Ikseon-dong Hanok Village","category":"sights","city":"Seoul","area":"Jongno","address":"17 Donhwamun-ro 11ga-gil, Jongno-gu, Seoul","hours":null,"days":null,"access":"Lines 1/3/5 · Jongno 3-ga, Exit 4","price":null,"note":"An alley neighborhood; opening times of individual venues have not been verified.","sources":["ikseon"]},
-    {"id":"ddp","name":"Dongdaemun Design Plaza","category":"sights","city":"Seoul","area":"Dongdaemun","address":"281 Eulji-ro, Jung-gu, Seoul","hours":"Complex 10:00–20:00; program hours vary","days":"Closed Jan 1, Lunar New Year and Chuseok","access":"Lines 2/4/5 · Dongdaemun History & Culture Park, Exit 1","price":null,"note":"DDP is in Dongdaemun, not Seongsu. Exhibitions may have separate hours, admission and tickets.","sources":["ddp_overview","ddp_hours","ddp_access"]},
-    {"id":"tower","name":"N Seoul Tower observatory","category":"sights","city":"Seoul","area":"Namsan","address":"105 Namsangongwon-gil, Yongsan-gu, Seoul","hours":"Weekdays 10:00–22:30; weekends 10:00–23:00; entry ends 30 min earlier","days":"Daily","access":"Cable car from Myeongdong; or 01A/01B from Chungmuro","price":"₩29,000 / adult (observatory only)","note":"Observatory admission is separate from the cable car fare. Weather may change operations.","sources":["n_tower_hours","n_tower_fee","n_tower_access","n_tower_location"]},
-    {"id":"cablecar","name":"Namsan Cable Car","category":"sights","city":"Seoul","area":"Namsan","address":"83 Sopa-ro, Jung-gu, Seoul","hours":"10:00–23:00, weather permitting","days":"Daily, subject to weather","access":"Line 4 · Myeongdong, Exit 3 walk or Exit 4 via Namsan Ormi","price":"₩15,000 return / ₩12,000 one-way per adult","note":"Cable car reaches the tower area, but does not include observatory admission.","sources":["cablecar"]},
-    {"id":"coex","name":"Starfield COEX Mall","category":"sights","city":"Seoul","area":"Gangnam","address":"513 Yeongdong-daero, Gangnam-gu, Seoul","hours":"Mall listed 10:30–22:00; individual stores vary","days":null,"access":"Line 2 · Samseong, Exits 5/6; or Line 9 · Bongeunsa, Exit 7","price":null,"note":"Use the operator's direct station connections; do not apply mall hours to each store.","sources":["coex"]},
-    {"id":"haeundae_beach","name":"Haeundae Beach","category":"sights","city":"Busan","area":"Haeundae","address":"264 Haeundaehaebyeon-ro, Haeundae-gu, Busan","hours":"Visitor listing 09:00–18:00","days":null,"access":"Line 2 · Haeundae, Exit 5 then walk","price":"Free for public beach area","note":"A November shoreline stroll is not a swimming-season recommendation; facilities may have separate hours.","sources":["haeundae_beach"]},
-    {"id":"temple","name":"Haedong Yonggungsa Temple","category":"sights","city":"Busan","area":"Gijang","address":"86 Yonggung-gil, Gijang-eup, Gijang-gun, Busan","hours":"04:30–19:20; last entry 18:50","days":"Daily","access":"Line 2 · Haeundae, Exit 7 → bus 181, 100 or Haeundae 9","price":"Free","note":"Coastal steps and an exposed route; allow extra time for the connecting bus.","sources":["temple"]},
-    {"id":"sky_capsule","name":"Haeundae Sky Capsule","category":"sights","city":"Busan","area":"Haeundae / Cheongsapo","address":"Mipo–Cheongsapo route","hours":"November 08:30–18:00; operations may change","days":null,"access":"Mipo station on the Haeundae coast; ends at Cheongsapo","price":null,"note":"Scenic ride, not the city subway. The operator's fare pages conflict, so no price is asserted; reservation not confirmed.","sources":["blueline_capsule","blueline_course","blueline_booking","blueline_price_current","blueline_price_conflict"]},
-    {"id":"beach_train","name":"Haeundae Beach Train","category":"sights","city":"Busan","area":"Haeundae coast","address":"Mipo–Cheongsapo–Songjeong route","hours":"November Mipo/Songjeong 09:00–19:00; operations may change","days":null,"access":"Operator's scenic route, not Busan Metro","price":null,"note":"Optional return from Cheongsapo. Operator fare pages conflict; check live checkout.","sources":["blueline_train","blueline_booking","blueline_price_current","blueline_price_conflict"]},
-    {"id":"gwangalli","name":"Gwangalli Beach","category":"sights","city":"Busan","area":"Suyeong","address":"219 Gwanganhaebyeon-ro, Suyeong-gu, Busan","hours":"Public beach area: anytime","days":"Year-round","access":"Line 2 · Gwangan, Exit 5 then walk","price":"Free","note":"Optional evening viewpoint. Public access does not guarantee events.","sources":["gwangalli"]},
-    {"id":"drone","name":"Gwangalli M Drone Light Show","category":"sights","city":"Busan","area":"Suyeong","address":"Gwangalli Beach, 219 Gwanganhaebyeon-ro","hours":"Usual winter Saturdays 19:00 & 21:00","days":"Saturdays; Nov 7 program unconfirmed","access":"Line 2 · Gwangan, Exit 5 then walk","price":null,"note":"The November 7, 2026 show has not been individually announced; weather or technical issues can cancel it.","sources":["drone"]},
-    {"id":"gamcheon","name":"Gamcheon Culture Village","category":"sights","city":"Busan","area":"Saha","address":"203 Gamnae 2-ro, Saha-gu, Busan","hours":"Visitor facilities Nov–Feb 09:00–17:00","days":"Daily","access":"Line 1 · Toseong, Exit 6 → village bus Saha 1-1, Seo-gu 2 or 2-2","price":"Free (some activities extra)","note":"A residential hillside. Keep voices low; take care on steep lanes.","sources":["gamcheon"]},
-    {"id":"biff","name":"BIFF Square","category":"sights","city":"Busan","area":"Nampo","address":"Around 58-1 Gudeok-ro, Jung-gu, Busan","hours":"Public street at all times; vendor hours vary","days":"Public street all year; vendor days vary","access":"Line 1 · Jagalchi / Nampo for the downtown walk","price":null,"note":"Outdoor food and cinema streets; individual vendor hours are not assured.","sources":["biff"]},
-    {"id":"kyoja","name":"Myeongdong Kyoja","category":"food","city":"Seoul","area":"Myeongdong","address":"29 Myeongdong 10-gil, Jung-gu, Seoul","hours":"10:30–21:00","days":"Daily","access":"Line 4 · Myeongdong, Exit 8","price":null,"note":"MICHELIN Bib Gourmand, not a Michelin star. Meal prices are not confirmed for this plan.","sources":["kyoja","michelin_kyoja"]},
-    {"id":"rainbow","name":"Rain Report Rainbow","category":"food","city":"Seoul","area":"Ikseon-dong","address":"33-7 Supyo-ro 28-gil, Jongno-gu, Seoul","hours":"10:30–20:30","days":"Daily","access":"Line 5 · Jongno 3-ga, Exit 4","price":null,"note":"This is the listed Ikseon café; it is not the unconfirmed Seongsu Croissant location.","sources":["rain_rainbow"]},
-    {"id":"jayeondo","name":"Jayeondo Salt Bread","category":"food","city":"Seoul","area":"Seongsu","address":"1F, 56-1 Yeonmujang-gil, Seongdong-gu, Seoul","hours":"09:00–22:00","days":"Daily","access":"Line 2 · Seongsu, Exit 3","price":null,"note":"Takeout-only bakery. Baking batches and queues may change.","sources":["jayeondo"]},
-    {"id":"gwangjang","name":"Gwangjang Market · retail & food street","category":"food","city":"Seoul","area":"Jongno","address":"88 Changgyeonggung-ro, Jongno-gu, Seoul","hours":"Retail 09:00–18:00; food street 09:00–23:00","days":"Retail closed Sundays; food street year-round","access":"Line 2 · Euljiro 4-ga; then walk to market area","price":null,"note":"The Sunday food street is not evidence the Sunday retail market is open.","sources":["gwangjang","seoul_metro"]},
-    {"id":"haeundae_market","name":"Haeundae Market","category":"food","city":"Busan","area":"Haeundae","address":"22-1 Gunam-ro 41beon-gil, Haeundae-gu, Busan","hours":"09:00–22:00; merchants may vary","days":"Year-round listing","access":"Line 2 · Haeundae, Exit 3","price":null,"note":"Market listing does not verify individual restaurant menus, prices or opening times.","sources":["haeundae_market"]},
-    {"id":"jagalchi","name":"Jagalchi Market","category":"food","city":"Busan","area":"Nampo","address":"52 Jagalchihaean-ro, Jung-gu, Busan","hours":"05:00–22:00 (excluding closure days)","days":null,"access":"Line 1 · Jagalchi, Exit 10; or Nampo, Exit 2","price":null,"note":"Two Visit Busan pages disagree on a fifth-Tuesday closure; stall prices also vary.","sources":["jagalchi","biff"]},
-    {"id":"bupyeong","name":"Bupyeong Kkangtong Night Market","category":"food","city":"Busan","area":"Nampo","address":"48 Bupyeong 1-gil, Jung-gu, Busan","hours":"Night market 19:30–00:00","days":"Daily except traditional holidays","access":"Line 1 · Jagalchi, Exit 3 then walk","price":null,"note":"An optional Nampo evening alternative; merchant hours and individual prices vary.","sources":["bupyeong"]},
-    {"id":"myeongdong","name":"Myeongdong shopping streets","category":"shopping","city":"Seoul","area":"Myeongdong","address":"27 Myeong-dong 8-gil, Jung-gu, Seoul","hours":"Varies by store","days":"District open daily","access":"Line 4 · Myeongdong, Exits 5–10","price":null,"note":"A walkable district, not a single store with a shared closing time.","sources":["myeongdong"]},
-    {"id":"ader","name":"ADERERROR Seongsu Space","category":"shopping","city":"Seoul","area":"Seongsu","address":"82 Seongsui-ro, Seongdong-gu, Seoul","hours":"11:00–21:00","days":"Daily","access":"Line 2 · Seongsu; continue on foot","price":null,"note":"Use this Space address, not the brand's separate Ov or FUTRO shop.","sources":["ader","seoul_metro"]},
-    {"id":"musinsa","name":"MUSINSA STANDARD Seongsu","category":"shopping","city":"Seoul","area":"Seongsu","address":"1F–2F, 83 Yeonmujang-gil, Seongdong-gu, Seoul","hours":"11:00–21:00","days":"Daily","access":"Line 2 · Seongsu; continue on foot","price":null,"note":"Operator-listed fashion flagship.","sources":["musinsa"]},
-    {"id":"marge","name":"MARGESHERWOOD Seoul Flagship","category":"shopping","city":"Seoul","area":"Seongsu","address":"1F–2F, 13 Yeonmujang 11-gil, Seongdong-gu, Seoul","hours":"11:00–20:00","days":"Daily","access":"Line 2 · Seongsu; continue on foot","price":null,"note":"Current operator directory replaces an older, conflicting Seongsu address.","sources":["marge"]},
-    {"id":"lotte","name":"Lotte Department Store Main","category":"shopping","city":"Seoul","area":"Myeongdong","address":"1 Sogong-dong, Jung-gu, Seoul","hours":"Calendar varies; verify date on operator page","days":"Closed Mon Nov 9, 2026 (listed)","access":"Line 2 · Euljiro 1-ga, Exit 7","price":null,"note":"Across from Stanford. Do not save this for a Nov 9 departure-day shopping trip.","sources":["lotte","stanford"]},
-    {"id":"shinsegae","name":"Shinsegae Department Store Main","category":"shopping","city":"Seoul","area":"Myeongdong","address":"63 Sogong-ro, Jung-gu, Seoul","hours":"Regular 10:30–20:00; extension 10:30–20:30","days":"Nov 9 unmarked for closure on current calendar; recheck","access":"Line 4 · Hoehyeon, Exit 7","price":null,"note":"A possible replacement for closed Lotte Main on Nov 9 only if flights allow; not booked.","sources":["shinsegae"]},
-    {"id":"mangwon","name":"Mangwon Market","category":"shopping","city":"Seoul","area":"Mangwon","address":"27 Poeun-ro 6-gil, Mapo-gu, Seoul","hours":"10:00–21:00; varies by merchant","days":"Daily","access":"Line 6 · Mangwon, Exit 2","price":null,"note":"Optional half-day; it is not next to COEX, so avoid forcing both into one short window.","sources":["mangwon"]},
-    {"id":"stanford","name":"Stanford Hotel Myeongdong","category":"stays","city":"Seoul","area":"Myeongdong","address":"Centerpoint Building, 9-1 Namdaemun-ro 2-ga, Jung-gu, Seoul","hours":"Check-in from 15:00 · check-out by 12:00","days":null,"access":"Opposite Lotte Main; Line 2 · Euljiro 1-ga station area","price":null,"note":"9F lobby; same-day luggage storage until midnight after checkout. Mentioned lodging, not a confirmed reservation.","sources":["stanford","lotte"]},
-    {"id":"l7","name":"L7 Haeundae by Lotte","category":"stays","city":"Busan","area":"Haeundae","address":"55 Haeun-daero 570beon-gil, Haeundae-gu, Busan","hours":"Check-in from 15:00 · check-out by 11:00","days":null,"access":"Haeundae area; Line 2 · Haeundae Station","price":null,"note":"Check the exact walking entrance and baggage policy with the hotel; mentioned lodging, not a confirmed reservation.","sources":["l7","busan_metro"]}
+    {
+      "id": "gyeongbokgung",
+      "name": "Gyeongbokgung Palace",
+      "category": "sights",
+      "city": "Seoul",
+      "area": "Jongno",
+      "address": "161 Sajik-ro, Jongno-gu, Seoul",
+      "hours": "Nov–Dec 09:00–17:00; last entry 16:00",
+      "days": "Closed Tuesdays*",
+      "access": "Line 3 · Gyeongbokgung, Exit 5",
+      "price": "₩3,000 / adult",
+      "note": "*A public holiday on Tuesday changes the closure day. The Monday placement is a proposed correction, not a reservation.",
+      "sources": [
+        "palace_hours",
+        "palace_location"
+      ]
+    },
+    {
+      "id": "bukchon",
+      "name": "Bukchon Hanok Village",
+      "category": "sights",
+      "city": "Seoul",
+      "area": "Jongno",
+      "address": "37 Gyedong-gil, Jongno-gu, Seoul",
+      "hours": "Tourist access in restricted areas 10:00–17:00",
+      "days": "Daily",
+      "access": "Line 3 · Anguk, Exit 3",
+      "price": null,
+      "note": "A lived-in neighborhood. Keep voices low, do not photograph inside homes, and obey red-zone signs.",
+      "sources": [
+        "bukchon"
+      ]
+    },
+    {
+      "id": "insadong",
+      "name": "Insa-dong street",
+      "category": "sights",
+      "city": "Seoul",
+      "area": "Jongno",
+      "address": "39-1 Insadong-gil, Jongno-gu, Seoul",
+      "hours": null,
+      "days": null,
+      "access": "Line 3 · Anguk; or Lines 1/3/5 · Jongno 3-ga",
+      "price": null,
+      "note": "Public street; individual galleries, cafés and shops set their own hours.",
+      "sources": [
+        "insadong"
+      ]
+    },
+    {
+      "id": "ikseon",
+      "name": "Ikseon-dong Hanok Village",
+      "category": "sights",
+      "city": "Seoul",
+      "area": "Jongno",
+      "address": "17 Donhwamun-ro 11ga-gil, Jongno-gu, Seoul",
+      "hours": null,
+      "days": null,
+      "access": "Lines 1/3/5 · Jongno 3-ga, Exit 4",
+      "price": null,
+      "note": "An alley neighborhood; opening times of individual venues have not been verified.",
+      "sources": [
+        "ikseon"
+      ]
+    },
+    {
+      "id": "itaewon_area",
+      "name": "Itaewon streets",
+      "category": "sights",
+      "city": "Seoul",
+      "area": "Itaewon",
+      "address": "Itaewon-ro, Yongsan-gu, Seoul",
+      "hours": null,
+      "days": null,
+      "access": "Line 6 · Itaewon, Exit 3",
+      "price": null,
+      "note": "The original Day 7 names Itaewon but lists no activities; this is a district wayfinding stop, not an assumed appointment.",
+      "sources": [
+        "itaewon_area"
+      ]
+    },
+    {
+      "id": "ddp",
+      "name": "Dongdaemun Design Plaza",
+      "category": "sights",
+      "city": "Seoul",
+      "area": "Dongdaemun",
+      "address": "281 Eulji-ro, Jung-gu, Seoul",
+      "hours": "Complex 10:00–20:00; program hours vary",
+      "days": "Closed Jan 1, Lunar New Year and Chuseok",
+      "access": "Lines 2/4/5 · Dongdaemun History & Culture Park, Exit 1",
+      "price": null,
+      "note": "DDP is in Dongdaemun, not Seongsu. Exhibitions may have separate hours, admission and tickets.",
+      "sources": [
+        "ddp_overview",
+        "ddp_hours",
+        "ddp_access"
+      ]
+    },
+    {
+      "id": "tower",
+      "name": "N Seoul Tower observatory",
+      "category": "sights",
+      "city": "Seoul",
+      "area": "Namsan",
+      "address": "105 Namsangongwon-gil, Yongsan-gu, Seoul",
+      "hours": "Weekdays 10:00–22:30; weekends 10:00–23:00; entry ends 30 min earlier",
+      "days": "Daily",
+      "access": "Cable car from Myeongdong; or 01A/01B from Chungmuro",
+      "price": "₩29,000 / adult (observatory only)",
+      "note": "Observatory admission is separate from the cable car fare. Weather may change operations.",
+      "sources": [
+        "n_tower_hours",
+        "n_tower_fee",
+        "n_tower_access",
+        "n_tower_location"
+      ]
+    },
+    {
+      "id": "cablecar",
+      "name": "Namsan Cable Car",
+      "category": "sights",
+      "city": "Seoul",
+      "area": "Namsan",
+      "address": "83 Sopa-ro, Jung-gu, Seoul",
+      "hours": "10:00–23:00, weather permitting",
+      "days": "Daily, subject to weather",
+      "access": "Line 4 · Myeongdong, Exit 3 walk or Exit 4 via Namsan Ormi",
+      "price": "₩15,000 return / ₩12,000 one-way per adult",
+      "note": "Cable car reaches the tower area, but does not include observatory admission.",
+      "sources": [
+        "cablecar"
+      ]
+    },
+    {
+      "id": "coex",
+      "name": "Starfield COEX Mall",
+      "category": "sights",
+      "city": "Seoul",
+      "area": "Gangnam",
+      "address": "513 Yeongdong-daero, Gangnam-gu, Seoul",
+      "hours": "Mall listed 10:30–22:00; individual stores vary",
+      "days": null,
+      "access": "Line 2 · Samseong, Exits 5/6; or Line 9 · Bongeunsa, Exit 7",
+      "price": null,
+      "note": "Use the operator's direct station connections; do not apply mall hours to each store.",
+      "sources": [
+        "coex"
+      ]
+    },
+    {
+      "id": "gangnam_statue",
+      "name": "Gangnam Style Statue",
+      "category": "sights",
+      "city": "Seoul",
+      "area": "COEX / Samseong",
+      "address": "WTC Seoul precinct, 511 Yeongdong-daero, Gangnam-gu, Seoul (area address)",
+      "hours": null,
+      "days": null,
+      "access": "Line 2 · Samseong, Exits 5/6; follow WTC/COEX wayfinding",
+      "price": null,
+      "note": "Visit Seoul lists this Psy Hand Statue in the WTC area; exact artwork hours and admission are not specified.",
+      "sources": [
+        "wtc_statue"
+      ]
+    },
+    {
+      "id": "haeundae_beach",
+      "name": "Haeundae Beach",
+      "category": "sights",
+      "city": "Busan",
+      "area": "Haeundae",
+      "address": "264 Haeundaehaebyeon-ro, Haeundae-gu, Busan",
+      "hours": null,
+      "days": null,
+      "access": "Line 2 · Haeundae, Exit 5 then walk",
+      "price": "Free for public beach area",
+      "note": "The tourism page gives 09:00–18:00 without identifying what it governs; beach-access hours stay unverified. November is not swimming season.",
+      "sources": [
+        "haeundae_beach"
+      ]
+    },
+    {
+      "id": "temple",
+      "name": "Haedong Yonggungsa Temple",
+      "category": "sights",
+      "city": "Busan",
+      "area": "Gijang",
+      "address": "86 Yonggung-gil, Gijang-eup, Gijang-gun, Busan",
+      "hours": "04:30–19:20; last entry 18:50",
+      "days": "Daily",
+      "access": "Line 2 · Haeundae, Exit 7 → bus 181, 100 or Haeundae 9",
+      "price": "Free",
+      "note": "Coastal steps and an exposed route; allow extra time for the connecting bus.",
+      "sources": [
+        "temple"
+      ],
+      "extension": true
+    },
+    {
+      "id": "sky_capsule",
+      "name": "Haeundae Sky Capsule",
+      "category": "sights",
+      "city": "Busan",
+      "area": "Haeundae / Cheongsapo",
+      "address": "Mipo–Cheongsapo route",
+      "hours": "November 08:30–18:00; operations may change",
+      "days": null,
+      "access": "Mipo station on the Haeundae coast; ends at Cheongsapo",
+      "price": null,
+      "note": "Scenic ride, not the city subway. The operator's fare pages conflict, so no price is asserted; reservation not confirmed.",
+      "sources": [
+        "blueline_capsule",
+        "blueline_course",
+        "blueline_booking",
+        "blueline_price_current",
+        "blueline_price_conflict"
+      ],
+      "extension": true
+    },
+    {
+      "id": "beach_train",
+      "name": "Haeundae Beach Train",
+      "category": "sights",
+      "city": "Busan",
+      "area": "Haeundae coast",
+      "address": "Mipo–Cheongsapo–Songjeong route",
+      "hours": "November Mipo/Songjeong 09:00–19:00; operations may change",
+      "days": null,
+      "access": "Operator's scenic route, not Busan Metro",
+      "price": null,
+      "note": "Optional return from Cheongsapo. Operator fare pages conflict; check live checkout.",
+      "sources": [
+        "blueline_train",
+        "blueline_booking",
+        "blueline_price_current",
+        "blueline_price_conflict"
+      ],
+      "extension": true
+    },
+    {
+      "id": "gwangalli",
+      "name": "Gwangalli Beach",
+      "category": "sights",
+      "city": "Busan",
+      "area": "Suyeong",
+      "address": "219 Gwanganhaebyeon-ro, Suyeong-gu, Busan",
+      "hours": "Public beach area: anytime",
+      "days": "Year-round",
+      "access": "Line 2 · Gwangan, Exit 5 then walk",
+      "price": "Free",
+      "note": "Optional evening viewpoint. Public access does not guarantee events.",
+      "sources": [
+        "gwangalli"
+      ],
+      "extension": true
+    },
+    {
+      "id": "drone",
+      "name": "Gwangalli M Drone Light Show",
+      "category": "sights",
+      "city": "Busan",
+      "area": "Suyeong",
+      "address": "Gwangalli Beach, 219 Gwanganhaebyeon-ro",
+      "hours": "Usual winter Saturdays 19:00 & 21:00",
+      "days": "Usual Saturdays; date-specific events unconfirmed",
+      "access": "Line 2 · Gwangan, Exit 5 then walk",
+      "price": null,
+      "note": "An unassigned, after-Day-9 extension only. Day 7 is in Seoul; even a later Busan Saturday's program would need confirmation and can be cancelled.",
+      "sources": [
+        "drone"
+      ],
+      "extension": true
+    },
+    {
+      "id": "gamcheon",
+      "name": "Gamcheon Culture Village",
+      "category": "sights",
+      "city": "Busan",
+      "area": "Saha",
+      "address": "203 Gamnae 2-ro, Saha-gu, Busan",
+      "hours": "Visitor facilities Nov–Feb 09:00–17:00",
+      "days": "Daily",
+      "access": "Line 1 · Toseong, Exit 6 → village bus Saha 1-1, Seo-gu 2 or 2-2",
+      "price": "Free (some activities extra)",
+      "note": "A residential hillside. Keep voices low; take care on steep lanes.",
+      "sources": [
+        "gamcheon"
+      ],
+      "extension": true
+    },
+    {
+      "id": "biff",
+      "name": "BIFF Square",
+      "category": "sights",
+      "city": "Busan",
+      "area": "Nampo",
+      "address": "Around 58-1 Gudeok-ro, Jung-gu, Busan",
+      "hours": "Public street at all times; vendor hours vary",
+      "days": "Public street all year; vendor days vary",
+      "access": "Line 1 · Jagalchi / Nampo for the downtown walk",
+      "price": null,
+      "note": "Outdoor food and cinema streets; individual vendor hours are not assured.",
+      "sources": [
+        "biff"
+      ],
+      "extension": true
+    },
+    {
+      "id": "kyoja",
+      "name": "Myeongdong Kyoja",
+      "category": "food",
+      "city": "Seoul",
+      "area": "Myeongdong",
+      "address": "29 Myeongdong 10-gil, Jung-gu, Seoul",
+      "hours": "10:30–21:00",
+      "days": "Daily",
+      "access": "Line 4 · Myeongdong, Exit 8",
+      "price": null,
+      "note": "MICHELIN Bib Gourmand, not a Michelin star. Meal prices are not confirmed for this plan.",
+      "sources": [
+        "kyoja",
+        "michelin_kyoja"
+      ]
+    },
+    {
+      "id": "onion_anguk",
+      "name": "Cafe Onion Anguk",
+      "category": "food",
+      "city": "Seoul",
+      "area": "Anguk",
+      "address": "5 Gyedong-gil, Jongno-gu, Seoul",
+      "hours": "Weekdays 07:00–22:00; weekends/holidays 09:00–22:00",
+      "days": "Daily; last order 21:30",
+      "access": "Line 3 · Anguk, Exit 3",
+      "price": null,
+      "note": "Operator directory and VisitKorea agree on the Anguk branch; visiting time is optional, not a queue reservation.",
+      "sources": [
+        "onion_stores",
+        "onion_anguk"
+      ]
+    },
+    {
+      "id": "rainbow",
+      "name": "Rain Report Rainbow",
+      "category": "food",
+      "city": "Seoul",
+      "area": "Ikseon-dong",
+      "address": "33-7 Supyo-ro 28-gil, Jongno-gu, Seoul",
+      "hours": "10:30–20:30",
+      "days": "Daily",
+      "access": "Line 5 · Jongno 3-ga, Exit 4",
+      "price": null,
+      "note": "This is the listed Ikseon café; it is not the unconfirmed Seongsu Croissant location.",
+      "sources": [
+        "rain_rainbow"
+      ]
+    },
+    {
+      "id": "jayeondo",
+      "name": "Jayeondo Salt Bread",
+      "category": "food",
+      "city": "Seoul",
+      "area": "Seongsu",
+      "address": "1F, 56-1 Yeonmujang-gil, Seongdong-gu, Seoul",
+      "hours": "09:00–22:00",
+      "days": "Daily",
+      "access": "Line 2 · Seongsu, Exit 3",
+      "price": null,
+      "note": "Takeout-only bakery. Baking batches and queues may change.",
+      "sources": [
+        "jayeondo"
+      ]
+    },
+    {
+      "id": "onion_seongsu",
+      "name": "Cafe Onion Seongsu",
+      "category": "food",
+      "city": "Seoul",
+      "area": "Seongsu",
+      "address": "8 Achasan-ro 9-gil, Seongdong-gu, Seoul",
+      "hours": "Weekdays 08:00–22:00; weekend opening unverified (official conflict); closes 22:00",
+      "days": "Daily; last order 21:30 per operator",
+      "access": "Line 2 · Seongsu, Exit 2",
+      "price": null,
+      "note": "Operator lists weekends 10:00 opening, Visit Seoul lists 09:00. Do not treat either as settled; recheck before a weekend visit.",
+      "sources": [
+        "onion_stores",
+        "onion_seongsu"
+      ]
+    },
+    {
+      "id": "gwangjang",
+      "name": "Gwangjang Market · retail & food street",
+      "category": "food",
+      "city": "Seoul",
+      "area": "Jongno",
+      "address": "88 Changgyeonggung-ro, Jongno-gu, Seoul",
+      "hours": "Retail 09:00–18:00; food street 09:00–23:00",
+      "days": "Retail closed Sundays; food street year-round",
+      "access": "Line 2 · Euljiro 4-ga; then walk to market area",
+      "price": null,
+      "note": "The Sunday food street is not evidence the Sunday retail market is open.",
+      "sources": [
+        "gwangjang",
+        "seoul_metro"
+      ]
+    },
+    {
+      "id": "haeundae_market",
+      "name": "Haeundae Market",
+      "category": "food",
+      "city": "Busan",
+      "area": "Haeundae",
+      "address": "22-1 Gunam-ro 41beon-gil, Haeundae-gu, Busan",
+      "hours": "09:00–22:00; merchants may vary",
+      "days": "Year-round listing",
+      "access": "Line 2 · Haeundae, Exit 3",
+      "price": null,
+      "note": "Market listing does not verify individual restaurant menus, prices or opening times.",
+      "sources": [
+        "haeundae_market"
+      ]
+    },
+    {
+      "id": "jagalchi",
+      "name": "Jagalchi Market",
+      "category": "food",
+      "city": "Busan",
+      "area": "Nampo",
+      "address": "52 Jagalchihaean-ro, Jung-gu, Busan",
+      "hours": "05:00–22:00 (excluding closure days)",
+      "days": null,
+      "access": "Line 1 · Jagalchi, Exit 10; or Nampo, Exit 2",
+      "price": null,
+      "note": "Two Visit Busan pages disagree on a fifth-Tuesday closure; stall prices also vary.",
+      "sources": [
+        "jagalchi",
+        "biff"
+      ],
+      "extension": true
+    },
+    {
+      "id": "bupyeong",
+      "name": "Bupyeong Kkangtong Night Market",
+      "category": "food",
+      "city": "Busan",
+      "area": "Nampo",
+      "address": "48 Bupyeong 1-gil, Jung-gu, Busan",
+      "hours": "Night market 19:30–00:00",
+      "days": "Daily except traditional holidays",
+      "access": "Line 1 · Jagalchi, Exit 3 then walk",
+      "price": null,
+      "note": "An optional Nampo evening alternative; merchant hours and individual prices vary.",
+      "sources": [
+        "bupyeong"
+      ],
+      "extension": true
+    },
+    {
+      "id": "myeongdong",
+      "name": "Myeongdong shopping streets",
+      "category": "shopping",
+      "city": "Seoul",
+      "area": "Myeongdong",
+      "address": "27 Myeong-dong 8-gil, Jung-gu, Seoul",
+      "hours": "Varies by store",
+      "days": "District open daily",
+      "access": "Line 4 · Myeongdong, Exits 5–10",
+      "price": null,
+      "note": "A walkable district, not a single store with a shared closing time.",
+      "sources": [
+        "myeongdong"
+      ]
+    },
+    {
+      "id": "oliveyoung_town",
+      "name": "Olive Young Myeongdong Town Store",
+      "category": "shopping",
+      "city": "Seoul",
+      "area": "Myeongdong",
+      "address": "53 Myeong-dong-gil, Jung-gu, Seoul",
+      "hours": "10:00–22:30",
+      "days": "Year-round in VisitKorea listing",
+      "access": "Myeongdong shopping district; Line 4 · Myeongdong Station",
+      "price": null,
+      "note": "The source identifies Myeongdong Town, NOT the unverified D176 location. Recheck the current store page near travel.",
+      "sources": [
+        "oliveyoung_town",
+        "myeongdong"
+      ]
+    },
+    {
+      "id": "ader",
+      "name": "ADERERROR Seongsu Space",
+      "category": "shopping",
+      "city": "Seoul",
+      "area": "Seongsu",
+      "address": "82 Seongsui-ro, Seongdong-gu, Seoul",
+      "hours": "11:00–21:00",
+      "days": "Daily",
+      "access": "Line 2 · Seongsu; continue on foot",
+      "price": null,
+      "note": "Use this Space address, not the brand's separate Ov or FUTRO shop.",
+      "sources": [
+        "ader",
+        "seoul_metro"
+      ]
+    },
+    {
+      "id": "musinsa",
+      "name": "MUSINSA STANDARD Seongsu",
+      "category": "shopping",
+      "city": "Seoul",
+      "area": "Seongsu",
+      "address": "1F–2F, 83 Yeonmujang-gil, Seongdong-gu, Seoul",
+      "hours": "11:00–21:00",
+      "days": "Daily",
+      "access": "Line 2 · Seongsu; continue on foot",
+      "price": null,
+      "note": "Operator-listed fashion flagship.",
+      "sources": [
+        "musinsa"
+      ]
+    },
+    {
+      "id": "marge",
+      "name": "MARGESHERWOOD Seoul Flagship",
+      "category": "shopping",
+      "city": "Seoul",
+      "area": "Seongsu",
+      "address": "1F–2F, 13 Yeonmujang 11-gil, Seongdong-gu, Seoul",
+      "hours": "11:00–20:00",
+      "days": "Daily",
+      "access": "Line 2 · Seongsu; continue on foot",
+      "price": null,
+      "note": "Current operator directory replaces an older, conflicting Seongsu address.",
+      "sources": [
+        "marge"
+      ]
+    },
+    {
+      "id": "lotte",
+      "name": "Lotte Department Store Main",
+      "category": "shopping",
+      "city": "Seoul",
+      "area": "Myeongdong",
+      "address": "1 Sogong-dong, Jung-gu, Seoul",
+      "hours": "Calendar varies; verify date on operator page",
+      "days": "Closed Mon Nov 9, 2026 (listed)",
+      "access": "Line 2 · Euljiro 1-ga, Exit 7",
+      "price": null,
+      "note": "Across from Stanford. Do not save this for a Nov 9 departure-day shopping trip.",
+      "sources": [
+        "lotte",
+        "stanford"
+      ]
+    },
+    {
+      "id": "shinsegae",
+      "name": "Shinsegae Department Store Main",
+      "category": "shopping",
+      "city": "Seoul",
+      "area": "Myeongdong",
+      "address": "63 Sogong-ro, Jung-gu, Seoul",
+      "hours": "Regular 10:30–20:00; extension 10:30–20:30",
+      "days": "Nov 9 unmarked for closure on current calendar; recheck",
+      "access": "Line 4 · Hoehyeon, Exit 7",
+      "price": null,
+      "note": "An optional shopping alternative if the rail-departure-day timing allows; it is not part of the submitted Day 9 outline or a confirmed booking.",
+      "sources": [
+        "shinsegae"
+      ]
+    },
+    {
+      "id": "mangwon",
+      "name": "Mangwon Market",
+      "category": "shopping",
+      "city": "Seoul",
+      "area": "Mangwon",
+      "address": "27 Poeun-ro 6-gil, Mapo-gu, Seoul",
+      "hours": "10:00–21:00; varies by merchant",
+      "days": "Daily",
+      "access": "Line 6 · Mangwon, Exit 2",
+      "price": null,
+      "note": "Optional half-day; it is not next to COEX, so avoid forcing both into one short window.",
+      "sources": [
+        "mangwon"
+      ]
+    },
+    {
+      "id": "stanford",
+      "name": "Stanford Hotel Myeongdong",
+      "category": "stays",
+      "city": "Seoul",
+      "area": "Myeongdong",
+      "address": "Centerpoint Building, 9-1 Namdaemun-ro 2-ga, Jung-gu, Seoul",
+      "hours": "Check-in from 15:00 · check-out by 12:00",
+      "days": null,
+      "access": "Opposite Lotte Main; Line 2 · Euljiro 1-ga station area",
+      "price": null,
+      "note": "9F lobby; same-day luggage storage until midnight after checkout. Mentioned lodging, not a confirmed reservation.",
+      "sources": [
+        "stanford",
+        "lotte"
+      ]
+    },
+    {
+      "id": "l7",
+      "name": "L7 Haeundae by Lotte",
+      "category": "stays",
+      "city": "Busan",
+      "area": "Haeundae",
+      "address": "55 Haeun-daero 570beon-gil, Haeundae-gu, Busan",
+      "hours": "Check-in from 15:00 · check-out by 11:00",
+      "days": null,
+      "access": "Haeundae area; Line 2 · Haeundae Station",
+      "price": null,
+      "note": "Check the exact walking entrance and baggage policy with the hotel; mentioned lodging, not a confirmed reservation.",
+      "sources": [
+        "l7",
+        "busan_metro"
+      ]
+    }
   ]
 }

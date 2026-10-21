@@ -14,7 +14,7 @@ from urllib.parse import unquote, urlsplit
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "src" / "data"
 ALLOWED_HOSTS = {
-    "royal.khs.go.kr", "english.visitseoul.net", "english.visitkorea.or.kr", "visitbusan.net", "www.visitbusan.net",
+    "royal.khs.go.kr", "onionkr.com", "english.visitseoul.net", "english.visitkorea.or.kr", "visitbusan.net", "www.visitbusan.net",
     "ddp.or.kr", "www.nseoultower.co.kr", "www.cablecar.co.kr", "guide.michelin.com", "m.starfield.co.kr",
     "www.adererror.com", "global.margesherwood.com", "locations.musinsa.com", "www.lotteshopping.com",
     "www.shinsegae.com", "www.stanford-hotel.com", "www.lottehotel.com", "www.korail.com",
@@ -46,7 +46,7 @@ def validate_data() -> set[str]:
     require("2026" in itinerary["trip"]["date_note"] and "not confirmed" in itinerary["trip"]["date_note"].lower(), "Working year must be flagged")
     ids = {x["id"] for x in places}
     flags = {x["id"] for x in review}
-    require({"dates", "flights", "hotels", "train_booking", "return_hotel", "blueline_fare", "jagalchi_closure"} <= flags, "Core review issues missing")
+    require({"dates", "flights", "hotels", "train_booking", "after_trip", "open_days", "haeundae_hours", "blueline_fare", "jagalchi_closure", "onion_weekend_hours"} <= flags, "Core review issues missing")
     official_urls = set()
     for sid, source in sources.items():
         require(sid and all(source.get(k) for k in ("title", "url", "scope")), f"Bad source: {sid}")
@@ -69,6 +69,8 @@ def validate_data() -> set[str]:
     by_id = {x["id"]: x for x in places}
     require(by_id["sky_capsule"]["price"] is None and by_id["beach_train"]["price"] is None, "Conflicting Blueline fare must stay blank")
     require(by_id["jagalchi"]["days"] is None, "Conflicting Jagalchi Tuesday pattern must stay blank")
+    require(by_id["haeundae_beach"]["hours"] is None, "Ambiguous beach listing hours must stay blank")
+    require("weekend opening unverified" in by_id["onion_seongsu"]["hours"], "Conflicting Onion weekend hour must remain flagged")
     require("Bib Gourmand" in by_id["kyoja"]["note"] and "starred" not in by_id["kyoja"]["note"], "Michelin distinction changed")
     for item in review:
         check_sources(item, "review item")
@@ -77,6 +79,15 @@ def validate_data() -> set[str]:
         require(all(item.get(k) for k in ("title", "finding", "action", "topic")), f"Incomplete review: {item['id']}")
         if item["tier"] == "merchant":
             require(item["source_role"] == "context_only", f"Unverified merchant wrongly marked proven: {item['id']}")
+    require(days[1]["stops"][0]["place"] == "gyeongbokgung" and days[2]["stops"][0]["place"] == "cablecar", "Palace Tuesday-closure correction must remain explicit")
+    require(days[5]["stops"][0]["place"] == "insadong", "Source outline keeps Ikseon/Insadong on Day 6")
+    require(days[6]["city"] == "Seoul" and days[7]["city"] == "Seoul", "Original Days 7–8 must remain in Seoul")
+    require(all(stop["optional"] for day in days[6:8] for stop in day["stops"]), "Source outline leaves Days 7–8 open")
+    require(days[8]["city"] == "Seoul → Busan" and days[8]["hotel"] == "stanford" and days[8].get("end_hotel") == "l7", "The original final day travels from Stanford to Busan")
+    require([stop["place"] for stop in days[8]["stops"]] == ["l7", "haeundae_market", "haeundae_beach"], "Day 9 ends at Haeundae, not a return to Seoul")
+    extension_ids = {x["id"] for x in places if x.get("extension")}
+    require(extension_ids and all(by_id[pid]["city"] == "Busan" for pid in extension_ids), "Unassigned extensions must be Busan-only")
+    require(not any(stop["place"] in extension_ids for day in days for stop in day["stops"]), "Post-Day-9 extensions cannot be assigned inside nine days")
     for number, day in enumerate(days, start=1):
         dt = date.fromisoformat(day["date"])
         require(day["number"] == number and dt == date(2026, 11, 1) + timedelta(days=number - 1), f"Broken proposed date sequence: {number}")
@@ -190,6 +201,11 @@ def validate_site(out: Path, official_urls: set[str]) -> None:
     require(rows >= 125, f"Too few source-linked table rows: {rows}")
     require((out / ".nojekyll").exists(), "Missing GitHub Pages .nojekyll")
     require("assets/site.css" in (out / "index.html").read_text(encoding="utf-8"), "Missing stylesheet")
+    require("After Day 9 · unassigned extension" in (out / "sights.html").read_text(encoding="utf-8"), "Extension labels absent from sights")
+    require("After Day 9 · unassigned extension" in (out / "food.html").read_text(encoding="utf-8"), "Extension labels absent from food")
+    final_day = (out / "days" / "09.html").read_text(encoding="utf-8")
+    require("ARRIVAL BASE · NOT BOOKED" in final_day and "L7 Haeundae" in final_day, "Day 9 Busan arrival-base label missing")
+    require("Northbound / conditional" not in (out / "transport.html").read_text(encoding="utf-8"), "Superseded Seoul return route reintroduced")
     print(f"PASS: {len(files)} pages, {rows} data rows with official links, {links} links/assets checked, {len(official_urls)} registered official URLs")
 
 

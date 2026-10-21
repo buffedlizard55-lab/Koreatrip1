@@ -3,123 +3,120 @@
     "title": "Seoul → Busan",
     "subtitle": "Nine days, two cities, room to wander.",
     "travelers": "Two adults",
-    "date_note": "Working calendar only: Nov 1–9, 2026 matches the supplied weekday pattern. The original also said ‘Nov 2, 2006’; the year is not confirmed.",
-    "provenance": "The complete originally supplied day-by-day text is not available in this checkout. This is a source-checked, editorially proposed sequence of the identifiable stops—not a transcription or a set of confirmed bookings.",
+    "date_note": "Working calendar only: Nov 1–9, 2026 matches the supplied weekday pattern. The notes also said ‘Nov 2, 2006’; the year is not confirmed.",
+    "provenance": "Another session's structured transcription of the supplied plan is preserved at data/trip.json on main. The verbatim original brief is not in this checkout. The submitted outline puts Seoul activities on Days 1–6, Itaewon only as a Day 7 heading, no Day 8 activities, and a Seoul→Busan KTX arrival on Day 9. This field guide preserves that sequence except for a clearly marked Monday/Tuesday swap needed for Gyeongbokgung's closure; optional suggestions on otherwise empty days are labeled editorial. No booking is established.",
     "verified_on": "2026-10-21"
   },
   "days": [
     {
-      "number": 1, "date": "2026-11-01", "city": "Seoul", "title": "Arrive & settle in", "subtitle": "A deliberately light first evening in Myeongdong.", "theme": "ARRIVAL DAY", "hotel": "stanford", "overnight": "Seoul · lodging not confirmed",
-      "depart": {"text": "If landing at Incheon, Stanford's FAQ suggests airport bus 6015 to the Ibis Myeongdong stop, then walk to its Centerpoint Building entrance. Alternatively, the AREX Express reaches Seoul Station and the metro map shows Line 4 onward to Myeongdong. Flight, terminal, arrival time and bus service are unconfirmed.", "sources": ["stanford", "arex", "seoul_metro"]},
+      "number": 1, "date": "2026-11-01", "city": "Seoul", "title": "Land & settle in", "subtitle": "The notes suggest SFO to Incheon; keep the first evening light.", "theme": "ARRIVAL DAY", "hotel": "stanford", "overnight": "Seoul · lodging not confirmed",
+      "depart": {"text": "The original notes describe SFO→ICN around Oct 31/Nov 1, but no actual flight or terminal is confirmed. If arriving at Incheon, Stanford's FAQ suggests airport bus 6015 to the Ibis Myeongdong stop and a walk to its Centerpoint Building entrance. AREX Express instead reaches Seoul Station, where onward local transport is needed. Confirm the live bus/rail service and flight before choosing.", "sources": ["stanford", "arex", "seoul_metro"]},
       "stops": [
-        {"period": "On arrival", "place": "stanford", "why": "Find the 9th-floor lobby. Check-in starts at 15:00; ask about luggage if you arrive sooner.", "optional": false},
-        {"period": "If time allows", "place": "myeongdong", "why": "Stay close to the hotel and browse only shops that are actually open.", "optional": true},
-        {"period": "Optional browse", "place": "lotte", "why": "Just opposite the hotel; check the live calendar rather than assuming a fixed Sunday closing time.", "optional": true}
+        {"period": "On arrival", "place": "stanford", "why": "Find the 9th-floor lobby. Check-in starts at 15:00; ask about bags if you arrive sooner.", "optional": false},
+        {"period": "If time allows", "place": "myeongdong", "why": "Stay near the hotel and browse only shops actually open that evening.", "optional": true}
       ],
-      "return": {"text": "Return to Stanford on foot; do not rely on a prearranged room until the reservation is confirmed.", "sources": ["stanford"]},
-      "note": "No flight details were supplied in the saved materials. Gwangjang retail closes Sundays; its food street is a separate option, but no cross-city dash is planned for arrival day.",
-      "flags": ["dates", "flights", "hotels", "gwangjang_sunday"]
+      "return": {"text": "Walk back to Stanford using its official address; no room or arrival time has been confirmed for this trip.", "sources": ["stanford"]},
+      "note": "Do not interpret the SFO/ICN route note as a purchased flight. Airport Express onboard time is not the total trip from aircraft to hotel.",
+      "flags": ["dates", "flights", "hotels", "original_text"]
     },
     {
-      "number": 2, "date": "2026-11-02", "city": "Seoul", "title": "Palaces & hanok lanes", "subtitle": "A walk through Jongno, before Bukchon's visitor cutoff.", "theme": "OLD SEOUL", "hotel": "stanford", "overnight": "Seoul · lodging not confirmed",
-      "depart": {"text": "From the hotel side of Euljiro 1-ga (Line 2), ride to Euljiro 3-ga and transfer to Line 3 for Gyeongbokgung Station. Use Exit 5 for the palace; check station signs and current train times on the day.", "sources": ["stanford", "lotte", "seoul_metro", "palace_location"]},
+      "number": 2, "date": "2026-11-02", "city": "Seoul", "title": "A palace-day correction", "subtitle": "Move the original Tuesday palace and Bukchon visit to Monday.", "theme": "SWAPPED WITH DAY 3", "hotel": "stanford", "overnight": "Seoul · lodging not confirmed",
+      "depart": {"text": "From Stanford's Euljiro 1-ga area (Line 2), ride to Euljiro 3-ga, change to Line 3 for Gyeongbokgung Station and use Exit 5. This Monday placement is an editorial correction; the submitted plan had the palace on Tuesday, its ordinary closed day.", "sources": ["stanford", "lotte", "seoul_metro", "palace_location", "palace_hours"]},
       "stops": [
-        {"period": "Morning", "place": "gyeongbokgung", "why": "Palace visit moved to Monday because the regular Tuesday closure makes the original Tuesday placement unsuitable.", "optional": false},
-        {"period": "Early afternoon", "place": "bukchon", "why": "From the palace district, use Line 3 to Anguk or walk. Enter the restricted tourist zone only between 10:00 and 17:00; be quiet.", "optional": false},
-        {"period": "Late afternoon", "place": "insadong", "why": "Browse the traditional shopping street via Anguk; shops close individually.", "optional": true},
-        {"period": "Evening option", "place": "ikseon", "why": "Continue toward Jongno 3-ga for the hanok alleys; not subject to Bukchon's red-zone visitor rule, but respect residents.", "optional": true},
-        {"period": "Café option", "place": "rainbow", "why": "Rain Report Rainbow is officially listed here in Ikseon—not the uncertain Seongsu Croissant site.", "optional": true}
+        {"period": "Morning", "place": "gyeongbokgung", "why": "Regular Tuesdays are closed. November closing is 17:00, last entry 16:00; a specific 2026 ceremonial performance is not guaranteed.", "optional": false},
+        {"period": "Early afternoon", "place": "bukchon", "why": "Reach the Anguk side on foot or via Line 3. Restricted residential tourist lanes permit visits only 10:00–17:00; be quiet.", "optional": false},
+        {"period": "Café option", "place": "onion_anguk", "why": "The operator-listed Anguk branch is near the palace district. Avoid promising a queue-free seat.", "optional": true}
       ],
-      "return": {"text": "From Jongno 3-ga, use Line 1 to City Hall and Line 2 to Euljiro 1-ga, or walk back if convenient. Compare with the live metro map.", "sources": ["seoul_metro", "stanford"]},
-      "note": "This is a suggested correction, not a change to a verified booking. Leave Gyeongbokgung before its 17:00 November close; the last entry is 16:00.",
-      "flags": ["palace_tuesday", "dates", "rain_seongsu"]
+      "return": {"text": "From Anguk, Line 3 to Euljiro 3-ga then Line 2 to Euljiro 1-ga; follow station signs back to Stanford.", "sources": ["seoul_metro", "stanford"]},
+      "note": "The submitted Day 2 focused on Namsan and Myeongdong; those stops move to Tuesday in this source-backed swap. A changing-of-the-guard time for the proposed date has not been confirmed.",
+      "flags": ["palace_tuesday", "bukchon_rules", "dates", "guard_event"]
     },
     {
-      "number": 3, "date": "2026-11-03", "city": "Seoul", "title": "Markets, design & a skyline", "subtitle": "A flexible eastward downtown loop with Namsan after dark.", "theme": "CITY CONTRASTS", "hotel": "stanford", "overnight": "Seoul · lodging not confirmed",
-      "depart": {"text": "From Euljiro 1-ga (Line 2), ride to Euljiro 4-ga and walk to Gwangjang Market at 88 Changgyeonggung-ro. The exact best exit is not established in these sources; use the address and local wayfinding.", "sources": ["lotte", "seoul_metro", "gwangjang"]},
+      "number": 3, "date": "2026-11-03", "city": "Seoul", "title": "Namsan & Myeongdong", "subtitle": "Use the original Day 2 shopping and skyline ideas on Tuesday.", "theme": "SWAPPED WITH DAY 2", "hotel": "stanford", "overnight": "Seoul · lodging not confirmed",
+      "depart": {"text": "From Stanford, walk toward Myeongdong Station (Line 4). The cable car operator gives a walking route from Exit 3 or the Namsan Ormi approach from Exit 4. For a bus alternative, the tower lists 01A/01B via Chungmuro. No hotel-to-tower duration is verified.", "sources": ["stanford", "cablecar", "n_tower_access", "seoul_metro"]},
       "stops": [
-        {"period": "Late morning", "place": "gwangjang", "why": "Browse retail before its 18:00 close and try the independently listed food street; stall-specific details vary.", "optional": false},
-        {"period": "Afternoon", "place": "ddp", "why": "From Euljiro 4-ga, continue on Line 2 to Dongdaemun History & Culture Park, Exit 1. This is Dongdaemun, not Seongsu.", "optional": false},
-        {"period": "Early evening", "place": "cablecar", "why": "Take Line 4 from the DDP station to Myeongdong; use Exit 3 on foot or Exit 4 for the Namsan Ormi approach.", "optional": true},
-        {"period": "Evening option", "place": "tower", "why": "The observatory is a separate ticket; weekday entry ends 30 minutes before the 22:30 close.", "optional": true}
+        {"period": "Late morning option", "place": "cablecar", "why": "Weather-dependent ride up Namsan. Its ticket does not include observatory admission.", "optional": true},
+        {"period": "Viewpoint option", "place": "tower", "why": "Separate paid observatory, with weekday entry stopping before its 22:30 close.", "optional": true},
+        {"period": "Afternoon", "place": "myeongdong", "why": "Browse the shopping district; individual street-food and beauty-store hours are not shared district hours.", "optional": false},
+        {"period": "Store option", "place": "lotte", "why": "Use the operator calendar; do not save this branch for its listed Monday Nov 9 closure.", "optional": true},
+        {"period": "Beauty option", "place": "oliveyoung_town", "why": "The VisitKorea listing identifies Myeongdong Town, not the unverified D176 branch.", "optional": true},
+        {"period": "Meal option", "place": "kyoja", "why": "MICHELIN lists the restaurant as Bib Gourmand, not starred.", "optional": true},
+        {"period": "Different-district alternative", "place": "gwangjang", "why": "If choosing the market instead of Myeongdong street food, take Line 2 toward Euljiro 4-ga. It is not in the same shopping block.", "optional": true}
       ],
-      "return": {"text": "Return by cable car if operating or use the tower's published Namsan 01A/01B bus route. Do not assume a specific last departure time from these sources.", "sources": ["cablecar", "n_tower_access"]},
-      "note": "This is the busiest Seoul day. Skip either DDP interiors or the paid tower if queues or energy make the loop too long. No exhibition or cable-car tickets are booked.",
-      "flags": ["ddp_location", "flights"]
+      "return": {"text": "Myeongdong shops are near Stanford. If ending at Gwangjang, take Line 2 from Euljiro 4-ga back to Euljiro 1-ga. No late-night food-stall opening is assumed.", "sources": ["stanford", "seoul_metro", "gwangjang"]},
+      "note": "The submitted Tuesday palace slot conflicts with the palace's regular closure. This proposed switch keeps its Day 2 tower/shopping ideas, but all optional purchases and specific shop hours require fresh checks.",
+      "flags": ["palace_tuesday", "michelin_label", "lotte_closed", "merchant_list"]
     },
     {
-      "number": 4, "date": "2026-11-04", "city": "Seoul", "title": "Seongsu, slowly", "subtitle": "Design shops and salt bread along Yeonmujang-gil.", "theme": "DESIGN DISTRICT", "hotel": "stanford", "overnight": "Seoul · lodging not confirmed",
-      "depart": {"text": "From Euljiro 1-ga take Line 2 toward Seongsu Station. Walk between each operator-listed address; the street's pop-ups have changing schedules.", "sources": ["lotte", "seoul_metro", "seongsu_street"]},
+      "number": 4, "date": "2026-11-04", "city": "Seoul", "title": "Seongsu, then DDP if time", "subtitle": "Keep the original design-and-café theme; treat DDP as a separate district.", "theme": "DESIGN DISTRICT", "hotel": "stanford", "overnight": "Seoul · lodging not confirmed",
+      "depart": {"text": "From Euljiro 1-ga use Line 2 to Seongsu Station. Walk between operator-listed Seongsu addresses; if adding DDP later, ride Line 2 to Dongdaemun History & Culture Park Exit 1 instead of treating DDP as a Seongsu shop.", "sources": ["lotte", "seoul_metro", "seongsu_street", "ddp_access"]},
       "stops": [
-        {"period": "Late morning", "place": "ader", "why": "The official directory distinguishes Seongsu Space from its other nearby shop formats.", "optional": true},
-        {"period": "Midday", "place": "jayeondo", "why": "A takeaway bread stop; the tourism listing notes queues and batch baking.", "optional": true},
-        {"period": "Afternoon", "place": "musinsa", "why": "Browse the operator's Seongsu fashion flagship.", "optional": true},
-        {"period": "Afternoon", "place": "marge", "why": "Use the current 13 Yeonmujang 11-gil flagship address, not an older stockist listing.", "optional": true}
+        {"period": "Morning café option", "place": "onion_seongsu", "why": "A branch named in the notes. Weekday hours agree across officials; weekend opening is disputed and left unverified.", "optional": true},
+        {"period": "Late morning", "place": "ader", "why": "Use the official Seongsu Space address, not another ADERERROR shop format.", "optional": true},
+        {"period": "Midday", "place": "jayeondo", "why": "Takeaway salt bread; the tourism listing mentions queues and batch baking.", "optional": true},
+        {"period": "Afternoon browse", "place": "musinsa", "why": "MUSINSA STANDARD's official Seongsu store listing.", "optional": true},
+        {"period": "Afternoon browse", "place": "marge", "why": "Use the current 13 Yeonmujang 11-gil flagship address.", "optional": true},
+        {"period": "Separate transfer", "place": "ddp", "why": "Dongdaemun Design Plaza is reached by Line 2; exhibitions have their own hours and admission.", "optional": true}
       ],
-      "return": {"text": "Return to Euljiro 1-ga on Line 2. Eat wherever is convenient; individual Seongsu restaurants without official confirmation are not scheduled.", "sources": ["seoul_metro", "seongsu_street"]},
-      "note": "All stops are browse-as-you-go rather than appointments. Rain Report Croissant in Seongsu is not routed here; its status needs confirmation.",
-      "flags": ["rain_seongsu", "merchant_list", "marge_address"]
+      "return": {"text": "From Seongsu or Dongdaemun History & Culture Park take Line 2 toward Euljiro 1-ga and walk to Stanford. The unsupported Seongsu dining and photo-booth candidates remain on the review page.", "sources": ["seoul_metro", "stanford", "ddp_access"]},
+      "note": "This day includes the original DDP idea but not the incorrect idea that DDP is in Seongsu. Neither Rain Report Croissant's current Seongsu operation nor the unverified restaurant shortlist is asserted.",
+      "flags": ["ddp_location", "rain_seongsu", "merchant_list", "marge_address", "onion_weekend_hours"]
     },
     {
-      "number": 5, "date": "2026-11-05", "city": "Seoul", "title": "Gangnam & one last city meal", "subtitle": "COEX first, then a return to Myeongdong.", "theme": "SOUTH OF THE RIVER", "hotel": "stanford", "overnight": "Seoul · lodging not confirmed",
-      "depart": {"text": "Use Line 2 from Euljiro 1-ga to Samseong; follow the COEX operator's direct connections at Exits 5/6. Check metro direction and service on the day.", "sources": ["lotte", "seoul_metro", "coex"]},
+      "number": 5, "date": "2026-11-05", "city": "Seoul", "title": "COEX & Gangnam", "subtitle": "A straightforward Line 2 day built around the submitted mall and photo stop.", "theme": "SOUTH OF THE RIVER", "hotel": "stanford", "overnight": "Seoul · lodging not confirmed",
+      "depart": {"text": "From Euljiro 1-ga ride Line 2 to Samseong. COEX directly connects at Exits 5/6. A submitted 47-minute door-to-door estimate has not been verified and is not repeated here.", "sources": ["lotte", "seoul_metro", "coex"]},
       "stops": [
-        {"period": "Late morning / afternoon", "place": "coex", "why": "Mall opening hours are not the opening hours of each shop or exhibition.", "optional": false},
-        {"period": "On the return", "place": "kyoja", "why": "Back in Myeongdong for kalguksu; the Michelin distinction is Bib Gourmand, not a star.", "optional": true},
-        {"period": "If still open", "place": "lotte", "why": "A better time to browse Lotte Main than its published Nov 9 closure.", "optional": true}
+        {"period": "Late morning / afternoon", "place": "coex", "why": "Mall hours do not establish the hours of every shop, aquarium or event.", "optional": false},
+        {"period": "Nearby photo option", "place": "gangnam_statue", "why": "Visit Seoul identifies the Psy Hand Statue within the WTC/COEX area; exact artwork hours are unverified.", "optional": true}
       ],
-      "return": {"text": "From Samseong, return on Line 2 toward Euljiro 1-ga, then walk to the hotel. Use official station wayfinding for the correct platform.", "sources": ["seoul_metro", "lotte", "stanford"]},
-      "note": "Mangwon Market is an optional separate half-day, not adjacent to COEX; avoid squeezing it into this day just to tick a box.",
-      "flags": ["lotte_closed", "merchant_list"]
+      "return": {"text": "Ride Line 2 from Samseong back toward Euljiro 1-ga and walk to Stanford; allow time for the real service on the day.", "sources": ["seoul_metro", "stanford"]},
+      "note": "The named Soul Market pastry stop has no venue-specific official address or hours in this ledger. Leave it off a confirmed route until checked.",
+      "flags": ["merchant_list", "gangnam_time"]
     },
     {
-      "number": 6, "date": "2026-11-06", "city": "Busan", "title": "Ride south to Haeundae", "subtitle": "A train day with a low-pressure beachside finish.", "theme": "CITY CHANGE", "hotel": "l7", "overnight": "Busan · lodging not confirmed",
-      "depart": {"text": "From Stanford's Euljiro 1-ga area, take Line 2 to City Hall, transfer to Line 1 for Seoul Station, then a Seoul–Busan Gyeongbu KTX only after booking a real departure. At Busan Station take Metro Line 1 to Seomyeon, transfer to Line 2 for Haeundae and use L7's published address for the final walk. No ticket or exact departure is confirmed.", "sources": ["stanford", "lotte", "seoul_metro", "visitkorea_rail", "korail", "busan_metro", "l7"]},
+      "number": 6, "date": "2026-11-06", "city": "Seoul", "title": "Insadong & Ikseon-dong", "subtitle": "Keep the original Day 6 hanok-lane theme without routing unverified cafés.", "theme": "JONGNO LANES", "hotel": "stanford", "overnight": "Seoul · lodging not confirmed",
+      "depart": {"text": "From the hotel area at Euljiro 1-ga Line 2, change at Euljiro 3-ga to Line 3 for Anguk and walk toward Insa-dong. Continue toward Jongno 3-ga / Ikseon-dong on foot or use Line 3 for the one-station connection.", "sources": ["stanford", "lotte", "seoul_metro", "insadong", "ikseon"]},
       "stops": [
-        {"period": "After arrival", "place": "l7", "why": "The listed check-in is 15:00. Ask the property directly about early arrival and bags; no storage policy was verified.", "optional": false},
-        {"period": "If daylight remains", "place": "haeundae_beach", "why": "Easy nearby shoreline stroll. November is outside a guaranteed swimming program.", "optional": true},
-        {"period": "Evening", "place": "haeundae_market", "why": "A flexible market meal within the Haeundae area; vendor-specific hours and prices vary.", "optional": true}
+        {"period": "Morning", "place": "insadong", "why": "Public shopping street; galleries and shops decide their own opening times.", "optional": false},
+        {"period": "Afternoon", "place": "ikseon", "why": "Hanok alleys around Jongno 3-ga; do not borrow Bukchon's hours for another neighborhood.", "optional": false},
+        {"period": "Café option", "place": "rainbow", "why": "Rain Report Rainbow is documented in Ikseon-dong. It is distinct from the unconfirmed Seongsu Croissant site.", "optional": true}
       ],
-      "return": {"text": "Walk back to L7 using its street address; no late-night transit is required by this proposed sequence.", "sources": ["l7", "haeundae_market"]},
-      "note": "KORAIL says tickets open at 07:00 two months ahead; VisitKorea says they usually open one month ahead. Rely on the rail operator and confirm availability before building the day around a train.",
-      "flags": ["train_booking", "korail_window", "hotels"]
+      "return": {"text": "From Jongno 3-ga, Line 1 to City Hall and Line 2 to Euljiro 1-ga, or walk if convenient. Check current subway routing before travel.", "sources": ["seoul_metro", "stanford"]},
+      "note": "The notes also mention Chwihyang, Favorite of Ikseon and Jayeondo on Day 6. The first two lack venue-specific official verification; the confirmed Jayeondo branch is in Seongsu, not Ikseon.",
+      "flags": ["rain_seongsu", "merchant_list", "jayeondo_day6"]
     },
     {
-      "number": 7, "date": "2026-11-07", "city": "Busan", "title": "Coastal lines & temple steps", "subtitle": "An east-Busan day with an optional Saturday waterfront finale.", "theme": "THE COAST", "hotel": "l7", "overnight": "Busan · lodging not confirmed",
-      "depart": {"text": "Start from L7's Haeundae address and make your way to the Mipo end of Blueline Park. Use operator maps to find the correct scenic-rail boarding point; Sky Capsule tickets have not been purchased.", "sources": ["l7", "blueline_course", "blueline_booking"]},
+      "number": 7, "date": "2026-11-07", "city": "Seoul", "title": "Itaewon, left open", "subtitle": "The supplied outline names Itaewon but does not list any Day 7 activities.", "theme": "OPEN DAY", "hotel": "stanford", "overnight": "Seoul · lodging not confirmed",
+      "depart": {"text": "If you choose to explore the named district, from Euljiro 1-ga take Line 2 to Euljiro 3-ga, change to Line 3 for Yaksu and then Line 6 to Itaewon Exit 3. This wayfinding route is optional; no submitted appointment or venue is assumed.", "sources": ["seoul_metro", "itaewon_area", "stanford"]},
       "stops": [
-        {"period": "Morning option", "place": "sky_capsule", "why": "Mipo to Cheongsapo is a one-way scenic ride; confirm availability and live price before committing.", "optional": true},
-        {"period": "Return option", "place": "beach_train", "why": "A separate train can bring you back along the coast; ticket and fare are not confirmed.", "optional": true},
-        {"period": "Afternoon", "place": "temple", "why": "From Haeundae Line 2 Exit 7, use the official Busan tourism bus guidance; the temple's last admission is 18:50.", "optional": false},
-        {"period": "After dark option", "place": "gwangalli", "why": "Line 2 links Haeundae and Gwangan; walk to the beach for bridge views.", "optional": true},
-        {"period": "If confirmed", "place": "drone", "why": "The usual winter Saturday show pattern is 19:00/21:00, but the Nov 7 program and weather clearance are unconfirmed.", "optional": true}
+        {"period": "Only if desired", "place": "itaewon_area", "why": "A flexible area walk, not a manufactured restaurant or event booking. The original Day 7 is only a heading.", "optional": true}
       ],
-      "return": {"text": "If ending at Gwangalli, ride Line 2 from Gwangan back to Haeundae for L7. Otherwise head straight back from the temple area.", "sources": ["busan_metro", "l7", "temple"]},
-      "note": "Keep the capsule and the evening show optional: both depend on live availability, and the operator's conflicting fare pages make a fixed capsule price unreliable.",
-      "flags": ["blueline_fare", "drone_schedule", "train_booking"]
+      "return": {"text": "Reverse the Line 6 → Line 3 at Yaksu → Line 2 at Euljiro 3-ga route to Euljiro 1-ga, or use live wayfinding if plans change.", "sources": ["seoul_metro", "itaewon_area"]},
+      "note": "The original plan provides no Itaewon times or businesses for this day. Nearby possibilities are not treated as traveler requests.",
+      "flags": ["open_days", "flights"]
     },
     {
-      "number": 8, "date": "2026-11-08", "city": "Busan → Seoul", "title": "Old Busan, then back north", "subtitle": "An optional hillside and market before a proposed Seoul overnight.", "theme": "RETURN ROUTE", "hotel": "l7", "overnight": "Seoul · return lodging not confirmed",
-      "depart": {"text": "Check out of L7 by 11:00. From Haeundae ride Line 2 to Seomyeon, change to Line 1 toward Toseong for Gamcheon (village bus from Exit 6); for a shorter route, skip Gamcheon and continue to Jagalchi. Luggage storage at L7 has not been verified.", "sources": ["l7", "busan_metro", "gamcheon", "jagalchi"]},
+      "number": 8, "date": "2026-11-08", "city": "Seoul", "title": "An unassigned Seoul day", "subtitle": "No Day 8 activities were supplied; keep this as a rest and preparation buffer.", "theme": "OPEN DAY", "hotel": "stanford", "overnight": "Seoul · lodging not confirmed",
+      "depart": {"text": "No destination is required by the source outline. If choosing Mangwon Market, use Euljiro 1-ga Line 2 to Hapjeong then Line 6 to Mangwon Exit 2. A different Sunday food-street option is Gwangjang via Line 2 Euljiro 4-ga; Gwangjang retail is closed on Sundays.", "sources": ["stanford", "seoul_metro", "mangwon", "gwangjang"]},
       "stops": [
-        {"period": "If bags allow", "place": "gamcheon", "why": "Aim before the visitor-facility 17:00 close; steep lanes are awkward with large luggage. Skip if your return train is early.", "optional": true},
-        {"period": "Midday alternative", "place": "jagalchi", "why": "Near Busan Station on Line 1, making it the easier choice if time or baggage is tight.", "optional": true},
-        {"period": "If time remains", "place": "biff", "why": "Walk the nearby cinema street; vendor hours are not verified.", "optional": true}
+        {"period": "Choose one / optional", "place": "mangwon", "why": "An officially listed neighborhood market, not a stop submitted for Day 8. Stall schedules can differ.", "optional": true},
+        {"period": "Alternative / optional", "place": "gwangjang", "why": "Food street is listed open year-round; on Sunday, do not expect Gwangjang retail to be open.", "optional": true}
       ],
-      "return": {"text": "From Jagalchi or Toseong, take Metro Line 1 to Busan Station. Book a suitable KTX to Seoul Station; to reach Stanford, use Seoul Metro Line 1 to City Hall and Line 2 to Euljiro 1-ga. A Nov 8 Seoul room is not confirmed and must not be assumed available.", "sources": ["busan_metro", "korail", "visitkorea_rail", "seoul_metro", "stanford"]},
-      "note": "The suggested Sunday return avoids relying on an unverified Busan-to-airport same-day transfer. It is a proposal only: train departure, baggage arrangements and Seoul overnight all remain unresolved.",
-      "flags": ["train_booking", "return_hotel", "bag_storage", "jagalchi_closure", "dates"]
+      "return": {"text": "Return to Stanford using the published metro map. Leave time to prepare for the proposed next-day Seoul Station rail departure; no KTX seat is confirmed.", "sources": ["seoul_metro", "stanford", "korail"]},
+      "note": "These alternatives are editorial suggestions, not original Day 8 bookings. Rest instead if preferred. Do not treat two different markets as a required two-stop route.",
+      "flags": ["open_days", "gwangjang_sunday", "train_booking"]
     },
     {
-      "number": 9, "date": "2026-11-09", "city": "Seoul → airport", "title": "Leave with a buffer", "subtitle": "Keep the departure day open until the flight is known.", "theme": "DEPARTURE DAY", "hotel": "stanford", "overnight": "Departure · flight unconfirmed",
-      "depart": {"text": "If departing from Incheon after a confirmed Seoul overnight, check out of Stanford by 12:00. From Euljiro 1-ga use Line 2 to City Hall and Line 1 to Seoul Station; take a separately ticketed AREX Express to the correct ICN terminal. Operator running time from Seoul Station: 43 min to T1 or 51 min to T2, excluding transfers, security and airport check-in.", "sources": ["stanford", "lotte", "seoul_metro", "arex"]},
+      "number": 9, "date": "2026-11-09", "city": "Seoul → Busan", "title": "Take the train to Haeundae", "subtitle": "The supplied final day travels south; it does not fly home from Seoul.", "theme": "CITY CHANGE", "hotel": "stanford", "end_hotel": "l7", "overnight": "Busan · L7 reservation not confirmed",
+      "depart": {"text": "Check out of Stanford by 12:00. From Euljiro 1-ga Line 2, change at City Hall to Line 1 for Seoul Station. Take a separately booked KORAIL train to Busan Station; no specific duration, fare, seat or departure is confirmed. At Busan Station take Metro Line 1 to Seomyeon, transfer to Line 2 for Haeundae, then use L7's published address for the final walk.", "sources": ["stanford", "seoul_metro", "korail", "visitkorea_rail", "busan_metro", "l7"]},
       "stops": [
-        {"period": "Before departure", "place": "stanford", "why": "Use the hotel's check-out rule only if a Nov 8 return-night room has actually been reserved.", "optional": false},
-        {"period": "Only if flight permits", "place": "shinsegae", "why": "Operator calendar currently does not mark Nov 9 closed; recheck on the day. Do not go to Lotte Main, which lists Nov 9 as a closure.", "optional": true}
+        {"period": "After arrival", "place": "l7", "why": "L7 publishes 15:00 check-in. The name in the notes does not establish a reservation or early-room access.", "optional": false},
+        {"period": "Evening meal option", "place": "haeundae_market", "why": "A walkable food market in the Haeundae area; vendor menus, prices and individual hours vary.", "optional": true},
+        {"period": "If time and energy allow", "place": "haeundae_beach", "why": "A shoreline stroll, not a November swimming suggestion. The tourism listing's 09:00–18:00 hours have unspecified scope.", "optional": true}
       ],
-      "return": {"text": "No flight, airline, departure terminal or airport is verified. The AREX route is conditional on an Incheon departure, not a ticket or guaranteed connection.", "sources": ["arex", "stanford"]},
-      "note": "If departure is early, drop all shopping. Stanford's after-checkout bag storage ends at midnight the same day; it is not a substitute for an extra hotel night.",
-      "flags": ["flights", "return_hotel", "lotte_closed", "dates"]
+      "return": {"text": "Use the published L7 address to walk back from the Haeundae area. Any onward trip after this Busan arrival falls outside the nine supplied days; do not assume a return train or flight.", "sources": ["l7", "haeundae_market", "haeundae_beach"]},
+      "note": "The submitted 45-minute early KTX boarding rule and 2h45 journey estimate are not asserted as verified. Confirm train inventory, station/platform guidance and the Busan hotel reservation independently.",
+      "flags": ["train_booking", "korail_window", "hotels", "after_trip", "haeundae_hours", "lotte_closed", "dates"]
     }
   ]
 }

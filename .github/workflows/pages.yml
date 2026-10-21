@@ -1,46 +1,41 @@
-name: Verify and publish the field guide
+name: Validate the field guide
 
+# Existing GitHub Pages publishes main from the repository root. This job checks
+# the tracked /field-guide/ subtree; it does not reconfigure or deploy Pages.
 on:
   push:
     branches: [main]
+    paths:
+      - 'src/data/**'
+      - 'scripts/**'
+      - 'web/**'
+      - 'field-guide/**'
+      - '.github/workflows/pages.yml'
   pull_request:
     branches: [main]
+    paths:
+      - 'src/data/**'
+      - 'scripts/**'
+      - 'web/**'
+      - 'field-guide/**'
+      - '.github/workflows/pages.yml'
   workflow_dispatch:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: pages
-  cancel-in-progress: false
 
 jobs:
   verify:
-    name: Verify data, links and static build
+    name: Verify source data, generated pages and internal links
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Build and validate all pages
-        run: python3 scripts/check.py --build
-      - name: Prepare GitHub Pages artifact
-        if: github.event_name != 'pull_request'
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: site
-
-  deploy:
-    if: github.event_name != 'pull_request'
-    name: Publish to GitHub Pages
-    needs: verify
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Build and audit every field-guide page
+        run: python3 scripts/check.py --build --out field-guide
+      - name: Assert the tracked Pages subtree matches the build
+        run: |
+          git diff --exit-code -- field-guide
+          test -z "$(git ls-files --others --exclude-standard field-guide)"
