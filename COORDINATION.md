@@ -15,16 +15,16 @@ Blank verified fields = not confirmed. "Flagged" = listed on the **Flagged for R
 
 | ID | Task | Status | Owner (session) | Files touched | Notes |
 |----|------|--------|-----------------|---------------|-------|
-| T1 | Itinerary data extraction (every line of the brief) | done | session `b86112b5` | `docs/data/trip.json` | 9 days, 80+ rows extracted from the brief |
-| T2 | Line-by-line verification against official sources | done (partial, see below) | session `b86112b5` | `docs/data/trip.json`, `docs/data/sources.json` | Official values confirmed where a public official page exists; the rest blank + flagged |
-| T3 | Static GitHub Pages site (landing, itinerary, entries, transit, hours, flagged, sources) | done | session `b86112b5` | `docs/**` | No build step; pure HTML/CSS/JS |
-| T4 | Integration: build check, link check, PR to `main`, merge, Pages deploy check | in progress | session `b86112b5` | `docs/**`, `COORDINATION.md` | See log |
+| T1 | Itinerary data extraction (every line of the brief) | done | session `b86112b5` | `data/trip.json` | 9 days, 80+ rows extracted from the brief |
+| T2 | Line-by-line verification against official sources | done (partial, see below) | session `b86112b5` | `data/trip.json`, `data/sources.json` | Official values confirmed where a public official page exists; the rest blank + flagged |
+| T3 | Static GitHub Pages site (landing, itinerary, entries, transit, hours, flagged, sources) | done | session `b86112b5` | site files (root `*.html`, `assets/`, `data/`) | No build step; pure HTML/CSS/JS |
+| T4 | Integration: build check, link check, PR to `main`, merge, Pages deploy check | in progress | session `b86112b5` | site files (root `*.html`, `assets/`, `data/`), `COORDINATION.md` | See log |
 
 ## Log
 
 - 2026-10-21 — Session `b86112b5` claimed T1–T4 on `arena/b86112b5-koreatrip1`. Repo had only `README.md` (no prior COORDINATION file; created here).
-- Pages is configured for branch `main`; the site is published from `/docs` (changed from `/` in T4).
-- T2 method: official pages were fetched or their search-indexed text was read (see `docs/data/sources.json`). Where a value came only from a press or third-party site, the row is marked **Partially verified** or **Unverified** and flagged.
+- Pages is configured for branch `main`, path `/` (the integration token cannot change the Pages source: HTTP 403). The site files were therefore moved to the repo root in T4, so no settings change is needed.
+- T2 method: official pages were fetched or their search-indexed text was read (see `data/sources.json`). Where a value came only from a press or third-party site, the row is marked **Partially verified** or **Unverified** and flagged.
 - **Irregularities found (summary; full list on the Flagged page):**
   1. Day 3 is **Tuesday 3 Nov 2026**. Gyeongbokgung Palace is **closed every Tuesday** (official royalpalacekr.org). Day 3 as written cannot visit the palace.
   2. Namsan Tower observatory hours written as "10:00–10:30". Official hours are 10:00–22:30 weekdays / 10:00–23:00 weekends.
@@ -45,9 +45,9 @@ Blank verified fields = not confirmed. "Flagged" = listed on the **Flagged for R
   17. L7 Haeundae by LOTTE: address confirmed only by third-party listings. Flagged.
   18. Myeongdong Night Market hours: no official source. Secondary sources conflict (4–10pm, 5pm–1am, 6–10pm). Left blank, flagged.
 
-- T3 built: `docs/` contains index (dashboard), itinerary (day-by-day), entries (all rows, filters), transit, hours & locations, Flagged for Review, and sources. Data lives in `docs/data/trip.json` and `docs/data/sources.json`. No build step.
+- T3 built: root (`*.html`, `assets/`, `data/`) contains index (dashboard), itinerary (day-by-day), entries (all rows, filters), transit, hours & locations, Flagged for Review, and sources. Data lives in `data/trip.json` and `data/sources.json`. No build step.
 - T4 checks run on the site (before merge):
-  - `docs/data/*.json` parse; 74 rows, 18 irregularities, 36 sources; no duplicate row IDs.
+  - `data/*.json` parse; 74 rows, 18 irregularities, 36 sources; no duplicate row IDs.
   - Every row and irregularity links to a source that appears on the Sources page; all links are https.
   - Rows marked Verified/Corrected have a verified value; rows with no value are not marked Verified/Corrected.
   - Internal links and asset references in all HTML pages resolve.
@@ -61,4 +61,6 @@ Blank verified fields = not confirmed. "Flagged" = listed on the **Flagged for R
 
 ## Pull request and merge
 
-- Pending. See the end of this file once T4 is complete.
+- PR: https://github.com/buffedlizard55-lab/Koreatrip1/pull/1 (`arena/b86112b5-koreatrip1` → `main`).
+- Merge result: pending (recorded after merge).
+- Pages source: `main` / `/` (site files at repo root). Pages source could not be changed to `/docs` (HTTP 403 for this token).
