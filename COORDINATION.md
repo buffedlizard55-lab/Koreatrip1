@@ -7,8 +7,8 @@ Last updated: 2026-10-21 UTC. Session owner: `3630416a` (Arena branch `arena/363
 | Task | Status | Owner | Exclusive file scope | Notes |
 | --- | --- | --- | --- | --- |
 | Source research, line-by-line verification and issue register | **in progress** | `3630416a` | `COORDINATION.md`, `src/data/**`, `docs/research/**` | Claimed 2026-10-21 UTC. Verify only against primary / official sources; record unsupported claims as unverified. |
-| Website design and implementation | unclaimed | — | `index.html`, `src/components/**`, `src/styles/**`, `src/main.*`, `public/**`, build config | To be claimed after research scope is settled. |
-| Integration, accessibility, link/build checks, Pages and PR | unclaimed | — | `.github/**`, `README.md`, package files, cross-scope integration | Final integration only, after other tasks are done. |
+| Website design and implementation | **in progress** | `3630416a` | `web/**`, `scripts/build.py` | Claimed 2026-10-21 UTC; static, responsive HTML pages generated from the verified research data. |
+| Integration, accessibility, link/build checks, Pages and PR | **in progress** | `3630416a` | `.github/**`, `README.md`, `.gitignore`, `scripts/check.py` | Claimed 2026-10-21 UTC; run final cross-scope checks before PR and record deployment proof here. |
 
 ## Requests / handoffs
 - None.
