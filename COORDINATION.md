@@ -45,6 +45,16 @@ Blank verified fields = not confirmed. "Flagged" = listed on the **Flagged for R
   17. L7 Haeundae by LOTTE: address confirmed only by third-party listings. Flagged.
   18. Myeongdong Night Market hours: no official source. Secondary sources conflict (4–10pm, 5pm–1am, 6–10pm). Left blank, flagged.
 
+- T3 built: `docs/` contains index (dashboard), itinerary (day-by-day), entries (all rows, filters), transit, hours & locations, Flagged for Review, and sources. Data lives in `docs/data/trip.json` and `docs/data/sources.json`. No build step.
+- T4 checks run on the site (before merge):
+  - `docs/data/*.json` parse; 74 rows, 18 irregularities, 36 sources; no duplicate row IDs.
+  - Every row and irregularity links to a source that appears on the Sources page; all links are https.
+  - Rows marked Verified/Corrected have a verified value; rows with no value are not marked Verified/Corrected.
+  - Internal links and asset references in all HTML pages resolve.
+  - All seven pages were rendered in jsdom with the data loaded (no browser download was available). Counts on the dashboard match the data.
+  - Browser-based visual check not possible in this sandbox (Playwright browser download blocked). Layout uses responsive CSS with a phone breakpoint; a manual check on a phone is recommended.
+- T2 correction pass: 3 rows changed after first review (R05 child fare removed, R18 source changed to an official domain, R69 address moved from "verified" to note because it is not official).
+
 ## Handoff / crash notes
 
 - None. No other session has claimed work on this repo.
