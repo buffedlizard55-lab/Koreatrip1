@@ -145,15 +145,15 @@ Observed: Restaurant brand and kalguksu specialty confirmed; operating hours, pr
 
 ### korail: KORAIL · reservation
 
-https://smart.letskorail.com/ebizbf/EbizBfTicketSearchM.do?lang=EN
+https://www.korail.com/global/eng/main
 
-Observed: Official booking interface supports Seoul–Busan search; no travel-date departure or fare confirmed.
+Observed: Current official foreign-language booking interface retrieved; departure, arrival, date and passenger search fields present. No travel-date train or fare confirmed. Legacy search URL returned an error and was replaced.
 
 ### ader: ADERERROR · official stockists
 
-https://en.adererror.com/stockist.html
+https://www.adererror.com/en
 
-Observed: Official brand page found; Seongsu branch hours not established in retrieved evidence.
+Observed: Current official brand home page retrieved; Seongsu branch hours not established. Legacy stockist page could not be fetched and was replaced.
 
 ### seoul: Seoul Tourism · official directory
 
@@ -496,7 +496,7 @@ Observed: Context / review starting point only; no venue-specific claim verified
 - Confirmed hours: Daily 12:00–22:00
 - Confirmed location: 2–3F, 13 Yeonmujang-gil, Seongdong-gu
 - Confirmed price: 
-- Finding: Named flagship confirmed. Do not confuse with other Blue Elephant branches.
+- Finding: Official-domain search excerpt confirms named flagship. Direct page presents a browser challenge; current live details cannot be rechecked. Do not confuse with other branches.
 - Official link: https://blueelephant.co/st2.html?product_no=3725&cate_no=128&display_group=1
 
 ### P034 · Day 4 · Café Far Ben
@@ -567,7 +567,7 @@ Observed: Context / review starting point only; no venue-specific claim verified
 - Confirmed location: 
 - Confirmed price: 
 - Finding: Official brand site located, but Seongsu hours and exact branch not confirmed in extracted evidence.
-- Official link: https://en.adererror.com/stockist.html
+- Official link: https://www.adererror.com/en
 
 ### P041 · Day 4 · Brandy Melville
 
@@ -737,7 +737,7 @@ Observed: Context / review starting point only; no venue-specific claim verified
 - Confirmed location: 
 - Confirmed price: 
 - Finding: User preference, not a booked transfer. Public transport alternative requires verified hotel access and route; fare and duration blank.
-- Official link: https://smart.letskorail.com/ebizbf/EbizBfTicketSearchM.do?lang=EN
+- Official link: https://www.korail.com/global/eng/main
 
 ### P058 · Day 9 · KTX · Seoul → Busan
 
@@ -747,7 +747,7 @@ Observed: Context / review starting point only; no venue-specific claim verified
 - Confirmed location: 
 - Confirmed price: 
 - Finding: Exact train and fare not selected. No official support for boarding 45 minutes early or guaranteed luggage space; do not rely on either claim.
-- Official link: https://smart.letskorail.com/ebizbf/EbizBfTicketSearchM.do?lang=EN
+- Official link: https://www.korail.com/global/eng/main
 
 ### P059 · Day 9 · Busan Station → L7 Haeundae
 
@@ -788,3 +788,13 @@ Observed: Context / review starting point only; no venue-specific claim verified
 - Confirmed price: 
 - Finding: Optional traveler wish list; exact stalls, availability, opening hours and walk not verified.
 - Official link: https://www.visitbusan.net/ (context only; no venue-specific official evidence)
+
+## Final availability recheck
+
+- KORAIL legacy mobile reservation link returned an HTTP404 error page despite an indexed result. Replaced throughout with the successfully retrieved current official https://www.korail.com/global/eng/main . No fare or boarding-time inference made.
+- ADERERROR legacy stockist link failed retrieval. Replaced with the successfully retrieved current official https://www.adererror.com/en ; branch facts remain blank.
+- Blue Elephant's direct flagship link presented a browser challenge. Facts originate in its official-domain search excerpt; this limitation is flagged on its row. This is an external access restriction, not a broken local site link.
+- Onion branch directory was subsequently retrieved directly and confirmed both branches' published hours and addresses.
+- MARGESHERWOOD directory was subsequently retrieved directly (chunk 4), confirming the flagship address and hours.
+- Visit Busan directory successfully retrieved and redirected to its English home page. It remains context-only, not market-specific evidence.
+- External sites may redirect, require browser interaction or change content; no claim is made that all external links will always be accessible.

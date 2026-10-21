@@ -108,13 +108,13 @@ window.TRIP = {
     ],
     "korail": [
       "KORAIL · reservation",
-      "https://smart.letskorail.com/ebizbf/EbizBfTicketSearchM.do?lang=EN",
-      "Official booking interface supports Seoul–Busan search; no travel-date departure or fare confirmed."
+      "https://www.korail.com/global/eng/main",
+      "Current official foreign-language booking interface retrieved; departure, arrival, date and passenger search fields present. No travel-date train or fare confirmed. Legacy search URL returned an error and was replaced."
     ],
     "ader": [
       "ADERERROR · official stockists",
-      "https://en.adererror.com/stockist.html",
-      "Official brand page found; Seongsu branch hours not established in retrieved evidence."
+      "https://www.adererror.com/en",
+      "Current official brand home page retrieved; Seongsu branch hours not established. Legacy stockist page could not be fetched and was replaced."
     ],
     "seoul": [
       "Seoul Tourism · official directory",
@@ -554,7 +554,7 @@ window.TRIP = {
       "hours": "Daily 12:00–22:00",
       "location": "2–3F, 13 Yeonmujang-gil, Seongdong-gu",
       "price": "",
-      "finding": "Named flagship confirmed. Do not confuse with other Blue Elephant branches.",
+      "finding": "Official-domain search excerpt confirms named flagship. Direct page presents a browser challenge; current live details cannot be rechecked. Do not confuse with other branches.",
       "status": "Partial"
     },
     {
