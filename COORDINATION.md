@@ -18,3 +18,14 @@ Task board (updated post-merge):
 | GitHub Pages deploy | checked | arena-verification | repo root (.nojekyll) | Static HTML served from root |
 
 Last updated: 2026-10-21 (post-merge)
+
+## Final Integration — Completed
+- PR #3 created: https://github.com/buffedlizard55-lab/Koreatrip1/pull/3
+- PR #3 merged: 2026-10-21T07:44:06Z (commit 60a44b1 on main)
+- Merge conflicts resolved without discarding other session's assets/data (assets/app.js, data/*.json, entries.html, hours.html, itinerary.html, transit.html preserved)
+- GitHub Pages status (API): build_type=legacy, source=main/, status=built — site deployed successfully
+- Verified all internal links (index → day1–9, sources, flagged, coordination) — no broken links
+- Flagged for Review page published with critical Tuesday error + all unverified items
+- Site builds from repo root with .nojekyll — mobile-friendly, table-based, clean UI
+
+Source links for manual review are included in sources.html and flagged.html.
