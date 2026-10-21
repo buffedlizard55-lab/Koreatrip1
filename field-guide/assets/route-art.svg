@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" role="img" aria-labelledby="title desc">
+  <title id="title">From Seoul to Busan</title>
+  <desc id="desc">Stylized palace roof and southern coastline connected by a dotted journey line. Decorative artwork, not a geographical map.</desc>
+  <defs>
+    <clipPath id="panel"><rect x="20" y="20" width="600" height="600" rx="30"/></clipPath>
+    <pattern id="grain" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="2" cy="3" r=".7" fill="#f8ede0" opacity=".22"/><circle cx="11" cy="12" r=".6" fill="#f8ede0" opacity=".2"/></pattern>
+  </defs>
+  <g clip-path="url(#panel)">
+    <rect x="20" y="20" width="600" height="600" fill="#d9e8d8"/>
+    <rect x="20" y="20" width="600" height="300" fill="#e8ba97"/>
+    <circle cx="494" cy="106" r="81" fill="#e36950"/>
+    <circle cx="494" cy="106" r="63" fill="none" stroke="#f6d8b8" stroke-width="1.5" opacity=".55"/>
+    <path d="M20 230c104-33 134-32 218 0s148 23 202-4c84-44 124-11 180 8v91H20Z" fill="#d99883" opacity=".45"/>
+    <text x="67" y="88" fill="#213a39" font-family="Arial,sans-serif" font-size="16" font-weight="700" letter-spacing="5">01 / SEOUL</text>
+    <text x="69" y="116" fill="#213a39" font-family="Arial,sans-serif" font-size="12" letter-spacing="2">THE NORTHERN CHAPTER</text>
+    <!-- roofline, inspired by traditional architecture rather than a particular palace -->
+    <path d="M72 224c77 6 143-6 179-39 51 46 141 49 207 37l-11 16c-82 20-165 1-196-16-35 20-116 35-168 16Z" fill="#203b3c"/>
+    <path d="M86 241c69 10 128-2 164-17 57 18 126 25 190 12l-8 11c-62 18-134 9-183-7-49 20-108 25-151 16Z" fill="#1d3437"/>
+    <path d="M135 254v76m57-77v77m59-80v80m58-79v79m56-75v75" stroke="#1c393a" stroke-width="14"/>
+    <path d="M120 295h262M101 330h299" stroke="#1c393a" stroke-width="9"/>
+    <path d="M129 279h251" stroke="#f0d1a6" stroke-width="4"/>
+    <rect x="208" y="274" width="83" height="58" fill="#314c48"/>
+    <path d="M249 276v55" stroke="#f0d1a6" stroke-width="3"/>
+    <path d="M54 322h415" stroke="#3e5c55" stroke-width="7"/>
+    <!-- travel line -->
+    <path d="M502 199c-26 58 34 80 9 131-31 64-36 93-22 149" fill="none" stroke="#fff5df" stroke-width="4" stroke-linecap="round" stroke-dasharray="2 11"/>
+    <circle cx="504" cy="200" r="11" fill="#fff5df" stroke="#244c4f" stroke-width="4"/>
+    <circle cx="488" cy="484" r="11" fill="#fff5df" stroke="#244c4f" stroke-width="4"/>
+    <!-- sea -->
+    <path d="M20 325h600v295H20Z" fill="#6da69e"/>
+    <path d="M20 351c102-25 138-11 232 0 91 11 135-10 204-6 87 5 113 16 164 1v274H20Z" fill="#3b7881"/>
+    <path d="M20 524c109-15 164 16 243 1 75-14 136-24 222-2 57 14 97 13 135 2v95H20Z" fill="#1d4b58"/>
+    <path d="M25 554c91-18 147 6 225 1s154-28 224-9c57 16 98 17 148 7M14 588c68-16 128 11 200 6s153-28 221-14c77 15 109 23 198 7" fill="none" stroke="#d6e7d8" stroke-opacity=".4" stroke-width="2"/>
+    <text x="65" y="411" fill="#f6f0e3" font-family="Arial,sans-serif" font-size="16" font-weight="700" letter-spacing="5">02 / BUSAN</text>
+    <text x="67" y="438" fill="#e2efe2" font-family="Arial,sans-serif" font-size="12" letter-spacing="2">THE COASTAL CHAPTER</text>
+    <!-- suspended bridge: suggestive, not specific -->
+    <path d="M61 504h506" stroke="#f7e9ce" stroke-width="7"/>
+    <path d="M139 502v-110m330 110V390" stroke="#f7e9ce" stroke-width="10"/>
+    <path d="M84 425c92 16 117 78 219 78 104 0 133-74 232-79" fill="none" stroke="#f7e9ce" stroke-width="4"/>
+    <path d="M175 445v57m35-39v40m34-24v24m38-8v8m40-4v4m40-10v10m38-25v25m34-40v40" stroke="#f7e9ce" stroke-opacity=".8" stroke-width="2"/>
+    <rect x="20" y="20" width="600" height="600" fill="url(#grain)"/>
+  </g>
+  <rect x="20" y="20" width="600" height="600" rx="30" fill="none" stroke="#f5ead8" stroke-width="2" opacity=".6"/>
+</svg>
