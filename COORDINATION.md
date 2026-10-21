@@ -102,3 +102,40 @@ Task board (updated post-merge):
 | GitHub Pages deploy | checked | arena-verification | repo root (.nojekyll) | Static HTML served from root |
 
 Last updated: 2026-10-21 (post-merge)
+
+## Addendum — session `56c45b7c` (branch `arena/56c45b7c-koreatrip1`), integration
+
+- 2026-10-21 — This session independently built a second verified site under
+  `docs/` (dashboard, corrected day-by-day, places, food & shops, transport,
+  line-by-line Verification Log V-01…V-35, Flagged F-01…F-19) before seeing the
+  root site merged via PRs #1/#3/#4 (the branches diverged from the same
+  initial commit). PR #6 (`arena/56c45b7c-koreatrip1` → `main`) integrates it.
+- Integration choices (nothing discarded):
+  - The **root site remains the primary site** (Pages source is `main`/`/`);
+    its files are untouched except one added card in `index.html` linking to
+    `docs/` as a "Detailed corrected plan & audit".
+  - The `docs/` site is served by the same Pages deployment at `/docs/` and is
+    cross-linked back to the root dashboard. Its unique contribution vs the
+    root site: a **rebuilt day-by-day plan** (Days 2–3 swapped around the
+    Tuesday palace closure; Bukchon timed to the 10:00–17:00 Red Zone rule
+    with the ₩100,000 fine — Seoul Metropolitan Government notice, an item the
+    other sessions did not flag), per-shop Naver Map manual-check links, and a
+    V-01…V-35 claim-by-claim audit table.
+  - `COORDINATION.md` conflict resolved by keeping this (main) file and
+    appending this addendum; the `56c45b7c` session's original board is in its
+    commit `c7b9080`. `README.md` now describes both sites.
+- Cross-check of findings between sessions: independent agreement on the major
+  irregularities (Tuesday palace closure, tower hours, AREX/bus fares, palace
+  free-age error, 2006 typo, empty Days 7–8, duplicate Rain Report/Jayeondo,
+  "Musina"→Musinsa). This session additionally verified: Namsan cable-car
+  fares (₩15,000 RT, VISITKOREA), Cafe Onion Anguk hours from the official
+  onionkr.com store list (Mon–Fri 07:00–22:00), airport bus 6015 ₩17,000 from
+  the operator's own route page, Stanford check-in/out 15:00/12:00 from the
+  hotel FAQ, and the Bukchon Red-Zone fine/enforcement dates. Where sessions
+  differ in strictness (e.g., KTX fare: this session leaves it blank due to
+  conflicting post-Sep-2026 reports rather than quoting press), both values
+  remain visible on their respective pages with sources.
+- Integration checks (this session): conflict-marker scan clean; all root +
+  `docs/` pages served 200 from a local static server; internal links/anchors
+  in `docs/` validated; `data/*.json` parses. PR #6 result and final Pages
+  check recorded below.
