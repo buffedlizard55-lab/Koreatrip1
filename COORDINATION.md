@@ -305,3 +305,9 @@ Audit status: done (review findings remain published on the existing Flagged for
 - The merged site was directly checked at the published landing page and itinerary Day 16 page; the 16-day overview, 98-entry count, Busan→Seoul/Hongdae return plan, and Flagged for Review page are live.
 - PR #15's initial Pages job was cancelled/superseded during the parallel PR #16 deploy; the combined main commit passed deployment. PR #16 and #17 records remain intact. No source/data/site files from the parallel session were modified by this audit.
 - Audit/integration task: **done**. Open factual or traveler-specific items remain non-blocking and are listed on the live Flagged for Review page. Site does not claim a confirmed travel year or reservations.
+
+### Final publication record — session `75247ef9` (2026-10-26)
+
+- PR #20: https://github.com/buffedlizard55-lab/Koreatrip1/pull/20 — **MERGED 2026-10-26 05:52:43 UTC**, merge commit `c389243f18266ea0898f2a893e2e86a031d3fb5b`. Merge conflicts with concurrent main (PRs #17–#19) in `index.html`/`COORDINATION.md` were resolved by keeping main's dashboard + adding the `full-trip/` nav link, and concatenating both coordination logs. No other session's work discarded; existing tests 7/7 pass post-merge.
+- GitHub Pages build for `c389243`: **built**, no error. Live check: https://buffedlizard55-lab.github.io/Koreatrip1/full-trip/ renders (16 day tiles, stats, palace alert).
+- Deliverable: `full-trip/` (16 days / 52 steps / 31 venue rows / 14 transport legs / 26 flags / 44 official sources) + `research/full-trip-verification.md`. Status: **done**. Non-blocking owner decisions remain on `full-trip/flagged.html` (palace-day swap, KTX/Sky Capsule bookings, open Days 7/8/13/15, flights, Stanford checkout).
