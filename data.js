@@ -1089,11 +1089,14 @@ window.TRIP = {
       "name": "Haeundae Amso Galbi (Haeundae Rib Barbecue Restaurant)",
       "original": "Check out Haeundae Amso Galbi (Michelin). Open at 11:30am. Go at least 30 min early to avoid long lines.",
       "source": "michelinGalbi",
-      "hours": "Daily 11:30–14:00 and 17:00–22:00 (MICHELIN listing)",
+      "hours": "MICHELIN: 11:30–14:00 & 17:00–22:00; KTO: 11:30–22:00 (weekend break 15:15–16:30). Break schedules differ; confirm before visiting.",
       "location": "333 Haeundaehaebyeon-ro, Haeundae-gu, Busan",
       "price": "",
-      "finding": "MICHELIN Guide lists this restaurant as MICHELIN-selected (not starred) at this address and a MICHELIN article says no reservations are accepted and queues are expected. The 11:30 opening and 30-minute-early advice were NOT on the official listing retrieved - left blank/unverified. VISITKOREA lists 11:30–22:00 with a weekend break 15:15–16:30, which does not match MICHELIN’s 14:00–17:00 gap — break times flagged. 11:30 opening is supported by MICHELIN; “arrive 30 minutes early” is traveler advice.",
-      "status": "Partial"
+      "finding": "KTO lists 11:30–22:00 with a weekend break 15:15–16:30; the 2026 MICHELIN Guide lists daily sessions 11:30–14:00 and 17:00–22:00. Break schedules conflict, so verify the exact day. MICHELIN lists the restaurant as selected (not starred). The 30-minute early-arrival advice is unverified; MICHELIN notes queues may occur but gives no wait-duration advice. No reservation is confirmed.",
+      "status": "Partial",
+      "more_sources": [
+        "amsoKto"
+      ]
     },
     {
       "id": "P065",

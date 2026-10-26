@@ -822,7 +822,7 @@ Checked 2026-10-26. Method unchanged: only facts visible on official operator / 
 | P079 Songdo Cable Car | Visit Busan uc_seq=1422 | 09:00–21:00 daily; 171 Songdohaebyeon-ro | Fare amount blank |
 | P077 Jagalchi | Visit Busan uc_seq=412 | 05:00–22:00; 52 Jagalchihaean-ro | **Closure-Tuesday pattern conflicts in prior research — recheck** |
 | P080 Gukje | Visit Busan uc_seq=399 | 09:00–20:00 by store; 32 Junggu-ro | Sunday closing per listing; "Gukje Marker" typo corrected |
-| P064 Amso Galbi | MICHELIN Guide https://guide.michelin.com/us/en/busan-region/busan_1025838/restaurant/haeundae-rib-barbecue-restaurant | MICHELIN-selected (not starred); 333 Haeundaehaebyeon-ro; no reservations, queues (MICHELIN article) | **Hours blank; "opens 11:30, arrive 30 min early" unverified** |
+| P064 Amso Galbi | MICHELIN Guide https://guide.michelin.com/us/en/busan-region/busan_1025838/restaurant/haeundae-rib-barbecue-restaurant + KTO https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=73814 | MICHELIN-selected (not starred); 333 Haeundaehaebyeon-ro; KTO 11:30–22:00 with weekend break 15:15–16:30; MICHELIN 11:30–14:00 & 17:00–22:00 | **Official break schedules conflict; 30-minute early-arrival advice remains unverified** |
 | P093 L7 checkout | Lotte (existing source `l7`) | Check-out 11:00 matches original | Not a reservation |
 | P095 Metro alternative | Humetro http://www2.humetro.busan.kr/homepage/cyberstation/mapeng.do | Line 2 Haeundae/Seomyeon; Line 1 Seomyeon/Busan Station | Duration/fare/final walk blank |
 | P096 KTX return | KORAIL (existing `korail`) | Booking interface only | Exact train/fare blank |
@@ -859,3 +859,7 @@ Sep–Nov 09:00–21:00. Air Cruise adult RT ₩19,000 / OW ₩15,000.
 ### VISITKOREA · Haeundae Amso Galbijip
 https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=73814
 11:30–22:00; weekend break 15:15–16:30. Conflicts with MICHELIN 14:00–17:00 gap.
+
+### Direct retrieval note · P064 Haeundae Amso Galbijip (2026-10-26)
+
+KTO's official page was retrieved directly at https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=73814 and gives 11:30–22:00 with a weekend break 15:15–16:30. The directly retrieved 2026 MICHELIN listing gives 11:30–14:00 and 17:00–22:00. Both official schedules are now linked from row P064; neither was discarded or reconciled. The entry is listed by MICHELIN, not represented as starred. The restaurant's own site https://www.haeundaegalbi.com/ was also retrieved but rendered sparse/dynamic content and supplied no usable hours. No source supports a guaranteed 30-minute wait/arrival rule.
