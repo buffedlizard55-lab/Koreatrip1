@@ -1,5 +1,21 @@
 # Coordination
 
+## Active session `3615cef7` — Week 2 Busan + Hongdae expansion
+
+Session started 2026-10-26 UTC on required Arena branch `arena/3615cef7-koreatrip1`. No session-* worktrees will be created. Existing root dashboard (Days 1–9, P001–P062), `docs/`, `field-guide/`, `verified-guide/`, `legacy/`, `prior-site/`, and other sessions' data files are out of this session's edit scope except as noted below.
+
+The traveler brief now includes **Week 2 (Days 10–16)**: Haeundae / Dongbaek / Sky Capsule / Busan X the Sky, Gamcheon / Songdo / Nampo, aquarium, Gwangalli drone show, return KTX to Seoul, and Mercure Ambassador Seoul Hongdae. Previous sessions stopped at Day 9. This session claims only that expansion plus the integration needed to publish it on the existing root dashboard.
+
+| ID | Task | Status | Owner | File scope |
+|---|---|---|---|---|
+| W2-RESEARCH | Line-by-line official verification of Days 10–16 named stops, hours, locations, transit, hotels | in progress | 3615cef7 | `data.js` (append P063+ only), `SOURCES.md` (append Week 2 ledger) |
+| W2-SITE | Extend root dashboard to 16 days; keep Days 1–9 rows intact | unclaimed until research commit | 3615cef7 | `app.js`, `index.html`, `styles.css`, `README.md`, `tests/site.test.cjs` |
+| W2-INTEGRATION | Tests, PR to main, merge, Pages deploy confirmation | unclaimed | 3615cef7 | `COORDINATION.md`, PR |
+
+Rules this session will follow: never overwrite P001–P062; never invent hours/prices/locations; blank + Flagged for Review when an official page does not state the value; every new table row has an official-source URL; companion sites (`docs/`, `field-guide/`, `verified-guide/`) are not edited.
+
+---
+
 Session: arena-9c9accaa (final integration session). Started 2026-10-21 UTC.
 
 | Task | Status | Owner | File scope |
