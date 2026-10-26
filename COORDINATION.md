@@ -252,3 +252,56 @@ PR #6 merged while #7 integration was in progress, advancing main to 1fe2d25. Th
 - **Claim:** New brief extends the trip to 16 days (Seoul Myeongdong → Busan Haeundae → Seoul Hongdae, Nov 1–16). Prior guides cover Days 1–9 only. This session claims a NEW companion guide in `full-trip/**` covering all 16 days, plus `research/full-trip-verification.md`, one added nav link in root `index.html`, and an appended section in `README.md`. Root dashboard data (`data.js`, `SOURCES.md`), `field-guide/`, `verified-guide/`, `docs/`, `prior-site/` are NOT edited.
 - **Status:** in progress. Branch: `arena/75247ef9-koreatrip1` (fixed Arena branch; no `session-*` branch created, per platform rule).
 - **Method:** Every table row links an official source; unconfirmed values left blank and flagged on `full-trip/flagged.html`. Calendar check: Nov 1, 2026 = Sunday, Nov 2 = Monday, Nov 3 = Tuesday, Nov 9 = Monday, Nov 14 = Saturday, Nov 16 = Monday — matches the brief's weekdays except Day 1 departure wording (see flags).
+
+## Arena session `14a08306` — Busan Week 2 + return extension (claimed 2026-10-26)
+
+- Session ID: `arena/14a08306-koreatrip1` (fixed Arena branch; no session-* branch per platform rule above).
+- Task: Extend root dashboard from 9 to 16 days using the newly supplied Week 2 Busan itinerary (Days 10–16, duplicate Day 9, Gwangalli drone show, Day 16 Busan→Seoul Hongdae/Mercure). Verify line-by-line from official sources only; blank + Flagged for Review where unconfirmed. Do not infer prices/times.
+- Status: in progress. Owner: arena-14a08306.
+- File scope (non-overlapping): `data.js`, `app.js`, `tests/site.test.cjs`, `SOURCES.md`, `README.md`, this COORDINATION.md append. Does NOT touch `field-guide/**`, `verified-guide/**`, `docs/**`, `prior-site/**`, `src/**`, `data/**` (other sessions' outputs preserved; read-only reference).
+
+### Completion — arena-14a08306 (2026-10-26)
+
+- Extended root dashboard 9 → 16 days / 62 → 98 rows (P063–P098) in `data.js`; `app.js` now handles 16 day cards, Busan/Hongdae bases and a Week-2 review section; `SOURCES.md` gained a row-by-row addendum with official links; tests updated and pass 7/7 (`node --test tests/site.test.cjs`); local HTTP smoke 200 on /, Days 10/14/16, places/transport/stays/review/sources.
+- Verified from official sources (operator/government/tourism/MICHELIN/Accor/AREX/Humetro, two pages directly retrieved 2026-10-26): Sky Capsule Nov hours 08:30–18:00 and one-way-only sales + Tue 07:00 release 4 weeks ahead; SEA LIFE weekday/weekend hours; X the SKY 10:00–21:00; drone show Sat Oct–Feb 19:00 & 21:00, ~12 min, free; Gamcheon Nov–Feb 09:00–17:00; Nurimaru/Dongbaek, skywalks, Songdo cable car, Jagalchi, Gukje, Amso Galbi (MICHELIN-selected), Mercure Hongdae, AREX All-Stop vs Express, Busan metro Line 1↔2 via Seomyeon.
+- Irregularities flagged on Flagged for Review (non-blocking): duplicate Day 9 (kept once); "round-trip Sky Capsule" does not exist; X the SKY duplicated Day 10/12 and adult price conflict ₩29,000 vs ₩27,000 (blank); Nurimaru hours conflict 09:00–18:00 vs 09:00–17:00; Jagalchi Tuesday-closure conflict; SEA LIFE adult price and Amso Galbi hours blank; Mercure walk 2 min (Accor) vs 8 min (original); AREX Express does not stop at Hongdae; Days 13/15 and Day 14 daytime blank in original and left open; all bus/Uber times and dollar figures unverified and blank; specific drone-show Saturday theme/cancellation not yet published. Working dates Nov 10–16 follow the document weekday sequence (matches Nov 2026); travel year/bookings remain unconfirmed.
+- Status: needs review (published on review.html). Next: PR to main, merge, confirm Pages build.
+## Current Arena session `080958a3` — inherited-site audit
+
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| Audit the inherited itinerary dashboard, source-link coverage, responsive site checks and publication state | done | `arena/080958a3-koreatrip1` | `COORDINATION.md` only |
+
+Claimed on 2026-10-26 UTC after reading the shared task board. Existing research/site scopes are already complete in the merged main tree; this session will preserve the independently maintained guides and avoid editing their shared data or navigation. Validation results and any uncovered issues will be recorded below.
+
+### Audit results — 2026-10-26 UTC
+
+- `node --test tests/site.test.cjs`: **7/7 passed**. Confirms the 62-entry source dashboard preserves the nine days, links and flags, including unverified blanks and palace closure.
+- `python3 scripts/check.py --build --out field-guide`: **passed**, builds 18 pages and validates 199 data rows with official-source links, 1,045 local links/assets and 64 registered official URLs.
+- `git diff --check`, Node syntax checks and JSON parsing: **passed**. Local HTTP smoke checks returned 200 for root dashboard and the `docs/`, `field-guide/`, and `verified-guide/` companion entrypoints.
+- Fresh official-source spot check: Royal Palaces and Tombs Center's official hours page confirms November Gyeongbokgung hours 09:00–17:00, last admission 16:00, closed Tuesdays with a public-holiday exception ([official Korean hours page](https://royal.khs.go.kr/ROYAL/contents/R702000000.do); [official English admission page](https://royal.khs.go.kr/ENG/contents/E702000000.do)). The official VISITKOREA N Seoul Tower listing confirms weekday hours 10:00–22:30 and weekend hours 10:00–23:00 ([official KTO listing](https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=88026)). This confirms the central scheduling conflict, not a booking or date-specific opening guarantee.
+- **Flagged discrepancy retained:** the latest-retrieved official Royal Palaces English admission page states free admission for age 18 and below / 65+, while the companion `verified-guide/` research record cites a different official page/rule (ages 7–18 ₩1,500; free ≤6 / ≥65). Do not silently reconcile these conflicting source records; both findings remain visible for owner review. The two-adult itinerary's stated ₩3,000 adult admission is unaffected. Trip year/date interpretation, bookings, named venue current hours/branches, and empty Days 7–8 remain flagged; no blank values were filled or dates inferred in the primary dashboard.
+- Existing GitHub Pages latest build is `built` for deployed main commit `90c8e39d7b4a501ac8e4018e35cdb1987f05adb2` (checked via Pages builds API). Companion pages and the existing main dashboard are already served from the repository; this audit does not claim a new Pages deploy until the documentation PR is merged.
+
+Audit status: done (review findings remain published on the existing Flagged for Review pages). This session edited only `COORDINATION.md`; all primary and companion research/data/site files were left intact.
+
+### Final publication record — arena-14a08306
+
+- PR #16: https://github.com/buffedlizard55-lab/Koreatrip1/pull/16 — **MERGED 2026-10-26**, merge commit `9eef1bd1d0c2b98efc470cf60ce8258df7e17d49`. One conflict on merge (concurrent PR #15 audit session in COORDINATION.md only) was resolved by keeping both sessions' records; no other session's work was discarded. Tests 7/7 pass on the merged tree.
+- GitHub Pages build for merge commit `9eef1bd`: **built** (Pages builds API). Live check via page fetch: https://buffedlizard55-lab.github.io/Koreatrip1/itinerary.html?day=14 renders "Gwangalli drone-show night", L7 base, the confirmed 19:00/21:00 Saturday drone pattern and the open-day flags. (Note: the `f85e975` "errored" build in the API list predates this merge and belongs to PR #15's commit, not this merge.)
+- All tasks for session `14a08306` are **done**. Non-blocking items remain on https://buffedlizard55-lab.github.io/Koreatrip1/review.html for owner review.
+### Integration follow-up — 2026-10-26 UTC
+
+- PR #15: https://github.com/buffedlizard55-lab/Koreatrip1/pull/15 — **merged** at `f85e9754a610f531df251d2c2cfa6489b20a9947` (2026-10-26 05:46:43 UTC). Its immediate Pages job was cancelled/superseded while the parallel Week 2 integration was landing; no live-success claim is made for that intermediate SHA.
+- Preserved concurrent PR #16 (Busan Week 2 + Hongdae return) without edits to its files. Current main includes 16 itinerary days and 98 plan rows. Its published Flagged for Review page transparently covers duplicate Day 9, the Sky Capsule one-way ticket detail, the BUSAN X the SKY price conflict, conflicting Nurimaru/Jagalchi details, the AREX Express-vs-All-Stop correction, original empty days, and unverified transit/booking particulars.
+- Re-ran validation against the combined `9eef1bd` main tree: Node tests **7/7 passed** (98 plan entries); Field Guide checker **passed** (18 pages, 199 source-linked rows, 1,045 internal links/assets, 64 source URLs); syntax and JSON checks pass.
+- GitHub Pages Actions deployment for combined main commit `9eef1bd1d0c2b98efc470cf60ce8258df7e17d49` completed **successfully** (`40276088181`); Pages builds API reports `built` for that exact commit. Direct published checks show the 16-day overview / 98-entry total, Day 16's Busan→Seoul plan, and the review page. Published root: https://buffedlizard55-lab.github.io/Koreatrip1/ · Day 16: https://buffedlizard55-lab.github.io/Koreatrip1/itinerary.html?day=16 · Review: https://buffedlizard55-lab.github.io/Koreatrip1/review.html.
+- This follow-up supersedes the earlier nine-day count as the current primary dashboard. The year remains explicitly unresolved in the site; calendar-matched dates are not treated as confirmation. The palace admissions-source conflict and all remaining unconfirmed bookings, venues and blank days remain visibly flagged.
+
+### Final publication record — arena-080958a3
+
+- PR #18: https://github.com/buffedlizard55-lab/Koreatrip1/pull/18 — **MERGED 2026-10-26 05:49:16 UTC**, merge commit `b027e431db9c4a9adeb14cdc08454b8f0bae77cc`.
+- GitHub Pages deployment run `40276300110` for that exact commit: **success**; Pages builds API reports **built** with no error.
+- The merged site was directly checked at the published landing page and itinerary Day 16 page; the 16-day overview, 98-entry count, Busan→Seoul/Hongdae return plan, and Flagged for Review page are live.
+- PR #15's initial Pages job was cancelled/superseded during the parallel PR #16 deploy; the combined main commit passed deployment. PR #16 and #17 records remain intact. No source/data/site files from the parallel session were modified by this audit.
+- Audit/integration task: **done**. Open factual or traveler-specific items remain non-blocking and are listed on the live Flagged for Review page. Site does not claim a confirmed travel year or reservations.
