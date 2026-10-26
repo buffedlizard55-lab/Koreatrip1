@@ -246,3 +246,22 @@ PR #6 merged while #7 integration was in progress, advancing main to 1fe2d25. Th
 - Field-guide validation run `39569170055` for the merge commit: **success**. GitHub Pages build `1302065060` / run `39569169287` for the same commit: **built/deployed**, no deployment error.
 - Direct live checks (cache-busted with merge SHA) confirmed the Field Guide dashboard, Day 4, Food & Markets, Shopping, Flagged for Review and Source Shelf at https://buffedlizard55-lab.github.io/Koreatrip1/field-guide/. Hanjungsun and Olive Young N Seongsu render on the Seongsu day/category tables; the D176 distinction, Gwangjang section hours and two-branch Blue Elephant review appear with source links.
 - Non-blocking traveler decisions remain visible on Flagged for Review: trip year/bookings, D176 identity, unresolved Blue Elephant branch, Eternalog/Solsot and other named candidates, and the open Days 7–8. Unsupported values remain blank. Root site and all other companion guides are preserved.
+
+## Current Arena session `080958a3` — inherited-site audit
+
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| Audit the inherited itinerary dashboard, source-link coverage, responsive site checks and publication state | in progress | `arena/080958a3-koreatrip1` | `COORDINATION.md` only |
+
+Claimed on 2026-10-26 UTC after reading the shared task board. Existing research/site scopes are already complete in the merged main tree; this session will preserve the independently maintained guides and avoid editing their shared data or navigation. Validation results and any uncovered issues will be recorded below.
+
+### Audit results — 2026-10-26 UTC
+
+- `node --test tests/site.test.cjs`: **7/7 passed**. Confirms the 62-entry source dashboard preserves the nine days, links and flags, including unverified blanks and palace closure.
+- `python3 scripts/check.py --build --out field-guide`: **passed**, builds 18 pages and validates 199 data rows with official-source links, 1,045 local links/assets and 64 registered official URLs.
+- `git diff --check`, Node syntax checks and JSON parsing: **passed**. Local HTTP smoke checks returned 200 for root dashboard and the `docs/`, `field-guide/`, and `verified-guide/` companion entrypoints.
+- Fresh official-source spot check: Royal Palaces and Tombs Center's official hours page confirms November Gyeongbokgung hours 09:00–17:00, last admission 16:00, closed Tuesdays with a public-holiday exception ([official Korean hours page](https://royal.khs.go.kr/ROYAL/contents/R702000000.do); [official English admission page](https://royal.khs.go.kr/ENG/contents/E702000000.do)). The official VISITKOREA N Seoul Tower listing confirms weekday hours 10:00–22:30 and weekend hours 10:00–23:00 ([official KTO listing](https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=88026)). This confirms the central scheduling conflict, not a booking or date-specific opening guarantee.
+- **Flagged discrepancy retained:** the latest-retrieved official Royal Palaces English admission page states free admission for age 18 and below / 65+, while the companion `verified-guide/` research record cites a different official page/rule (ages 7–18 ₩1,500; free ≤6 / ≥65). Do not silently reconcile these conflicting source records; both findings remain visible for owner review. The two-adult itinerary's stated ₩3,000 adult admission is unaffected. Trip year/date interpretation, bookings, named venue current hours/branches, and empty Days 7–8 remain flagged; no blank values were filled or dates inferred in the primary dashboard.
+- Existing GitHub Pages latest build is `built` for deployed main commit `90c8e39d7b4a501ac8e4018e35cdb1987f05adb2` (checked via Pages builds API). Companion pages and the existing main dashboard are already served from the repository; this audit does not claim a new Pages deploy until the documentation PR is merged.
+
+Audit status: done (review findings remain published on the existing Flagged for Review pages). This session edited only `COORDINATION.md`; all primary and companion research/data/site files were left intact.
