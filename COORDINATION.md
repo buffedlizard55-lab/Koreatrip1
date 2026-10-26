@@ -247,6 +247,12 @@ PR #6 merged while #7 integration was in progress, advancing main to 1fe2d25. Th
 - Direct live checks (cache-busted with merge SHA) confirmed the Field Guide dashboard, Day 4, Food & Markets, Shopping, Flagged for Review and Source Shelf at https://buffedlizard55-lab.github.io/Koreatrip1/field-guide/. Hanjungsun and Olive Young N Seongsu render on the Seongsu day/category tables; the D176 distinction, Gwangjang section hours and two-branch Blue Elephant review appear with source links.
 - Non-blocking traveler decisions remain visible on Flagged for Review: trip year/bookings, D176 identity, unresolved Blue Elephant branch, Eternalog/Solsot and other named candidates, and the open Days 7–8. Unsupported values remain blank. Root site and all other companion guides are preserved.
 
+## Arena session `75247ef9` — full 16-day trip guide (2026-10-26)
+
+- **Claim:** New brief extends the trip to 16 days (Seoul Myeongdong → Busan Haeundae → Seoul Hongdae, Nov 1–16). Prior guides cover Days 1–9 only. This session claims a NEW companion guide in `full-trip/**` covering all 16 days, plus `research/full-trip-verification.md`, one added nav link in root `index.html`, and an appended section in `README.md`. Root dashboard data (`data.js`, `SOURCES.md`), `field-guide/`, `verified-guide/`, `docs/`, `prior-site/` are NOT edited.
+- **Status:** in progress. Branch: `arena/75247ef9-koreatrip1` (fixed Arena branch; no `session-*` branch created, per platform rule).
+- **Method:** Every table row links an official source; unconfirmed values left blank and flagged on `full-trip/flagged.html`. Calendar check: Nov 1, 2026 = Sunday, Nov 2 = Monday, Nov 3 = Tuesday, Nov 9 = Monday, Nov 14 = Saturday, Nov 16 = Monday — matches the brief's weekdays except Day 1 departure wording (see flags).
+
 ## Arena session `14a08306` — Busan Week 2 + return extension (claimed 2026-10-26)
 
 - Session ID: `arena/14a08306-koreatrip1` (fixed Arena branch; no session-* branch per platform rule above).
