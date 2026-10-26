@@ -1,5 +1,35 @@
 # Coordination
 
+## Active session `3615cef7` — Week 2 Busan + Hongdae expansion
+
+Session started 2026-10-26 UTC on required Arena branch `arena/3615cef7-koreatrip1`. No session-* worktrees will be created. Existing root dashboard (Days 1–9, P001–P062), `docs/`, `field-guide/`, `verified-guide/`, `legacy/`, `prior-site/`, and other sessions' data files are out of this session's edit scope except as noted below.
+
+The traveler brief now includes **Week 2 (Days 10–16)**: Haeundae / Dongbaek / Sky Capsule / Busan X the Sky, Gamcheon / Songdo / Nampo, aquarium, Gwangalli drone show, return KTX to Seoul, and Mercure Ambassador Seoul Hongdae. Previous sessions stopped at Day 9. This session claims only that expansion plus the integration needed to publish it on the existing root dashboard.
+
+| ID | Task | Status | Owner | File scope |
+|---|---|---|---|---|
+| W2-RESEARCH | Line-by-line official verification of Days 10–16 named stops, hours, locations, transit, hotels | done | 3615cef7 | `data.js` (append P063–P097 only), `SOURCES.md` (append Week 2 ledger) |
+| W2-SITE | Extend root dashboard to 16 days; keep Days 1–9 rows intact | done | 3615cef7 | `app.js`, `index.html`, `itinerary.html`, `places.html`, `transport.html`, `stays.html`, `review.html`, `sources.html`, `README.md`, `tests/site.test.cjs` |
+| W2-INTEGRATION | Tests, PR to main, merge, Pages deploy confirmation | in progress | 3615cef7 | `COORDINATION.md`, PR |
+
+Rules this session followed: never overwrite P001–P062; never invent hours/prices/locations; blank + Flagged for Review when an official page does not state the value; every new table row has an official-source URL; companion sites (`docs/`, `field-guide/`, `verified-guide/`) were not edited.
+
+### Week 2 research record — 2026-10-26
+
+35 new rows (P063–P097) cover every named Week 2 stop, empty day, transfer and hotel. 27 new official-source records. Direct retrieval: Busan Metropolitan Government (Haeundae Beach, Nurimaru, 2026 drone event), MICHELIN Guide (Haeundae Rib Barbecue), Blueline Park, BUSAN X the SKY, SEA LIFE Busan, Busan Air Cruise, AREX fare table, Accor Mercure Hongdae, VISITKOREA (Amso, Jagalchi, Daritdol, drone). Visit Busan used for Gamcheon, Songdo Beach/Cloud Trails, BIFF, markets, Dongbaek.
+
+Irregularities published on `review.html` (do not block merge): Sky Capsule one-way vs “round trip”; X the Sky Day 10/12 duplicate and ₩29,000 vs $17.59 Klook; AREX Express does not stop at Hongdae (all-stop ₩1,550); Mercure 100 m vs “8 min walk”; Coffee It House unofficial; aquarium $15 unconfirmed; Amso and Daritdol hour conflicts; Days 13 and 15 empty; taxi dollar estimates blank; trip year unresolved.
+
+`node --test tests/site.test.cjs`: 7/7 pass on this session’s 97-row draft. No conflict markers in that draft. Companion sites untouched.
+
+### Merge with session `75247ef9` (2026-10-26)
+
+`origin/main` advanced through PR #20/#21 while this session worked: that session also expanded the root dashboard to 16 days (98 rows) and added the `full-trip/` companion. Nothing from `full-trip/` or `research/full-trip-verification.md` was discarded.
+
+Integration choice for shared root files: keep the already-published 98-row dashboard and tests from `75247ef9` as the live table (their extra public-transit row P095 is unique). Operator pages this session retrieved (AREX all-stop ₩1,550 Seoul↔Hongik, BUSAN X the SKY on-site adult ₩29,000, Busan Air Cruise fares, Busan city Haeundae Beach address, MICHELIN Amso hours) are applied onto that 98-row table where the published row had left the field blank, with the conflict still flagged in the finding. This session’s 97-row ID scheme is not used. Nav link to `full-trip/` is retained.
+
+---
+
 Session: arena-9c9accaa (final integration session). Started 2026-10-21 UTC.
 
 | Task | Status | Owner | File scope |
@@ -110,7 +140,7 @@ Blank verified fields = not confirmed. "Flagged" = listed on the **Flagged for R
 
 ## Incident: broken `main` after parallel merges (T4, 2026-10-21)
 
-- What happened: after PR #1 merged, another session's PR #3 merged on top. Its merge commit `6f9004d` contained unresolved conflict markers (`<<<<<<< HEAD` / `=======` / `>>>>>>>`) in `index.html`, `flagged.html`, and `sources.html`. The site would not render those pages correctly.
+- What happened: after PR #1 merged, another session's PR #3 merged on top. Its merge commit `6f9004d` contained unresolved git conflict markers in `index.html`, `flagged.html`, and `sources.html`. The site would not render those pages correctly.
 - How it was resolved (this branch, PR #4):
   1. Restored this session's clean `index.html`, `flagged.html`, and `sources.html` (the versions generated from `data/trip.json`).
   2. Moved the other session's nine day pages (`day1.html`–`day9.html`) and `style.css` into `legacy/`, unchanged except: navigation links now point to `../index.html` etc., and a banner marks them as superseded drafts. Nothing was deleted.

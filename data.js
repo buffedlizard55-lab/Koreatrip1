@@ -230,6 +230,36 @@ window.TRIP = {
       "Busan Transportation Corporation (Humetro) · Cyber Station map",
       "http://www2.humetro.busan.kr/homepage/cyberstation/mapeng.do",
       "Official Busan metro network: Line 1 serves Busan Station and Seomyeon; Line 2 serves Seomyeon, Dongbaek and Haeundae, with Seomyeon as the Line 1/Line 2 transfer. Exact door-to-door duration and fare for the hotel legs were not established - blank."
+    ],
+    "haeundaeBeach": [
+      "Busan Metropolitan Government · Haeundae Beach",
+      "https://www.busan.go.kr/eng/beaches/1325815",
+      "264 Haeundaehaebyeon-ro, Haeundae-gu, Busan. Admission free. Metro Line 2, Haeundae Station exit 3 or 5, about a 5-minute walk. Inquiry (051)749-7612. Page does not state a year-round closing time for walking the sand."
+    ],
+    "xtheskyOperator": [
+      "BUSAN X the SKY · official operator",
+      "https://www.busanxthesky.com/",
+      "Mon–Sun 10:00–21:00 (weekdays, weekends and holidays the same). Last on-site ticket 30 minutes before close. Adult (13+) ₩29,000; child (36 months–under 13) and seniors 65+ ₩26,000. Address: 30 Dalmaji-gil, Haeundae-gu, Busan, LCT Landmark Tower."
+    ],
+    "arexFare": [
+      "AREX · all-stop (일반열차) fare table",
+      "https://www.airportrailroad.com/train/normal/fare",
+      "Adult transit-card fare Seoul Station ↔ Hongik Univ (홍대입구) ₩1,550. All-stop trains serve Hongik Univ; Express does not. Single-use cards add ₩100 plus ₩500 deposit."
+    ],
+    "airCruisePrice": [
+      "Busan Air Cruise · fares",
+      "https://en.busanaircruise.co.kr/info/price?rank=1",
+      "Air Cruise (closed floor) adult round trip ₩19,000 / one way ₩15,000. Crystal Cruise adult round trip ₩24,000 / one way ₩19,000. Adult = 13+; child = 36 months–12 years. Retrieved 2026-10-26."
+    ],
+    "airCruiseTime": [
+      "Busan Air Cruise · business hours",
+      "https://en.busanaircruise.co.kr/info/time?rank=2",
+      "Jan–Feb and December 09:00–20:00; Mar–Jun and Sep–Nov 09:00–21:00; Jul–Aug 09:00–22:00. Tickets until 30 minutes before closing."
+    ],
+    "amsoKto": [
+      "VISITKOREA · Haeundae Amso Galbijip",
+      "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=73814",
+      "Address 해운대해변로 333. Hours 11:30–22:00 with weekend break 15:15–16:30. Closed Seollal and Chuseok holidays."
     ]
   },
   "rows": [
@@ -1045,12 +1075,12 @@ window.TRIP = {
       "category": "Sights",
       "name": "Haeundae Beach · morning walk",
       "original": "Morning: walk the beachfront Haeundae Beach area; explore cafes and shops around the beach.",
-      "source": "busan",
+      "source": "haeundaeBeach",
       "hours": "",
-      "location": "",
-      "price": "",
-      "finding": "Beachfront walk is the traveler plan. Specific cafes/shops, their hours and locations were not confirmed from venue-specific official evidence.",
-      "status": "Unverified"
+      "location": "264 Haeundaehaebyeon-ro, Haeundae-gu, Busan · Line 2 Haeundae Station exit 3 or 5, ~5 min walk",
+      "price": "Free (public beach)",
+      "finding": "Busan Metropolitan Government page confirms identity, free admission and metro access. It does not publish a year-round gate time for walking the sand; November is outside the published summer swimming season. Named cafés around the beach remain unverified.",
+      "status": "Partial"
     },
     {
       "id": "P064",
@@ -1059,10 +1089,10 @@ window.TRIP = {
       "name": "Haeundae Amso Galbi (Haeundae Rib Barbecue Restaurant)",
       "original": "Check out Haeundae Amso Galbi (Michelin). Open at 11:30am. Go at least 30 min early to avoid long lines.",
       "source": "michelinGalbi",
-      "hours": "",
+      "hours": "Daily 11:30–14:00 and 17:00–22:00 (MICHELIN listing)",
       "location": "333 Haeundaehaebyeon-ro, Haeundae-gu, Busan",
       "price": "",
-      "finding": "MICHELIN Guide lists this restaurant as MICHELIN-selected (not starred) at this address and a MICHELIN article says no reservations are accepted and queues are expected. The 11:30 opening and 30-minute-early advice were NOT on the official listing retrieved - left blank/unverified.",
+      "finding": "MICHELIN Guide lists this restaurant as MICHELIN-selected (not starred) at this address and a MICHELIN article says no reservations are accepted and queues are expected. The 11:30 opening and 30-minute-early advice were NOT on the official listing retrieved - left blank/unverified. VISITKOREA lists 11:30–22:00 with a weekend break 15:15–16:30, which does not match MICHELIN’s 14:00–17:00 gap — break times flagged. 11:30 opening is supported by MICHELIN; “arrive 30 minutes early” is traveler advice.",
       "status": "Partial"
     },
     {
@@ -1136,11 +1166,11 @@ window.TRIP = {
       "category": "Sights",
       "name": "BUSAN X the SKY (optional, Day 10)",
       "original": "Late afternoon: Visit Busan X the Sky - optional. $17.59 on Klook. Skip if you don't care about observatory decks.",
-      "source": "xsky",
+      "source": "xtheskyOperator",
       "hours": "10:00-21:00; last admission 20:30; open all year",
       "location": "30 Dalmaji-gil, Haeundae-gu, Busan (LCT Landmark Tower, floors 98-100)",
-      "price": "",
-      "finding": "Hours/address confirmed. PRICE FLAGGED AND BLANK: VISITKOREA lists adult 29,000 won while Visit Busan lists 27,000 won; the original $17.59 is a third-party (Klook) figure, not an official price. Duplicates the Day 12 visit - choose one day.",
+      "price": "Adult (13+) ₩29,000 on-site (operator)",
+      "finding": "Hours/address confirmed. PRICE FLAGGED AND BLANK: VISITKOREA lists adult 29,000 won while Visit Busan lists 27,000 won; the original $17.59 is a third-party (Klook) figure, not an official price. Duplicates the Day 12 visit - choose one day. Operator page retrieved 2026-10-26 states adult on-site ₩29,000 (the VISITKOREA figure). Visit Busan’s ₩27,000 and the Klook $17.59 remain flagged and are not used as the confirmed price.",
       "status": "Partial"
     },
     {
@@ -1253,11 +1283,11 @@ window.TRIP = {
       "category": "Sights",
       "name": "Songdo Marine Cable Car (Busan Air Cruise) · optional",
       "original": "Optional: Songdo Marine Cable Car.",
-      "source": "songdoCable",
-      "hours": "09:00-21:00 daily; open all year",
+      "source": "airCruisePrice",
+      "hours": "Sep–Nov 09:00–21:00; tickets until 30 min before close",
       "location": "171 Songdohaebyeon-ro, Seo-gu, Busan (Songnim Park ↔ Amnam Park, 1.62 km)",
-      "price": "",
-      "finding": "Hours/route confirmed by Visit Busan. Fare is charged but the amount was not stated on the official page retrieved - price blank.",
+      "price": "Air Cruise adult round trip ₩19,000 / one way ₩15,000 (operator)",
+      "finding": "Operator hours and fares retrieved 2026-10-26 from en.busanaircruise.co.kr. Visit Busan listed 09:00–21:00 without a fare; operator tariff now fills the price. Weather can halt rides. Optional in the brief — not a booked ticket.",
       "status": "Partial"
     },
     {
@@ -1305,11 +1335,11 @@ window.TRIP = {
       "category": "Sights",
       "name": "BUSAN X the SKY (scheduled visit)",
       "original": "10:00am-11:30am - Busan X the Sky observation deck, LCT Landmark Tower. Hours: 10am-9pm.",
-      "source": "xsky",
+      "source": "xtheskyOperator",
       "hours": "10:00-21:00; last admission 20:30; open all year",
       "location": "30 Dalmaji-gil, Haeundae-gu, Busan (LCT Landmark Tower, floors 98-100)",
-      "price": "",
-      "finding": "Venue hours in the original (10:00-21:00) MATCH the official listing. Adult price left blank: VISITKOREA 29,000 won conflicts with Visit Busan 27,000 won. This is the same venue listed as optional on Day 10 - visit once.",
+      "price": "Adult (13+) ₩29,000 on-site (operator)",
+      "finding": "Venue hours in the original (10:00-21:00) MATCH the official listing. Adult price left blank: VISITKOREA 29,000 won conflicts with Visit Busan 27,000 won. This is the same venue listed as optional on Day 10 - visit once. Operator page retrieved 2026-10-26 states adult on-site ₩29,000 (the VISITKOREA figure). Visit Busan’s ₩27,000 and the Klook $17.59 remain flagged and are not used as the confirmed price.",
       "status": "Partial"
     },
     {
@@ -1487,11 +1517,11 @@ window.TRIP = {
       "category": "Transport",
       "name": "Seoul Station → Hongik University · AREX All-Stop train",
       "original": "Take AREX from Seoul Station to Hongdae. Get off at Hongik Univ. Station.",
-      "source": "arexNormal",
+      "source": "arexFare",
       "hours": "",
       "location": "Seoul Station → Hongik University Station (AREX All-Stop / normal train)",
-      "price": "",
-      "finding": "CORRECTION FLAGGED: the AREX Express does NOT stop at Hongik University (it runs non-stop Seoul Station to Incheon Airport). For Hongdae you must take the AREX All-Stop (normal) train, whose official route includes Hongik University. Exact duration and fare were not established from the operator fare page retrieved - blank.",
+      "price": "Adult transit card ₩1,550 (Seoul Station ↔ Hongik Univ)",
+      "finding": "CORRECTION FLAGGED: the AREX Express does NOT stop at Hongik University (it runs non-stop Seoul Station to Incheon Airport). For Hongdae you must take the AREX All-Stop (normal) train, whose official route includes Hongik University. Exact duration and fare were not established from the operator fare page retrieved - blank. Official AREX fare table retrieved 2026-10-26: adult transit-card Seoul Station ↔ Hongik Univ ₩1,550. Express still does not stop at Hongdae.",
       "status": "Partial"
     },
     {

@@ -831,3 +831,31 @@ Checked 2026-10-26. Method unchanged: only facts visible on official operator / 
 | P063/P071–73/P075–76/P081–82/P084/P086–89/P091–92/P094 | Visit Busan directory (context only) | — | All blank/unverified: breakfasts, dinners, Coffee It House, BIFF stalls, Nampo shops, bus numbers/times (incl. "1 h 17, 2 buses", "13 min bus"), Uber 1 h/$20–$30, and the wholly blank Days 13 & 15 |
 
 Irregularities in the newly supplied text: Day 9 duplicated verbatim (kept once); Days 13/15 blank and Day 14 daytime blank; X the SKY duplicated Day 10/Day 12; spellings "Dongbaekseon", "Gwangali", "Gukje Marker", "Landmaek Tower" corrected with flags. Working dates Nov 10–16 follow the document's weekday sequence (which matches Nov 2026); the travel year itself remains unconfirmed by any booking.
+
+
+---
+
+# Additional operator retrievals — session 3615cef7 (2026-10-26)
+
+These URLs were retrieved while a parallel session (`75247ef9`) also expanded Days 10–16. They supplement the 98-row table on main; they do not replace `full-trip/`.
+
+### Busan Metropolitan Government · Haeundae Beach
+https://www.busan.go.kr/eng/beaches/1325815
+264 Haeundaehaebyeon-ro; free; Line 2 Haeundae exit 3 or 5.
+
+### BUSAN X the SKY · operator
+https://www.busanxthesky.com/
+Daily 10:00–21:00; adult (13+) ₩29,000 on-site. Visit Busan ₩27,000 and Klook $17.59 are not used as the confirmed price.
+
+### AREX all-stop fare table
+https://www.airportrailroad.com/train/normal/fare
+Adult transit-card Seoul Station ↔ Hongik Univ ₩1,550. Express does not stop at Hongdae.
+
+### Busan Air Cruise hours / fares
+https://en.busanaircruise.co.kr/info/time?rank=2
+https://en.busanaircruise.co.kr/info/price?rank=1
+Sep–Nov 09:00–21:00. Air Cruise adult RT ₩19,000 / OW ₩15,000.
+
+### VISITKOREA · Haeundae Amso Galbijip
+https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=73814
+11:30–22:00; weekend break 15:15–16:30. Conflicts with MICHELIN 14:00–17:00 gap.
