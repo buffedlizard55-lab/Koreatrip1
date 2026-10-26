@@ -291,3 +291,11 @@ Audit status: done (review findings remain published on the existing Flagged for
 - Re-ran validation against the combined `9eef1bd` main tree: Node tests **7/7 passed** (98 plan entries); Field Guide checker **passed** (18 pages, 199 source-linked rows, 1,045 internal links/assets, 64 source URLs); syntax and JSON checks pass.
 - GitHub Pages Actions deployment for combined main commit `9eef1bd1d0c2b98efc470cf60ce8258df7e17d49` completed **successfully** (`40276088181`); Pages builds API reports `built` for that exact commit. Direct published checks show the 16-day overview / 98-entry total, Day 16's Busan→Seoul plan, and the review page. Published root: https://buffedlizard55-lab.github.io/Koreatrip1/ · Day 16: https://buffedlizard55-lab.github.io/Koreatrip1/itinerary.html?day=16 · Review: https://buffedlizard55-lab.github.io/Koreatrip1/review.html.
 - This follow-up supersedes the earlier nine-day count as the current primary dashboard. The year remains explicitly unresolved in the site; calendar-matched dates are not treated as confirmation. The palace admissions-source conflict and all remaining unconfirmed bookings, venues and blank days remain visibly flagged.
+
+### Final publication record — arena-080958a3
+
+- PR #18: https://github.com/buffedlizard55-lab/Koreatrip1/pull/18 — **MERGED 2026-10-26 05:49:16 UTC**, merge commit `b027e431db9c4a9adeb14cdc08454b8f0bae77cc`.
+- GitHub Pages deployment run `40276300110` for that exact commit: **success**; Pages builds API reports **built** with no error.
+- The merged site was directly checked at the published landing page and itinerary Day 16 page; the 16-day overview, 98-entry count, Busan→Seoul/Hongdae return plan, and Flagged for Review page are live.
+- PR #15's initial Pages job was cancelled/superseded during the parallel PR #16 deploy; the combined main commit passed deployment. PR #16 and #17 records remain intact. No source/data/site files from the parallel session were modified by this audit.
+- Audit/integration task: **done**. Open factual or traveler-specific items remain non-blocking and are listed on the live Flagged for Review page. Site does not claim a confirmed travel year or reservations.
