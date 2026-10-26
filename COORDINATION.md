@@ -358,3 +358,12 @@ Audit status: done (review findings remain published on the existing Flagged for
 - Scope after reconciliation: incremental source update only in `data.js`, `app.js`, `SOURCES.md`, and this log (plus a test assertion for supplemental row links). All inherited/site/data/docs/companion-guide content is preserved.
 - A second concurrent integration advanced `origin/main` from `ad63a7e` to `a9fd729` through PRs #22/#23 while this PR was being prepared. The rebase conflicted in `data.js` and `SOURCES.md`; kept the newer main versions (including its 98 rows, additional official source records, and session 3615cef7's work), then added only the P064 supplemental KTO link and explicit split-hours display. No data or source entries from those sessions were discarded.
 - Validation is recorded in the session follow-up below. No findings are marked resolved beyond what the official pages support; dates and bookings remain unconfirmed.
+
+### Final publication record — session `3dcba7c8` (2026-10-26)
+
+- PR #24: https://github.com/buffedlizard55-lab/Koreatrip1/pull/24 — **MERGED 2026-10-26 06:00:39 UTC**, merge commit `3f30db28b93dec4ec2de55250defc9b034beeed5`.
+- GitHub Pages deployment for that exact merge commit: run `40277361124`, **success**; Pages Builds API reports `built` at `2026-10-26T06:01:14Z`.
+- Direct live checks after deployment: [Day 10 itinerary](https://buffedlizard55-lab.github.io/Koreatrip1/itinerary.html?day=10) shows P064 with both KTO and MICHELIN official links and both conflicting schedules; [Flagged for Review](https://buffedlizard55-lab.github.io/Koreatrip1/review.html) loads with 98 rows and published conflicts. The main dashboard and the full-trip companion were preserved.
+- Final validation: root tests **7/7 passed**, supplemental row source keys resolve, `node --check app.js` and `git diff --check` pass; the independent Field Guide audit remains green (18 pages, 199 source-linked rows, 1,045 link/asset references).
+- Non-blocking review item: travelers should confirm Haeundae Amso Galbijip's break schedule directly before visiting. The 30-minute early-arrival claim, booking, exact trip year/date, and all other previously flagged bookings/transit gaps remain unconfirmed.
+- Task status: **done**. No source rows or changes from the parallel full-trip sessions were overwritten; the only final data change was a transparent, linked clarification of P064.
