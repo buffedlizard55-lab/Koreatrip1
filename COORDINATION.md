@@ -367,3 +367,13 @@ Audit status: done (review findings remain published on the existing Flagged for
 - Final validation: root tests **7/7 passed**, supplemental row source keys resolve, `node --check app.js` and `git diff --check` pass; the independent Field Guide audit remains green (18 pages, 199 source-linked rows, 1,045 link/asset references).
 - Non-blocking review item: travelers should confirm Haeundae Amso Galbijip's break schedule directly before visiting. The 30-minute early-arrival claim, booking, exact trip year/date, and all other previously flagged bookings/transit gaps remain unconfirmed.
 - Task status: **done**. No source rows or changes from the parallel full-trip sessions were overwritten; the only final data change was a transparent, linked clarification of P064.
+
+## Arena session `7058e110` — Field Guide 16-day Week 2 Busan + Seoul Hongdae extension (claimed 2026-10-26 UTC)
+
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| Extend `field-guide/` from 9 days to the full 16-day Seoul–Busan–Seoul Hongdae itinerary, verify every Week 2 entry line-by-line against official sources, and regenerate/validate the tracked `/field-guide/` static site | done | `arena/7058e110-koreatrip1` | `src/data/**`, `scripts/build.py`, `scripts/check.py`, `web/README.md`, `docs/research/verification.md`, `field-guide/**`, `COORDINATION.md` |
+
+- Session note: Fixed branch `arena/7058e110-koreatrip1` per platform rules (no `session-*` branch created).
+- Non-overlapping scope: Does NOT edit root dashboard files (`index.html`, `data.js`, `app.js`, `SOURCES.md`, `README.md`), `data/**`, `docs/*.html`, `verified-guide/**`, `prior-site/**`, or any `full-trip/**` files claimed by `arena/75247ef9-koreatrip1`.
+- Completed verification and regeneration: `python3 scripts/check.py --build --out field-guide` passed (25 pages, 277 data rows with official links, 1,565 links/assets checked, 80 registered official URLs); `node --test tests/site.test.cjs` passed (7/7).
