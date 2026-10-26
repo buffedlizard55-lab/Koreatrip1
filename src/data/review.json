@@ -1,13 +1,13 @@
 {
-  "intro": "These items are published for post-publication review, not held back for approval. The source outline ends with Day 9 arrival in Busan; the earlier experimental Friday–Sunday Busan/Seoul-return draft has been withdrawn. An official 'context only' link points to an operator or city directory but does NOT verify the specific unverified claim. Missing addresses, hours, prices and bookings are intentionally left blank.",
+  "intro": "These items are published for post-publication review, not held back for approval. The 16-day outline covers Week 1 in Seoul Myeongdong (Days 1–8), the Day 9 KTX transfer to Busan, Week 2 in Busan Haeundae (Days 10–15), and the Day 16 KTX + AREX All-Stop return to Seoul Hongdae. An official 'context only' link points to an operator or city directory but does NOT verify the specific unverified claim. Missing addresses, hours, prices and bookings are intentionally left blank.",
   "items": [
     {
       "id": "dates",
       "tier": "priority",
       "topic": "Calendar",
       "title": "Trip year conflicts with weekday labels",
-      "finding": "Notes include ‘Nov 2, 2006’ while the Sunday-to-Monday sequence fits Nov 1–9, 2026. Year 2026 is used only as a working layout, not a confirmed travel date.",
-      "action": "Confirm actual year and all nine dates before making time-sensitive plans. Nov 9 closure advice applies only if 2026 is intended.",
+      "finding": "Notes include ‘Nov 2, 2006’ while the Sunday-through-Monday sequence fits Nov 1–16, 2026. Year 2026 is used only as a working 16-day layout, not a confirmed travel date.",
+      "action": "Confirm actual year and all 16 dates before making time-sensitive plans. Nov 9 closure advice and Saturday Nov 14 show timing apply only if 2026 is intended.",
       "sources": [
         "palace_hours",
         "lotte"
@@ -18,9 +18,9 @@
       "id": "original_text",
       "tier": "priority",
       "topic": "Itinerary provenance",
-      "title": "Structured outline exists; verbatim brief does not",
-      "finding": "A concurrently merged data/trip.json transcribes the submitted nine-day outline and 74 claim rows. It puts the Seoul→Busan KTX on Day 9, Itaewon only as a Day 7 heading, and no activities on Day 8. The verbatim brief is not stored.",
-      "action": "Preserve this documented sequence; label the palace-day swap and empty-day suggestions as editorial. Compare with the original verbatim notes if available.",
+      "title": "16-day Week 1 + Week 2 outline preserved with editorial labels",
+      "finding": "The supplied 16-day itinerary puts Seoul activities on Days 1–6, Itaewon only as a Day 7 heading, no Day 8 activities, a duplicated Day 9 Seoul→Busan KTX transfer, Busan sights on Days 10–12 and 14, blank headings on Days 13 and 15, and a Day 16 Busan→Seoul Hongdae return.",
+      "action": "Preserve this documented 16-day sequence; label the Day 2/3 palace swap and optional suggestions on open Days 7, 8, 13 and 15 as editorial.",
       "sources": [
         "seoul_directory",
         "busan_directory"
@@ -32,8 +32,8 @@
       "tier": "priority",
       "topic": "Transport",
       "title": "SFO→ICN note is not a booked flight",
-      "finding": "The submitted notes name SFO→ICN around Oct 31/Nov 1, but do not give a verified booking, airline, flight number, times or terminal.",
-      "action": "Confirm the actual flight and arrival terminal before relying on any Incheon ground route. No onward flight after the Day 9 Busan arrival is supplied.",
+      "finding": "The submitted notes name SFO→ICN around Oct 31/Nov 1, but do not give a verified booking, airline, flight number, times or terminal, nor any departure flight after Day 16.",
+      "action": "Confirm the actual inbound flight and arrival terminal before relying on any Incheon ground route, and confirm the post-Day-16 return flight separately.",
       "sources": [
         "arex",
         "stanford"
@@ -45,11 +45,12 @@
       "tier": "priority",
       "topic": "Lodging",
       "title": "Named hotels are not confirmed reservations",
-      "finding": "Stanford Myeongdong and L7 Haeundae publish addresses and check-in/out policies; no traveler reservation or room dates were supplied.",
-      "action": "Confirm the Seoul stay through Day 9 checkout and the Busan check-in/night independently.",
+      "finding": "Stanford Myeongdong, L7 Haeundae and Mercure Ambassador Seoul Hongdae publish addresses and check-in/out policies; no traveler reservation or room dates were supplied.",
+      "action": "Confirm the Seoul Myeongdong stay (Days 1–9), Busan Haeundae stay (Days 9–16), and Seoul Hongdae stay (from Day 16) independently.",
       "sources": [
         "stanford",
-        "l7"
+        "l7",
+        "mercure_hongdae"
       ],
       "source_role": "context_only"
     },
@@ -57,12 +58,25 @@
       "id": "train_booking",
       "tier": "priority",
       "topic": "Rail",
-      "title": "KTX travel is a route, not a ticket",
-      "finding": "The submitted final day travels Seoul Station→Busan Station, but no specific KTX departure, journey time, fare, seat or purchased ticket is established.",
-      "action": "Book a suitable train only after confirming the real travel date. Do not repeat the submitted 45-minute boarding rule or 2h45 ride time as verified.",
+      "title": "KTX travel on Days 9 and 16 is a route, not a ticket",
+      "finding": "The submitted outline travels Seoul Station→Busan Station on Day 9 and Busan Station→Seoul Station on Day 16, but no specific KTX departure, journey time, fare, seat or purchased ticket is established.",
+      "action": "Book suitable southbound and northbound KTX trains only after confirming real travel dates. Do not repeat the submitted 45-minute boarding rule or 2h45 ride time as verified.",
       "sources": [
         "korail",
         "visitkorea_rail"
+      ],
+      "source_role": "context_only"
+    },
+    {
+      "id": "day9_duplicate",
+      "tier": "correction",
+      "topic": "Itinerary structure",
+      "title": "Day 9 is duplicated across Week 1 and Week 2 headings",
+      "finding": "The supplied prompt prints 'Day 9: Monday - Travel from Seoul to Busan' at the end of Week 1 (with steps numbered 1, 1, 2, 4, 5, 6, 7, 8) and repeats it verbatim at the start of Week 2 (numbered 1–8).",
+      "action": "Consolidated into a single Day 9 (Monday Nov 9 working date) transitioning from Stanford Hotel Myeongdong to L7 Haeundae.",
+      "sources": [
+        "korail",
+        "l7"
       ],
       "source_role": "context_only"
     },
@@ -166,6 +180,44 @@
       "source_role": "evidence"
     },
     {
+      "id": "sky_capsule_roundtrip",
+      "tier": "correction",
+      "topic": "Attractions",
+      "title": "Sky Capsule tickets are sold one-way only, not round-trip",
+      "finding": "Day 10 says 'Book round trip tickets' for the Sky Capsule, but Haeundae Blueline Park sells Sky Capsule departures strictly one-way (Mipo→Cheongsapo or Cheongsapo→Mipo) or as a one-way capsule + Beach Train package. Online sales open Tuesdays at 07:00 four weeks ahead.",
+      "action": "Book two separate one-way capsule slots if riding both ways, or pair a Mipo→Cheongsapo capsule with the Beach Train or coastal walk back. Also note Mipo is walkable from Haeundae Beach; the brief's unspecified bus to Mipo is unverified.",
+      "sources": [
+        "blueline_course",
+        "blueline_booking"
+      ],
+      "source_role": "evidence"
+    },
+    {
+      "id": "gukje_typo",
+      "tier": "correction",
+      "topic": "Markets",
+      "title": "Gukje Market spelling and Sunday closure",
+      "finding": "Day 11 step 10 writes 'Gukje Marker'. Official Visit Busan listing confirms Gukje Market at 32 Junggu-ro, Jung-gu, open 09:00–20:00 (differs by store) and closed Sundays.",
+      "action": "Visiting on Day 11 (Wednesday) avoids Gukje Market's Sunday closure; individual stall hours still vary.",
+      "sources": [
+        "gukje"
+      ],
+      "source_role": "evidence"
+    },
+    {
+      "id": "arex_hongdae",
+      "tier": "correction",
+      "topic": "Rail",
+      "title": "Use AREX All-Stop (not Express) from Seoul Station to Hongik Univ. Station",
+      "finding": "Day 16 says 'Take AREX from Seoul Station to Hongdae. Get off at Hongik Univ. Station.' Official AREX documentation shows the Express Train runs non-stop between Seoul Station and Incheon Airport and does NOT stop at Hongik Univ. Station; only the AREX All-Stop Train (일반열차) stops at Hongik Univ. Station.",
+      "action": "Board the AREX All-Stop Train (or Seoul Metro Line 2 via City Hall) at Seoul Station for Hongik Univ. Station.",
+      "sources": [
+        "arex_allstop",
+        "arex"
+      ],
+      "source_role": "evidence"
+    },
+    {
       "id": "korail_window",
       "tier": "discrepancy",
       "topic": "Rail",
@@ -183,7 +235,7 @@
       "tier": "discrepancy",
       "topic": "Attractions",
       "title": "Blueline operator fare pages conflict",
-      "finding": "The operator's main fare page and Sky Capsule subpage list different two-person capsule fares. A current purchasable fare is not verified.",
+      "finding": "The operator's main fare page and Sky Capsule subpage list different two-person capsule fares (₩50,000 vs ₩40,000). A current purchasable fare is not verified.",
       "action": "Leave the site price blank; use the live official booking checkout. Scenic rail tickets have not been booked.",
       "sources": [
         "blueline_price_current",
@@ -193,12 +245,51 @@
       "source_role": "evidence"
     },
     {
+      "id": "amso_galbi_michelin",
+      "tier": "discrepancy",
+      "topic": "Busan dining",
+      "title": "Haeundae Amso Galbi is MICHELIN Selected, and afternoon break hours conflict",
+      "finding": "The MICHELIN Guide lists Haeundae Rib Barbecue Restaurant (Amso Galbi) as MICHELIN Selected (₩₩), not Michelin-starred. Both MICHELIN and VisitKorea list 11:30 opening and 22:00 closing, but MICHELIN lists a daily 14:00–17:00 break while VisitKorea lists a weekend-only 15:15–16:30 break.",
+      "action": "Confirmed 11:30 opening matches Day 10, but treat afternoon break hours and the brief's 'go at least 30 min early' queue advice as unverified until checked with the restaurant.",
+      "sources": [
+        "michelin_amso",
+        "kto_amso"
+      ],
+      "source_role": "evidence"
+    },
+    {
+      "id": "nurimaru_hours",
+      "tier": "discrepancy",
+      "topic": "Busan sights",
+      "title": "Nurimaru APEC House closing hour conflicts across Visit Busan pages",
+      "finding": "Visit Busan's dedicated Nurimaru APEC House page lists hours as 09:00–18:00, while its Dongbaek Coastal Trail page lists Nurimaru operating hours as 09:00–17:00. Both agree on free admission and first-Monday monthly closure (also note brief spelling 'Dongbaekseon Island').",
+      "action": "Arrive before 17:00 on Day 10 (Tuesday) so the 17:00 vs 18:00 closing discrepancy does not affect entry.",
+      "sources": [
+        "nurimaru",
+        "dongbaek_trail"
+      ],
+      "source_role": "evidence"
+    },
+    {
+      "id": "xthesky_conflict",
+      "tier": "discrepancy",
+      "topic": "Busan sights",
+      "title": "BUSAN X the SKY is listed on both Day 10 and Day 12, and official adult fares conflict",
+      "finding": "The brief lists BUSAN X the SKY as optional on Day 10 late afternoon ('$17.59 on klook') and again on Day 12 at 10:00–11:30 ('LCT Landmaek Tower', hours 10:00–21:00). Official hours 10:00–21:00 (last entry 20:30) are confirmed, but VisitKorea lists adult admission as ₩29,000 while Visit Busan lists ₩27,000; third-party Klook USD pricing is unverified.",
+      "action": "Keep the adult fee blank in the guide, choose either Day 10 or Day 12 rather than paying twice, and verify current ticket pricing at the official counter.",
+      "sources": [
+        "xthesky_kto",
+        "xthesky_busan"
+      ],
+      "source_role": "evidence"
+    },
+    {
       "id": "jagalchi_closure",
       "tier": "discrepancy",
       "topic": "Markets",
       "title": "Jagalchi fifth-Tuesday closure conflicts",
       "finding": "Visit Busan's Jagalchi attraction listing says closed first, third and fifth Tuesdays; its 2026 downtown walk says first and third. The market's closing-day field is intentionally blank here.",
-      "action": "Jagalchi is only an unassigned extension after Day 9. Confirm its closing rule before any later Busan visit; no visit day is scheduled.",
+      "action": "Scheduled on Day 11 (Wednesday Nov 11 working date), which avoids Tuesday closures, but confirm the market schedule before any Tuesday visit.",
       "sources": [
         "jagalchi",
         "biff"
@@ -206,15 +297,82 @@
       "source_role": "evidence"
     },
     {
+      "id": "mercure_walk",
+      "tier": "discrepancy",
+      "topic": "Lodging",
+      "title": "Mercure Ambassador Seoul Hongdae walk time conflicts (2 min vs 8 min)",
+      "finding": "Day 16 states an '8 minute walk' from Hongik Univ. Station to Mercure Ambassador Seoul Hongdae, whereas Accor's official hotel page states the property at 144 Yanghwa-ro is next to Hongik Univ. Station Exit 9, a 2-minute (100 m) walk (check-in 15:00, check-out 12:00).",
+      "action": "Use Hongik Univ. Station Exit 9 for the shortest 100 m access; confirm the hotel reservation independently.",
+      "sources": [
+        "mercure_hongdae"
+      ],
+      "source_role": "evidence"
+    },
+    {
+      "id": "day11_transit_claims",
+      "tier": "priority",
+      "topic": "Busan transit",
+      "title": "Day 11 bus durations, walk times and repeated BIFF/Jagalchi loop are unverified",
+      "finding": "Day 11 specifies '2 buses (1 hr & 17 min)' to Gamcheon, a '9 min. walk' from BIFF Square to Jagalchi, a '13 min bus ride, 9 min walk' to Songdo Beach, repeats Jagalchi and BIFF Square in step 10, and ends with a blank item '9.'. Official sources verify Metro Line 1 Toseong + village bus to Gamcheon and Bus 7/26/30/71/96 from Jagalchi Exit 2 to Songdo Beach, not the exact minute estimates.",
+      "action": "Use the verified Metro + bus transfer points and group BIFF Square, Jagalchi, Gukje Market and Nampo-dong into one contiguous downtown block before or after Songdo.",
+      "sources": [
+        "gamcheon",
+        "songdo_beach",
+        "biff",
+        "busan_metro"
+      ],
+      "source_role": "context_only"
+    },
+    {
+      "id": "sealife_price",
+      "tier": "priority",
+      "topic": "Busan sights",
+      "title": "SEA LIFE Busan weekday hours verified; '$15 ticket' unconfirmed",
+      "finding": "The operator confirms weekday hours 10:00–19:00 (last entry 18:00) and weekend hours 10:00–20:00 (last entry 19:00) at 266 Haeundaehaebyeon-ro. However, the operator's ticket overview displays child starting prices and timed-entry rules without a static adult KRW figure, so the brief's '$15 ticket' is unverified.",
+      "action": "Leave the adult ticket price blank and check the official SEA LIFE booking page for the exact date.",
+      "sources": [
+        "sealife_hours",
+        "sealife_tickets",
+        "sealife_busan"
+      ],
+      "source_role": "evidence"
+    },
+    {
       "id": "drone_schedule",
       "tier": "priority",
       "topic": "Events",
-      "title": "Gwangalli show is an unassigned Busan extension",
-      "finding": "A usual winter Saturday 19:00/21:00 pattern is not a confirmed 2026 event. The supplied Day 7 is in Seoul, and the nine-day outline first reaches Busan on Day 9.",
-      "action": "Do not show a Nov 7 Busan event as a scheduled stop. Check the real later Busan stay and district calendar if extending the trip.",
+      "title": "Gwangalli M Drone Light Show Saturday winter schedule vs specific date",
+      "finding": "Visit Busan confirms Saturday winter (Oct–Feb) shows at 19:00 and 21:00 at Gwangalli Beach (spelled 'Gwangali' in the brief), lasting ~10 minutes per Visit Busan vs 12 minutes in the brief. However, any specific Saturday's theme or weather cancellation is not guaranteed in advance.",
+      "action": "Plan for the 19:00 Saturday show on Day 14 as written, and check the official show notice on the afternoon of travel for wind or rain cancellations.",
       "sources": [
         "drone",
-        "itaewon_area"
+        "gwangalli"
+      ],
+      "source_role": "evidence"
+    },
+    {
+      "id": "busan_open_days",
+      "tier": "priority",
+      "topic": "Itinerary",
+      "title": "Days 13 and 15 are blank; Day 12 dinner and Day 14 daytime are open",
+      "finding": "The supplied Week 2 outline leaves Day 13 (Friday), Day 15 (Sunday), Day 12 '5. Dinner:', and Day 14 before 17:00 without submitted stops.",
+      "action": "Keep those windows flexible. Sourced Busan options shown on Days 13 and 15 (Haedong Yonggungsa Temple, Bupyeong Kkangtong Night Market) are clearly marked optional editorial suggestions.",
+      "sources": [
+        "busan_directory",
+        "l7"
+      ],
+      "source_role": "context_only"
+    },
+    {
+      "id": "day16_uber",
+      "tier": "priority",
+      "topic": "Busan transit",
+      "title": "Day 16 Uber '1 hour ride, $20-$30' to Busan Station is unverified",
+      "finding": "No official source establishes road duration or USD taxi/Uber fare from L7 Haeundae to Busan Station. Public transit via Busan Metro Line 2 (Haeundae → Seomyeon) and Line 1 (Seomyeon → Busan Station) is verified by map topology.",
+      "action": "Leave road taxi duration and fare blank; allow a generous buffer before the booked KTX departure.",
+      "sources": [
+        "busan_metro",
+        "l7"
       ],
       "source_role": "context_only"
     },
@@ -248,12 +406,13 @@
       "id": "after_trip",
       "tier": "priority",
       "topic": "Continuation",
-      "title": "Travel after Day 9 Busan arrival is not supplied",
-      "finding": "The nine-day submitted outline ends with KTX to Busan, L7 Haeundae and a market/beach option. It does not specify a return Seoul room, return train, flight home or length of Busan stay.",
-      "action": "Plan onward lodging and departure separately; do not treat this itinerary as a return-to-airport schedule.",
+      "title": "Departure flight and travel after Day 16 Hongdae check-in are not supplied",
+      "finding": "The 16-day outline ends with the walk to Mercure Ambassador Seoul Hongdae on Day 16. It does not specify length of the Hongdae stay, airport transfer back to ICN, or a return flight home.",
+      "action": "Confirm the Mercure check-out date, AREX transfer to Incheon International Airport, and outbound flight separately.",
       "sources": [
-        "l7",
-        "korail"
+        "mercure_hongdae",
+        "arex_allstop",
+        "arex"
       ],
       "source_role": "context_only"
     },
@@ -263,7 +422,7 @@
       "topic": "Beach access",
       "title": "Haeundae listing hours lack a clear scope",
       "finding": "Visit Busan lists 09:00–18:00 for Haeundae Beach but does not clearly say whether those hours govern public beach access, facilities or tourism services. The access-hours field is intentionally blank.",
-      "action": "If visiting after Day 9 arrival, verify any desired facilities and seasonal restrictions separately. Do not treat the listed hours as a ban on a shoreline walk.",
+      "action": "If visiting on Days 9, 10 or 12, verify any desired facilities and seasonal restrictions separately. Do not treat the listed hours as a ban on a shoreline walk.",
       "sources": [
         "haeundae_beach"
       ],
@@ -318,6 +477,31 @@
       "sources": [
         "onion_stores",
         "onion_seongsu"
+      ],
+      "source_role": "evidence"
+    },
+    {
+      "id": "hanjungsun",
+      "tier": "correction",
+      "topic": "Seongsu restaurant / dessert",
+      "title": "Hanjungsun has a current Visit Seoul listing",
+      "finding": "Visit Seoul (edited 2026-09-01) lists Hanjungsun at 1F, 43-1 Yeonmujang-gil, every day 10:30–22:00, and describes it as takeout-only with no dine-in tables. This is a tourism listing, not a reservation or same-day guarantee.",
+      "action": "Use the listed address and takeaway format; recheck the live listing before visiting. Menu and queue conditions are not verified.",
+      "sources": [
+        "hanjungsun"
+      ],
+      "source_role": "evidence"
+    },
+    {
+      "id": "blue_elephant",
+      "tier": "discrepancy",
+      "topic": "Seongsu retail",
+      "title": "Blue Elephant has two distinct Seongsu listings",
+      "finding": "Earlier direct checks of the official operator pages showed a Flagship Store at 2F–3F, 13 Yeonmujang-gil (12:00–22:00) and Space Seongsu at 53 Yeonmujang-gil (10:00–22:00). The original notes do not identify which branch; a repeat check on 2026-10-21 returned a browser challenge, so no branch is assigned.",
+      "action": "Confirm the exact branch with the traveler and recheck its operator page before routing; do not choose between two locations by inference.",
+      "sources": [
+        "blue_elephant_flagship",
+        "blue_elephant_space"
       ],
       "source_role": "evidence"
     },
@@ -380,18 +564,6 @@
         "seoul_directory"
       ],
       "source_role": "context_only"
-    },
-    {
-      "id": "hanjungsun",
-      "tier": "correction",
-      "topic": "Seongsu restaurant / dessert",
-      "title": "Hanjungsun has a current Visit Seoul listing",
-      "finding": "Visit Seoul (edited 2026-09-01) lists Hanjungsun at 1F, 43-1 Yeonmujang-gil, every day 10:30–22:00, and describes it as takeout-only with no dine-in tables. This is a tourism listing, not a reservation or same-day guarantee.",
-      "action": "Use the listed address and takeaway format; recheck the live listing before visiting. Menu and queue conditions are not verified.",
-      "sources": [
-        "hanjungsun"
-      ],
-      "source_role": "evidence"
     },
     {
       "id": "uri_wang",
@@ -464,19 +636,6 @@
         "seoul_directory"
       ],
       "source_role": "context_only"
-    },
-    {
-      "id": "blue_elephant",
-      "tier": "discrepancy",
-      "topic": "Seongsu retail",
-      "title": "Blue Elephant has two distinct Seongsu listings",
-      "finding": "Earlier direct checks of the official operator pages showed a Flagship Store at 2F–3F, 13 Yeonmujang-gil (12:00–22:00) and Space Seongsu at 53 Yeonmujang-gil (10:00–22:00). The original notes do not identify which branch; a repeat check on 2026-10-21 returned a browser challenge, so no branch is assigned.",
-      "action": "Confirm the exact branch with the traveler and recheck its operator page before routing; do not choose between two locations by inference.",
-      "sources": [
-        "blue_elephant_flagship",
-        "blue_elephant_space"
-      ],
-      "source_role": "evidence"
     },
     {
       "id": "eternalog",
@@ -573,6 +732,19 @@
       "sources": [
         "myeongdong",
         "oliveyoung_town"
+      ],
+      "source_role": "context_only"
+    },
+    {
+      "id": "coffee_it_house",
+      "tier": "merchant",
+      "topic": "Busan café",
+      "title": "Coffee It House",
+      "finding": "Named on Day 11 near Gamcheon Culture Village ('2 minute walk'), but no official tourism or operator page establishes its address, operating hours or prices.",
+      "action": "Keep off the confirmed route until verified against a current official business listing.",
+      "sources": [
+        "gamcheon",
+        "busan_directory"
       ],
       "source_role": "context_only"
     }
