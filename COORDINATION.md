@@ -246,3 +246,11 @@ PR #6 merged while #7 integration was in progress, advancing main to 1fe2d25. Th
 - Field-guide validation run `39569170055` for the merge commit: **success**. GitHub Pages build `1302065060` / run `39569169287` for the same commit: **built/deployed**, no deployment error.
 - Direct live checks (cache-busted with merge SHA) confirmed the Field Guide dashboard, Day 4, Food & Markets, Shopping, Flagged for Review and Source Shelf at https://buffedlizard55-lab.github.io/Koreatrip1/field-guide/. Hanjungsun and Olive Young N Seongsu render on the Seongsu day/category tables; the D176 distinction, Gwangjang section hours and two-branch Blue Elephant review appear with source links.
 - Non-blocking traveler decisions remain visible on Flagged for Review: trip year/bookings, D176 identity, unresolved Blue Elephant branch, Eternalog/Solsot and other named candidates, and the open Days 7–8. Unsupported values remain blank. Root site and all other companion guides are preserved.
+
+## Current Arena session `080958a3` — inherited-site audit
+
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| Audit the inherited itinerary dashboard, source-link coverage, responsive site checks and publication state | in progress | `arena/080958a3-koreatrip1` | `COORDINATION.md` only |
+
+Claimed on 2026-10-26 UTC after reading the shared task board. Existing research/site scopes are already complete in the merged main tree; this session will preserve the independently maintained guides and avoid editing their shared data or navigation. Validation results and any uncovered issues will be recorded below.
