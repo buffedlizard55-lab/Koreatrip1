@@ -278,3 +278,9 @@ Claimed on 2026-10-26 UTC after reading the shared task board. Existing research
 - Existing GitHub Pages latest build is `built` for deployed main commit `90c8e39d7b4a501ac8e4018e35cdb1987f05adb2` (checked via Pages builds API). Companion pages and the existing main dashboard are already served from the repository; this audit does not claim a new Pages deploy until the documentation PR is merged.
 
 Audit status: done (review findings remain published on the existing Flagged for Review pages). This session edited only `COORDINATION.md`; all primary and companion research/data/site files were left intact.
+
+### Final publication record — arena-14a08306
+
+- PR #16: https://github.com/buffedlizard55-lab/Koreatrip1/pull/16 — **MERGED 2026-10-26**, merge commit `9eef1bd1d0c2b98efc470cf60ce8258df7e17d49`. One conflict on merge (concurrent PR #15 audit session in COORDINATION.md only) was resolved by keeping both sessions' records; no other session's work was discarded. Tests 7/7 pass on the merged tree.
+- GitHub Pages build for merge commit `9eef1bd`: **built** (Pages builds API). Live check via page fetch: https://buffedlizard55-lab.github.io/Koreatrip1/itinerary.html?day=14 renders "Gwangalli drone-show night", L7 base, the confirmed 19:00/21:00 Saturday drone pattern and the open-day flags. (Note: the `f85e975` "errored" build in the API list predates this merge and belongs to PR #15's commit, not this merge.)
+- All tasks for session `14a08306` are **done**. Non-blocking items remain on https://buffedlizard55-lab.github.io/Koreatrip1/review.html for owner review.
