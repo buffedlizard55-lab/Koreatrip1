@@ -803,110 +803,59 @@ Observed: Context / review starting point only; no venue-specific claim verified
 
 The previous main snapshot is preserved in `prior-site/`. Its dataset assumes travel year 2026 and records different child admission rules for Gyeongbokgung. This session's direct retrieval of Royal Palaces and Tombs Center E702000000 explicitly states free ages 18 and below and ages 65 and above. Current rows follow that source and leave travel year unresolved. Prior research is not represented as reverified or included in current counts. See COORDINATION.md for conflict resolution and retained historical log.
 
+---
+
+## Addendum 2026-10-26 · Busan Week 2 + return (Days 10–16) — session arena-14a08306
+
+Checked 2026-10-26. Method unchanged: only facts visible on official operator / government / tourism-board pages (directly retrieved where marked) populate confirmed fields; everything else stays blank and is flagged on `review.html`. No row is fully verified.
+
+| Row(s) | Official source | Evidence used | Left blank / flagged |
+|---|---|---|---|
+| P068 Sky Capsule | Blueline Park operator — hours page (directly retrieved) https://www.bluelinepark.com/eng/skyCapsuleTime.do | Nov–Feb 08:30–18:00; ~30 min one way | Fare blank (not on retrieved pages) |
+| P068 | Blueline Park — course https://www.bluelinepark.com/eng/skyCapsuleCourse.do + booking https://www.bluelinepark.com/eng/booking.do | Mipo↔Cheongsapo 2.0 km; one-way departures only; weekly release Tue 07:00, 4 weeks ahead | **Original "book round trip" is incorrect — flagged** |
+| P070/P083 X the SKY | VISITKOREA https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=33642 + operator https://www.busanxthesky.com/ | 10:00–21:00, last admission 20:30, 30 Dalmaji-gil | **Price blank: ₩29,000 (VISITKOREA) vs ₩27,000 (Visit Busan) conflict; $17.59 Klook figure unverified; Day 10/Day 12 duplication** |
+| P085 SEA LIFE | Operator hours (directly retrieved) https://www.visitsealife.com/busan/en/plan-your-visit/before-you-visit/opening-hours/ + tickets https://www.visitsealife.com/busan/en/tickets-passes/ | Weekdays 10:00–19:00 (last 18:00), weekends 10:00–20:00 (last 19:00); 266 Haeundaehaebyeon-ro | **Adult price blank; original $15 unverified** |
+| P090 Drone show | Busan Metropolitan City https://www.busan.go.kr/eng/bsevents/1713160 + official show site https://www.gwangallimdrone.co.kr/en/home | Every Sat; Oct–Feb 19:00 & 21:00; ~12 min; free; Gwangalli Beach | **Specific-Saturday theme/cancellation not yet published — recheck official site** |
+| P074 Gamcheon | Visit Busan https://www.visitbusan.net/en/index.do?menuCd=DOM_000000301001001000&uc_seq=365&lang_cd=en | Nov–Feb 09:00–17:00; 203 Gamnae 2-ro; free | 2–3 h duration is traveler estimate |
+| P065/P066 Dongbaek/Nurimaru | Visit Busan https://visitbusan.net/index.do?lang_cd=en&menuCd=DOM_000000301001001000&uc_seq=2121 + walking page uc_seq=284 | 116 Dongbaek-ro; free; closed first Monday | **Hours conflict 09:00–18:00 vs 09:00–17:00 — flagged** |
+| P069/P078 Skywalks | Visit Busan https://www.visitbusan.net/en/index.do?menuCd=DOM_000000301001001000&uc_seq=282&lang_cd=en | Cheongsapo Daritdol 09:00–18:00; Songdo Cloud Trails 06:00–23:00; free | Weather-limited opening |
+| P079 Songdo Cable Car | Visit Busan uc_seq=1422 | 09:00–21:00 daily; 171 Songdohaebyeon-ro | Fare amount blank |
+| P077 Jagalchi | Visit Busan uc_seq=412 | 05:00–22:00; 52 Jagalchihaean-ro | **Closure-Tuesday pattern conflicts in prior research — recheck** |
+| P080 Gukje | Visit Busan uc_seq=399 | 09:00–20:00 by store; 32 Junggu-ro | Sunday closing per listing; "Gukje Marker" typo corrected |
+| P064 Amso Galbi | MICHELIN Guide https://guide.michelin.com/us/en/busan-region/busan_1025838/restaurant/haeundae-rib-barbecue-restaurant | MICHELIN-selected (not starred); 333 Haeundaehaebyeon-ro; no reservations, queues (MICHELIN article) | **Hours blank; "opens 11:30, arrive 30 min early" unverified** |
+| P093 L7 checkout | Lotte (existing source `l7`) | Check-out 11:00 matches original | Not a reservation |
+| P095 Metro alternative | Humetro http://www2.humetro.busan.kr/homepage/cyberstation/mapeng.do | Line 2 Haeundae/Seomyeon; Line 1 Seomyeon/Busan Station | Duration/fare/final walk blank |
+| P096 KTX return | KORAIL (existing `korail`) | Booking interface only | Exact train/fare blank |
+| P097 AREX Hongdae | AREX operator All-Stop https://www.airportrailroad.com/train/normal/introduce + Express https://www.airportrailroad.com/train/express/introduce | All-Stop stops at Hongik University; Express is non-stop to Incheon and does **not** | **Original "take AREX" corrected to All-Stop; fare/duration blank** |
+| P098 Mercure Hongdae | Accor https://all.accor.com/hotel/B696/index.en.shtml | 144 Yanghwa-ro; check-in 15:00 / check-out 12:00; Exit 9, 2-min walk | **Original 8-min walk conflicts — flagged** |
+| P063/P071–73/P075–76/P081–82/P084/P086–89/P091–92/P094 | Visit Busan directory (context only) | — | All blank/unverified: breakfasts, dinners, Coffee It House, BIFF stalls, Nampo shops, bus numbers/times (incl. "1 h 17, 2 buses", "13 min bus"), Uber 1 h/$20–$30, and the wholly blank Days 13 & 15 |
+
+Irregularities in the newly supplied text: Day 9 duplicated verbatim (kept once); Days 13/15 blank and Day 14 daytime blank; X the SKY duplicated Day 10/Day 12; spellings "Dongbaekseon", "Gwangali", "Gukje Marker", "Landmaek Tower" corrected with flags. Working dates Nov 10–16 follow the document's weekday sequence (which matches Nov 2026); the travel year itself remains unconfirmed by any booking.
+
 
 ---
 
-# Week 2 expansion — session 3615cef7 (checked 2026-10-26 UTC)
+# Additional operator retrievals — session 3615cef7 (2026-10-26)
 
-Days 10–16 were added from the traveler brief. P001–P062 were not edited. Confirmed columns contain only facts observed on official operator, government or tourism-board pages (or official-domain excerpts where a Visit Busan page is JS-heavy). Unestablished values remain blank. No row is fully verified.
+These URLs were retrieved while a parallel session (`75247ef9`) also expanded Days 10–16. They supplement the 98-row table on main; they do not replace `full-trip/`.
 
-## Method
-
-- Operator pages retrieved directly: Nurimaru (busan.go.kr), BUSAN X the SKY, Blueline Park Sky Capsule hours/course, SEA LIFE Busan hours/tickets, Busan Air Cruise hours/fares, AREX all-stop fare table, Accor Mercure Ambassador Seoul Hongdae, Busan Metropolitan Government Haeundae Beach, MICHELIN Guide Haeundae Rib Barbecue Restaurant, VISITKOREA (Amso Galbi, Jagalchi, Daritdol, drone show).
-- Visit Busan listings used for Gamcheon, Songdo Beach, Songdo Cloud Trails, BIFF Square, Haeundae Market, Dongbaek walking tour, Gwangalli Beach (official tourism domain; some pages are JS-rendered).
-- Directory-only `busan` / `seoul` links remain context, not row verification.
-
-## New sources
-
-### haeundaeBeach
+### Busan Metropolitan Government · Haeundae Beach
 https://www.busan.go.kr/eng/beaches/1325815
-264 Haeundaehaebyeon-ro; free; Line 2 Haeundae exit 3 or 5, ~5 min walk.
+264 Haeundaehaebyeon-ro; free; Line 2 Haeundae exit 3 or 5.
 
-### amsoKto
-https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=73814
-11:30–22:00; weekend break 15:15–16:30; 해운대해변로 333.
-
-### amsoMichelin
-https://guide.michelin.com/us/en/busan-region/busan_1025838/restaurant/haeundae-rib-barbecue-restaurant
-Daily 11:30–14:00 and 17:00–22:00; 333 Haunedahaebyeon-ro. Break times conflict with VISITKOREA.
-
-### nurimaru
-https://www.busan.go.kr/nurimaru/english/Design/sub0101.jsp
-09:00–18:00, last admission 17:00; closed first Monday of the month; free.
-
-### dongbaek
-https://www.visitbusan.net/en/index.do?menuCd=DOM_000000302004001000&uc_seq=284&lang_cd=en
-99 Dongbaek-ro; area open all year. Nurimaru hours on this page (09:00–17:00) conflict with the operator.
-
-### skyTime / skyCourse / skyBook
-https://www.bluelinepark.com/eng/skyCapsuleTime.do
-https://www.bluelinepark.com/eng/skyCapsuleCourse.do
-https://www.bluelinepark.com/eng/booking.do
-Winter 08:30–18:00; 2.0 km one-way Mipo↔Cheongsapo ~30 min. Course table is one-way, not round-trip. Fare left blank (operator fare pages conflict).
-
-### daritdol
-https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=112698
-167 Cheongsapo-ro; free. Hours conflict with Visit Busan 09:00–18:00 vs VISITKOREA Sep–Nov 09:00–21:00 — hours blank.
-
-### xthesky
+### BUSAN X the SKY · operator
 https://www.busanxthesky.com/
-Daily 10:00–21:00; adult 13+ ₩29,000 on-site. Address 30 Dalmaji-gil, LCT Landmark Tower.
+Daily 10:00–21:00; adult (13+) ₩29,000 on-site. Visit Busan ₩27,000 and Klook $17.59 are not used as the confirmed price.
 
-### gamcheon
-https://www.visitbusan.net/index.do?menuCd=DOM_000000301001001000&uc_seq=365&lang_cd=en
-203 Gamnae 2-ro; Nov–Feb visitor hours 09:00–17:00; free. VISITKOREA “Open 24 hr” refers to the lived-in village.
+### AREX all-stop fare table
+https://www.airportrailroad.com/train/normal/fare
+Adult transit-card Seoul Station ↔ Hongik Univ ₩1,550. Express does not stop at Hongdae.
 
-### jagalchi
-https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=69318
-52 Jagalchihaean-ro; 05:00–22:00; closed 1st & 3rd Tuesdays.
-
-### gukje
-https://english.visitkorea.or.kr/svc/contents/contentsView.do?menuSn=929&dataSetId=263&vcontsId=249917
-25 Gukjesijang 2-gil; 09:00–20:00; closed 1st and 3rd Sundays.
-
-### songdoBeach
-https://visitbusan.net/index.do?lang_cd=en&menuCd=DOM_000000301001001000&uc_seq=286
-100 Songdohaebyeon-ro; 06:00–23:00; free.
-
-### songdoCloud
-https://www.visitbusan.net/index.do?menuCd=DOM_000000301001001000&uc_seq=282&lang_cd=en
-129-4 Amnam-dong; 06:00–23:00; free.
-
-### airCruiseTime / airCruisePrice
+### Busan Air Cruise hours / fares
 https://en.busanaircruise.co.kr/info/time?rank=2
 https://en.busanaircruise.co.kr/info/price?rank=1
 Sep–Nov 09:00–21:00. Air Cruise adult RT ₩19,000 / OW ₩15,000.
 
-### sealifeHours / sealifeTickets
-https://www.visitsealife.com/busan/en/plan-your-visit/before-you-visit/opening-hours/
-https://www.visitsealife.com/busan/en/tickets-passes/
-Weekdays 10:00–19:00 last entry 18:00. Adult on-site fare and traveler $15 not confirmed from the English tickets extract.
-
-### droneKto / droneCity
-https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=194990
-https://www.busan.go.kr/eng/bsevents/1713160
-Saturday winter 19:00 and 21:00; ~12 minutes; free; weather cancellation.
-
-### mercure
-https://all.accor.com/hotel/B696/index.en.shtml
-144 Yanghwa Ro, Mapo Gu; check-in 15:00 / checkout 12:00; Hongik Univ Station 100 m.
-
-### arexAll / arexHongik
-https://www.airportrailroad.com/train/normal/fare
-https://www.airportrailroad.com/train/normal/info/030/0
-Adult transit-card Seoul↔Hongik ₩1,550 on the all-stop train. Express does not stop at Hongdae.
-
-## Irregularities added (non-blocking)
-
-1. Sky Capsule “round trip tickets” vs official one-way course table.
-2. Busan X the Sky listed on Day 10 (optional) and Day 12 (10:00–11:30).
-3. Operator adult fare ₩29,000 vs traveler $17.59 Klook vs Visit Busan ₩27,000.
-4. AREX Express cannot serve Hongdae; all-stop required.
-5. Mercure “8 minute walk” vs hotel 100 m / 1–2 minutes.
-6. Coffee It House has no official page; hours conflict across third parties.
-7. Aquarium $15 not on operator English tickets page; adult fare listings conflict.
-8. Amso Galbi break-time conflict (MICHELIN 14:00–17:00 vs VISITKOREA weekend 15:15–16:30).
-9. Daritdol hours conflict (VISITKOREA vs Visit Busan).
-10. Day 13 and Day 15 empty in the brief.
-11. Hotel–station taxi times and dollar fares unverified.
-12. Trip year still unresolved (2006 typo vs 2026 weekday match).
+### VISITKOREA · Haeundae Amso Galbijip
+https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=73814
+11:30–22:00; weekend break 15:15–16:30. Conflicts with MICHELIN 14:00–17:00 gap.
