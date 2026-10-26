@@ -246,3 +246,10 @@ PR #6 merged while #7 integration was in progress, advancing main to 1fe2d25. Th
 - Field-guide validation run `39569170055` for the merge commit: **success**. GitHub Pages build `1302065060` / run `39569169287` for the same commit: **built/deployed**, no deployment error.
 - Direct live checks (cache-busted with merge SHA) confirmed the Field Guide dashboard, Day 4, Food & Markets, Shopping, Flagged for Review and Source Shelf at https://buffedlizard55-lab.github.io/Koreatrip1/field-guide/. Hanjungsun and Olive Young N Seongsu render on the Seongsu day/category tables; the D176 distinction, Gwangjang section hours and two-branch Blue Elephant review appear with source links.
 - Non-blocking traveler decisions remain visible on Flagged for Review: trip year/bookings, D176 identity, unresolved Blue Elephant branch, Eternalog/Solsot and other named candidates, and the open Days 7–8. Unsupported values remain blank. Root site and all other companion guides are preserved.
+
+## Arena session `14a08306` — Busan Week 2 + return extension (claimed 2026-10-26)
+
+- Session ID: `arena/14a08306-koreatrip1` (fixed Arena branch; no session-* branch per platform rule above).
+- Task: Extend root dashboard from 9 to 16 days using the newly supplied Week 2 Busan itinerary (Days 10–16, duplicate Day 9, Gwangalli drone show, Day 16 Busan→Seoul Hongdae/Mercure). Verify line-by-line from official sources only; blank + Flagged for Review where unconfirmed. Do not infer prices/times.
+- Status: in progress. Owner: arena-14a08306.
+- File scope (non-overlapping): `data.js`, `app.js`, `tests/site.test.cjs`, `SOURCES.md`, `README.md`, this COORDINATION.md append. Does NOT touch `field-guide/**`, `verified-guide/**`, `docs/**`, `prior-site/**`, `src/**`, `data/**` (other sessions' outputs preserved; read-only reference).
