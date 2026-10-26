@@ -264,7 +264,7 @@ PR #6 merged while #7 integration was in progress, advancing main to 1fe2d25. Th
 
 | Task | Status | Owner | File scope |
 |---|---|---|---|
-| Audit the inherited itinerary dashboard, source-link coverage, responsive site checks and publication state | in progress | `arena/080958a3-koreatrip1` | `COORDINATION.md` only |
+| Audit the inherited itinerary dashboard, source-link coverage, responsive site checks and publication state | done | `arena/080958a3-koreatrip1` | `COORDINATION.md` only |
 
 Claimed on 2026-10-26 UTC after reading the shared task board. Existing research/site scopes are already complete in the merged main tree; this session will preserve the independently maintained guides and avoid editing their shared data or navigation. Validation results and any uncovered issues will be recorded below.
 
@@ -284,3 +284,10 @@ Audit status: done (review findings remain published on the existing Flagged for
 - PR #16: https://github.com/buffedlizard55-lab/Koreatrip1/pull/16 — **MERGED 2026-10-26**, merge commit `9eef1bd1d0c2b98efc470cf60ce8258df7e17d49`. One conflict on merge (concurrent PR #15 audit session in COORDINATION.md only) was resolved by keeping both sessions' records; no other session's work was discarded. Tests 7/7 pass on the merged tree.
 - GitHub Pages build for merge commit `9eef1bd`: **built** (Pages builds API). Live check via page fetch: https://buffedlizard55-lab.github.io/Koreatrip1/itinerary.html?day=14 renders "Gwangalli drone-show night", L7 base, the confirmed 19:00/21:00 Saturday drone pattern and the open-day flags. (Note: the `f85e975` "errored" build in the API list predates this merge and belongs to PR #15's commit, not this merge.)
 - All tasks for session `14a08306` are **done**. Non-blocking items remain on https://buffedlizard55-lab.github.io/Koreatrip1/review.html for owner review.
+### Integration follow-up — 2026-10-26 UTC
+
+- PR #15: https://github.com/buffedlizard55-lab/Koreatrip1/pull/15 — **merged** at `f85e9754a610f531df251d2c2cfa6489b20a9947` (2026-10-26 05:46:43 UTC). Its immediate Pages job was cancelled/superseded while the parallel Week 2 integration was landing; no live-success claim is made for that intermediate SHA.
+- Preserved concurrent PR #16 (Busan Week 2 + Hongdae return) without edits to its files. Current main includes 16 itinerary days and 98 plan rows. Its published Flagged for Review page transparently covers duplicate Day 9, the Sky Capsule one-way ticket detail, the BUSAN X the SKY price conflict, conflicting Nurimaru/Jagalchi details, the AREX Express-vs-All-Stop correction, original empty days, and unverified transit/booking particulars.
+- Re-ran validation against the combined `9eef1bd` main tree: Node tests **7/7 passed** (98 plan entries); Field Guide checker **passed** (18 pages, 199 source-linked rows, 1,045 internal links/assets, 64 source URLs); syntax and JSON checks pass.
+- GitHub Pages Actions deployment for combined main commit `9eef1bd1d0c2b98efc470cf60ce8258df7e17d49` completed **successfully** (`40276088181`); Pages builds API reports `built` for that exact commit. Direct published checks show the 16-day overview / 98-entry total, Day 16's Busan→Seoul plan, and the review page. Published root: https://buffedlizard55-lab.github.io/Koreatrip1/ · Day 16: https://buffedlizard55-lab.github.io/Koreatrip1/itinerary.html?day=16 · Review: https://buffedlizard55-lab.github.io/Koreatrip1/review.html.
+- This follow-up supersedes the earlier nine-day count as the current primary dashboard. The year remains explicitly unresolved in the site; calendar-matched dates are not treated as confirmation. The palace admissions-source conflict and all remaining unconfirmed bookings, venues and blank days remain visibly flagged.
