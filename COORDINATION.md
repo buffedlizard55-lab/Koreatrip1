@@ -377,3 +377,10 @@ Audit status: done (review findings remain published on the existing Flagged for
 - Session note: Fixed branch `arena/7058e110-koreatrip1` per platform rules (no `session-*` branch created).
 - Non-overlapping scope: Does NOT edit root dashboard files (`index.html`, `data.js`, `app.js`, `SOURCES.md`, `README.md`), `data/**`, `docs/*.html`, `verified-guide/**`, `prior-site/**`, or any `full-trip/**` files claimed by `arena/75247ef9-koreatrip1`.
 - Completed verification and regeneration: `python3 scripts/check.py --build --out field-guide` passed (25 pages, 277 data rows with official links, 1,565 links/assets checked, 80 registered official URLs); `node --test tests/site.test.cjs` passed (7/7).
+- PR #26: https://github.com/buffedlizard55-lab/Koreatrip1/pull/26 — **MERGED 2026-10-26 06:13:07 UTC**, merge commit `f82e25035534117f4332698608e640cd7ffc292f`.
+- GitHub Pages deployment for merge commit `f82e25035534117f4332698608e640cd7ffc292f`: workflow run `40278527662` (`pages-build-deployment`) and `40278527985` (`Validate the field guide`) both **succeeded**; GitHub Pages Builds API reports `built` with no error.
+- Live deployment verified via page fetch:
+  - Field Guide home (16 days): https://buffedlizard55-lab.github.io/Koreatrip1/field-guide/
+  - Day 16 (Busan → Seoul Hongdae return): https://buffedlizard55-lab.github.io/Koreatrip1/field-guide/days/16.html
+  - Flagged for Review (59 flags): https://buffedlizard55-lab.github.io/Koreatrip1/field-guide/review.html
+- Non-blocking open items remain published on the Flagged for Review page for owner review (unconfirmed travel year, unbooked flights/hotels/KTX/Sky Capsule seats, conflicting official adult fares on Blueline Park and BUSAN X the SKY, conflicting Nurimaru closing hours, conflicting Haeundae Amso Galbi afternoon break hours, unverified SEA LIFE $15 ticket claim, unverified Coffee It House venue, and open Days 7, 8, 13, and 15).
