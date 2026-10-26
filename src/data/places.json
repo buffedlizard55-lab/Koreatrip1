@@ -183,21 +183,37 @@
       ]
     },
     {
-      "id": "temple",
-      "name": "Haedong Yonggungsa Temple",
+      "id": "dongbaek",
+      "name": "Dongbaekseom Island & Dongbaek Coastal Trail",
       "category": "sights",
       "city": "Busan",
-      "area": "Gijang",
-      "address": "86 Yonggung-gil, Gijang-eup, Gijang-gun, Busan",
-      "hours": "04:30–19:20; last entry 18:50",
-      "days": "Daily",
-      "access": "Line 2 · Haeundae, Exit 7 → bus 181, 100 or Haeundae 9",
+      "area": "Haeundae",
+      "address": "99 Dongbaek-ro, Haeundae-gu, Busan",
+      "hours": "Coastal trail open at all hours",
+      "days": "Daily, year-round",
+      "access": "West end of Haeundae Beach; or Line 2 · Dongbaek, Exit 1 (20-min walk) / Bus 139, 307, 1003",
       "price": "Free",
-      "note": "Coastal steps and an exposed route; allow extra time for the connecting bus.",
+      "note": "Spelled 'Dongbaekseon Island' in the submitted notes. The 950 m coastal walk connects Haeundae Beach, the Mermaid Statue, suspension bridge, lighthouse plaza and Nurimaru APEC House.",
       "sources": [
-        "temple"
-      ],
-      "extension": true
+        "dongbaek_trail"
+      ]
+    },
+    {
+      "id": "nurimaru",
+      "name": "Nurimaru APEC House",
+      "category": "sights",
+      "city": "Busan",
+      "area": "Haeundae / Dongbaekseom",
+      "address": "116 Dongbaek-ro, Haeundae-gu, Busan",
+      "hours": "Opens 09:00; closing hour unverified (17:00 vs 18:00 official conflict)",
+      "days": "Closed first Monday of every month",
+      "access": "Inside Dongbaekseom Island; Line 2 · Dongbaek, Exit 1 (14-min walk)",
+      "price": "Free",
+      "note": "Two Visit Busan listings disagree on whether indoor exhibition closing is 17:00 or 18:00. Proposed Day 10 is a Tuesday (not the first Monday closure).",
+      "sources": [
+        "nurimaru",
+        "dongbaek_trail"
+      ]
     },
     {
       "id": "sky_capsule",
@@ -205,20 +221,35 @@
       "category": "sights",
       "city": "Busan",
       "area": "Haeundae / Cheongsapo",
-      "address": "Mipo–Cheongsapo route",
+      "address": "Mipo–Cheongsapo route (2.0 km aerial rail)",
       "hours": "November 08:30–18:00; operations may change",
       "days": null,
-      "access": "Mipo station on the Haeundae coast; ends at Cheongsapo",
+      "access": "Mipo Station on the east end of Haeundae Beach to Cheongsapo Station (~30 min one way)",
       "price": null,
-      "note": "Scenic ride, not the city subway. The operator's fare pages conflict, so no price is asserted; reservation not confirmed.",
+      "note": "Scheduled on Day 10. Operator sells one-way departures only (Mipo→Cheongsapo or Cheongsapo→Mipo), not a single round-trip Sky Capsule ticket; online reservations open Tuesdays at 07:00 four weeks ahead. Operator fare pages conflict (₩50,000 vs ₩40,000 for two), so price stays blank.",
       "sources": [
         "blueline_capsule",
         "blueline_course",
         "blueline_booking",
         "blueline_price_current",
         "blueline_price_conflict"
-      ],
-      "extension": true
+      ]
+    },
+    {
+      "id": "daritdol",
+      "name": "Cheongsapo Daritdol Observatory",
+      "category": "sights",
+      "city": "Busan",
+      "area": "Cheongsapo / Haeundae",
+      "address": "167 Cheongsapo-ro, Haeundae-gu, Busan",
+      "hours": "09:00–18:00 (June–August until 20:00)",
+      "days": "Daily, year-round (weather/repair restrictions apply)",
+      "access": "Walk from Cheongsapo Blueline Station; or Line 2 · Haeundae, Exit 1 → Village Bus 2",
+      "price": "Free",
+      "note": "Curved overwater glass skywalk near Cheongsapo Port; visitors wear protective shoe covers at the entrance. Access can close in rain, snow or high wind.",
+      "sources": [
+        "busan_skywalks"
+      ]
     },
     {
       "id": "beach_train",
@@ -229,50 +260,50 @@
       "address": "Mipo–Cheongsapo–Songjeong route",
       "hours": "November Mipo/Songjeong 09:00–19:00; operations may change",
       "days": null,
-      "access": "Operator's scenic route, not Busan Metro",
+      "access": "Operator's coastal rail route between Mipo, Cheongsapo and Songjeong",
       "price": null,
-      "note": "Optional return from Cheongsapo. Operator fare pages conflict; check live checkout.",
+      "note": "Optional coastal return from Cheongsapo on Day 10 (or booked in the operator's one-way Sky Capsule + Beach Train package). Operator fare pages conflict; check live checkout.",
       "sources": [
         "blueline_train",
         "blueline_booking",
         "blueline_price_current",
         "blueline_price_conflict"
-      ],
-      "extension": true
+      ]
     },
     {
-      "id": "gwangalli",
-      "name": "Gwangalli Beach",
+      "id": "x_the_sky",
+      "name": "BUSAN X the SKY",
       "category": "sights",
       "city": "Busan",
-      "area": "Suyeong",
-      "address": "219 Gwanganhaebyeon-ro, Suyeong-gu, Busan",
-      "hours": "Public beach area: anytime",
-      "days": "Year-round",
-      "access": "Line 2 · Gwangan, Exit 5 then walk",
-      "price": "Free",
-      "note": "Optional evening viewpoint. Public access does not guarantee events.",
-      "sources": [
-        "gwangalli"
-      ],
-      "extension": true
-    },
-    {
-      "id": "drone",
-      "name": "Gwangalli M Drone Light Show",
-      "category": "sights",
-      "city": "Busan",
-      "area": "Suyeong",
-      "address": "Gwangalli Beach, 219 Gwanganhaebyeon-ro",
-      "hours": "Usual winter Saturdays 19:00 & 21:00",
-      "days": "Usual Saturdays; date-specific events unconfirmed",
-      "access": "Line 2 · Gwangan, Exit 5 then walk",
+      "area": "Haeundae",
+      "address": "30 Dalmaji-gil, Haeundae-gu, Busan (Haeundae LCT Landmark Tower 98–100F)",
+      "hours": "10:00–21:00; last admission 20:30",
+      "days": "Daily, year-round",
+      "access": "East end of Haeundae Beach near Mipo; walk from Line 2 · Jung-dong or Haeundae",
       "price": null,
-      "note": "An unassigned, after-Day-9 extension only. Day 7 is in Seoul; even a later Busan Saturday's program would need confirmation and can be cancelled.",
+      "note": "Appears twice in the brief (optional late afternoon on Day 10 and 10:00–11:30 on Day 12). Official adult fee conflicts between VisitKorea (₩29,000) and Visit Busan (₩27,000), and the brief's $17.59 Klook figure is a third-party reseller rate; price is left unverified.",
       "sources": [
-        "drone"
-      ],
-      "extension": true
+        "xthesky_kto",
+        "xthesky_busan"
+      ]
+    },
+    {
+      "id": "sealife",
+      "name": "SEA LIFE Busan Aquarium",
+      "category": "sights",
+      "city": "Busan",
+      "area": "Haeundae",
+      "address": "266 Haeundaehaebyeon-ro, Haeundae-gu, Busan",
+      "hours": "Weekdays 10:00–19:00 (last entry 18:00); weekends 10:00–20:00 (last entry 19:00)",
+      "days": "Daily (check operator calendar for date-specific closures)",
+      "access": "On Haeundae Beach; Line 2 · Haeundae, Exit 3 or 5 (10-min walk) or Bus 139, 307",
+      "price": null,
+      "note": "Weekday 10:00–19:00 matches the submitted Day 12 note, with last entry at 18:00. The operator's ticket overview lists child starting rates without a static adult KRW price, and the brief's '$15 ticket' is unverified.",
+      "sources": [
+        "sealife_hours",
+        "sealife_tickets",
+        "sealife_busan"
+      ]
     },
     {
       "id": "gamcheon",
@@ -285,11 +316,59 @@
       "days": "Daily",
       "access": "Line 1 · Toseong, Exit 6 → village bus Saha 1-1, Seo-gu 2 or 2-2",
       "price": "Free (some activities extra)",
-      "note": "A residential hillside. Keep voices low; take care on steep lanes.",
+      "note": "Scheduled on Day 11 morning. A residential hillside; keep voices low and take care on steep lanes.",
       "sources": [
         "gamcheon"
-      ],
-      "extension": true
+      ]
+    },
+    {
+      "id": "songdo_beach",
+      "name": "Songdo Beach",
+      "category": "sights",
+      "city": "Busan",
+      "area": "Seo-gu / Songdo",
+      "address": "100 Songdohaebyeon-ro, Seo-gu, Busan",
+      "hours": "Listing shows 06:00–23:00 with adjacent skywalk",
+      "days": "Open year-round",
+      "access": "Line 1 · Jagalchi, Exit 2 → Bus 7, 26, 30, 71 or 96 to Songdo Beach (3-min walk)",
+      "price": "Free",
+      "note": "Scheduled on Day 11 afternoon adjacent to Songdo Cloud Trails and Songdo Marine Cable Car. The brief's '13 min bus ride, 9 min walk' from Jagalchi is unverified.",
+      "sources": [
+        "songdo_beach"
+      ]
+    },
+    {
+      "id": "songdo_skywalk",
+      "name": "Songdo Cloud Trails (Songdo Skywalk)",
+      "category": "sights",
+      "city": "Busan",
+      "area": "Seo-gu / Songdo",
+      "address": "129-4 Amnam-dong, Seo-gu, Busan",
+      "hours": "06:00–23:00",
+      "days": "Daily, year-round (weather/repair restrictions apply)",
+      "access": "East side of Songdo Beach; Line 1 · Jagalchi, Exit 2 → Bus 7, 26, 30, 71 or 96",
+      "price": "Free",
+      "note": "Curved overwater walkway off Songdo Beach; access may close in rain, snow or high winds.",
+      "sources": [
+        "busan_skywalks",
+        "songdo_beach"
+      ]
+    },
+    {
+      "id": "songdo_cablecar",
+      "name": "Songdo Marine Cable Car (Busan Air Cruise)",
+      "category": "sights",
+      "city": "Busan",
+      "area": "Seo-gu / Songdo",
+      "address": "171 Songdohaebyeon-ro, Seo-gu, Busan",
+      "hours": "09:00–21:00",
+      "days": "Daily, year-round",
+      "access": "Songdo Base Station at Songnim Park; Line 1 · Jagalchi, Exit 2 → Bus 6, 26, 30, 71, 96 or 96-1",
+      "price": "Air Cruise ₩17,000 RT / ₩13,000 OW · Crystal ₩22,000 RT / ₩17,000 OW (adult)",
+      "note": "Optional 1.62 km overwater cable car between Songnim Park (Songdo Base Station) and Amnam Park (Songdo Sky Park). Weather can suspend operation.",
+      "sources": [
+        "songdo_cablecar"
+      ]
     },
     {
       "id": "biff",
@@ -302,9 +381,57 @@
       "days": "Public street all year; vendor days vary",
       "access": "Line 1 · Jagalchi / Nampo for the downtown walk",
       "price": null,
-      "note": "Outdoor food and cinema streets; individual vendor hours are not assured.",
+      "note": "Outdoor food and cinema plaza in Nampo-dong; listed twice on Day 11 (lunch before Songdo and late-afternoon downtown walk). Individual vendor hours are not assured.",
       "sources": [
         "biff"
+      ]
+    },
+    {
+      "id": "gwangalli",
+      "name": "Gwangalli Beach",
+      "category": "sights",
+      "city": "Busan",
+      "area": "Suyeong",
+      "address": "219 Gwanganhaebyeon-ro, Suyeong-gu, Busan",
+      "hours": "Public beach area: anytime",
+      "days": "Year-round",
+      "access": "Line 2 · Gwangan, Exit 5 then walk (~13 min)",
+      "price": "Free",
+      "note": "Scheduled on Day 14 (Saturday from 17:00; spelled 'Gwangali' in the brief). Public access does not guarantee weather-dependent events.",
+      "sources": [
+        "gwangalli"
+      ]
+    },
+    {
+      "id": "drone",
+      "name": "Gwangalli M Drone Light Show",
+      "category": "sights",
+      "city": "Busan",
+      "area": "Suyeong",
+      "address": "Gwangalli Beach, 219 Gwanganhaebyeon-ro",
+      "hours": "Usual winter Saturdays (Oct–Feb) 19:00 & 21:00",
+      "days": "Usual Saturdays; date-specific events unconfirmed",
+      "access": "Line 2 · Gwangan, Exit 5 then walk (~13 min)",
+      "price": "Free",
+      "note": "Scheduled on Day 14 (Saturday evening). Visit Busan lists two Saturday winter shows at 19:00 and 21:00 (~10 minutes per show on Visit Busan vs 12 minutes in the brief). Specific Saturday theme or wind/rain cancellation must be checked on the day.",
+      "sources": [
+        "drone"
+      ]
+    },
+    {
+      "id": "temple",
+      "name": "Haedong Yonggungsa Temple",
+      "category": "sights",
+      "city": "Busan",
+      "area": "Gijang",
+      "address": "86 Yonggung-gil, Gijang-eup, Gijang-gun, Busan",
+      "hours": "04:30–19:20; last entry 18:50",
+      "days": "Daily",
+      "access": "Line 2 · Haeundae, Exit 7 → bus 181, 100 or Haeundae 9",
+      "price": "Free",
+      "note": "Editorial suggestion for the blank Day 13 Friday (not in the submitted brief). Coastal steps and an exposed route; allow extra time for the connecting bus.",
+      "sources": [
+        "temple"
       ],
       "extension": true
     },
@@ -426,6 +553,23 @@
       ]
     },
     {
+      "id": "amso_galbi",
+      "name": "Haeundae Amso Galbi (Haeundae Rib Barbecue)",
+      "category": "food",
+      "city": "Busan",
+      "area": "Haeundae",
+      "address": "333 Haeundaehaebyeon-ro (32-10 Jungdong 2-ro 10beon-gil), Haeundae-gu, Busan",
+      "hours": "Opens 11:30, closes 22:00; afternoon break unverified (official conflict)",
+      "days": "Daily (closed Seollal and Chuseok holidays per VisitKorea)",
+      "access": "Haeundae Beach area; walk from Line 2 · Haeundae or Jung-dong",
+      "price": null,
+      "note": "MICHELIN Guide Selected (₩₩), not Michelin-starred. Both official sources agree on 11:30 opening, but MICHELIN lists a daily 14:00–17:00 break while VisitKorea lists a weekend-only 15:15–16:30 break. Fresh ribs often sell out early.",
+      "sources": [
+        "michelin_amso",
+        "kto_amso"
+      ]
+    },
+    {
       "id": "haeundae_market",
       "name": "Haeundae Market",
       "category": "food",
@@ -452,12 +596,11 @@
       "days": null,
       "access": "Line 1 · Jagalchi, Exit 10; or Nampo, Exit 2",
       "price": null,
-      "note": "Two Visit Busan pages disagree on a fifth-Tuesday closure; stall prices also vary.",
+      "note": "Scheduled on Day 11 (Wednesday). Two Visit Busan pages disagree on a fifth-Tuesday closure; stall prices and the brief's '9 min. walk' from BIFF Square are unverified.",
       "sources": [
         "jagalchi",
         "biff"
-      ],
-      "extension": true
+      ]
     },
     {
       "id": "bupyeong",
@@ -470,7 +613,7 @@
       "days": "Daily except traditional holidays",
       "access": "Line 1 · Jagalchi, Exit 3 then walk",
       "price": null,
-      "note": "An optional Nampo evening alternative; merchant hours and individual prices vary.",
+      "note": "Editorial Nampo evening alternative for the blank Day 15 Sunday (not in the submitted brief); merchant hours and individual prices vary.",
       "sources": [
         "bupyeong"
       ],
@@ -625,6 +768,39 @@
       ]
     },
     {
+      "id": "gukje",
+      "name": "Gukje Market",
+      "category": "shopping",
+      "city": "Busan",
+      "area": "Nampo / Jung-gu",
+      "address": "32 Junggu-ro, Jung-gu, Busan",
+      "hours": "09:00–20:00; differs by store",
+      "days": "Closed Sundays (differs by store)",
+      "access": "Line 1 · Jagalchi, Exit 7 (7-min walk); or Bus 15, 40, 86, 126, 186",
+      "price": null,
+      "note": "Scheduled on Day 11 (Wednesday); spelled 'Gukje Marker' in the submitted notes. Traditional maze-like market next to BIFF Square and Bupyeong Kkangtong Market.",
+      "sources": [
+        "gukje"
+      ]
+    },
+    {
+      "id": "nampo_shopping",
+      "name": "Nampo-dong shopping streets (Gwangbok-ro)",
+      "category": "shopping",
+      "city": "Busan",
+      "area": "Nampo / Jung-gu",
+      "address": "Gwangbok-ro, Jung-gu, Busan",
+      "hours": "Public street at all times; individual store hours vary",
+      "days": "Open year-round; individual store days vary",
+      "access": "Line 1 · Nampo, Exit 3 or 7 (5-min walk); connects directly with BIFF Square and Gukje Market",
+      "price": null,
+      "note": "Scheduled on Day 11 late afternoon. Visit Busan identifies Gwangbok-ro Fashion Street and surrounding Nampo-dong alleys as the main downtown shopping spine.",
+      "sources": [
+        "nampo_shopping",
+        "biff"
+      ]
+    },
+    {
       "id": "stanford",
       "name": "Stanford Hotel Myeongdong",
       "category": "stays",
@@ -635,7 +811,7 @@
       "days": null,
       "access": "Opposite Lotte Main; Line 2 · Euljiro 1-ga station area",
       "price": null,
-      "note": "9F lobby; same-day luggage storage until midnight after checkout. Mentioned lodging, not a confirmed reservation.",
+      "note": "Suggested Week 1 Seoul base (Days 1–9 checkout). 9F lobby; same-day luggage storage until midnight after checkout. Mentioned lodging, not a confirmed reservation.",
       "sources": [
         "stanford",
         "lotte"
@@ -652,10 +828,27 @@
       "days": null,
       "access": "Haeundae area; Line 2 · Haeundae Station",
       "price": null,
-      "note": "Check the exact walking entrance and baggage policy with the hotel; mentioned lodging, not a confirmed reservation.",
+      "note": "Suggested Week 2 Busan base (Day 9 arrival to Day 16 checkout before 11:00). Mentioned lodging, not a confirmed reservation.",
       "sources": [
         "l7",
         "busan_metro"
+      ]
+    },
+    {
+      "id": "mercure_hongdae",
+      "name": "Mercure Ambassador Seoul Hongdae",
+      "category": "stays",
+      "city": "Seoul",
+      "area": "Hongdae / Mapo",
+      "address": "144 Yanghwa-ro, Mapo-gu, Seoul",
+      "hours": "Check-in from 15:00 · check-out by 12:00",
+      "days": null,
+      "access": "Hongik Univ. Station (AREX All-Stop / Line 2 / Gyeongui-Jungang), Exit 9 (operator lists 2-min / 100 m walk)",
+      "price": null,
+      "note": "Day 16 return-to-Seoul base in Hongdae. Accor states a 2-minute (100 m) walk from Hongik Univ. Station Exit 9, whereas the brief says '8 minute walk'. Use AREX All-Stop from Seoul Station (AREX Express does not stop at Hongik Univ.). Mentioned lodging, not a confirmed reservation.",
+      "sources": [
+        "mercure_hongdae",
+        "arex_allstop"
       ]
     }
   ]

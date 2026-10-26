@@ -1,11 +1,11 @@
 {
   "trip": {
-    "title": "Seoul → Busan",
-    "subtitle": "Nine days, two cities, room to wander.",
+    "title": "Seoul → Busan → Seoul (Hongdae)",
+    "subtitle": "Sixteen days, three neighborhood bases, room to wander.",
     "travelers": "Two adults",
-    "date_note": "Working calendar only: Nov 1–9, 2026 matches the supplied weekday pattern. The notes also said ‘Nov 2, 2006’; the year is not confirmed.",
-    "provenance": "Another session's structured transcription of the supplied plan is preserved at data/trip.json on main. The verbatim original brief is not in this checkout. The submitted outline puts Seoul activities on Days 1–6, Itaewon only as a Day 7 heading, no Day 8 activities, and a Seoul→Busan KTX arrival on Day 9. This field guide preserves that sequence except for a clearly marked Monday/Tuesday swap needed for Gyeongbokgung's closure; optional suggestions on otherwise empty days are labeled editorial. No booking is established.",
-    "verified_on": "2026-10-21"
+    "date_note": "Working calendar only: Nov 1–16, 2026 matches the supplied Sunday-through-Monday weekday pattern. The notes also said ‘Nov 2, 2006’; the year is not confirmed.",
+    "provenance": "The supplied 16-day outline covers Week 1 in Seoul Myeongdong (Days 1–8), the Seoul→Busan KTX transfer on Day 9 (printed at the end of Week 1 and repeated at the top of Week 2), Week 2 in Busan Haeundae (Days 10–15), and a Busan→Seoul KTX + AREX return to Mercure Ambassador Seoul Hongdae on Day 16. Days 7, 8, 13 and 15 have no listed activities in the brief (Day 7 names Itaewon only). This field guide preserves that sequence except for a clearly marked Monday/Tuesday swap needed for Gyeongbokgung's Tuesday closure; optional suggestions on otherwise empty days are labeled editorial. No booking is established.",
+    "verified_on": "2026-10-26"
   },
   "days": [
     {
@@ -109,16 +109,108 @@
       "flags": ["open_days", "gwangjang_sunday", "train_booking"]
     },
     {
-      "number": 9, "date": "2026-11-09", "city": "Seoul → Busan", "title": "Take the train to Haeundae", "subtitle": "The supplied final day travels south; it does not fly home from Seoul.", "theme": "CITY CHANGE", "hotel": "stanford", "end_hotel": "l7", "overnight": "Busan · L7 reservation not confirmed",
+      "number": 9, "date": "2026-11-09", "city": "Seoul → Busan", "title": "Take the KTX to Haeundae", "subtitle": "Check out of Stanford, ride the KTX south to Busan, and settle into Haeundae for Week 2.", "theme": "CITY CHANGE", "hotel": "stanford", "end_hotel": "l7", "overnight": "Busan · L7 reservation not confirmed",
       "depart": {"text": "Check out of Stanford by 12:00. From Euljiro 1-ga Line 2, change at City Hall to Line 1 for Seoul Station. Take a separately booked KORAIL train to Busan Station; no specific duration, fare, seat or departure is confirmed. At Busan Station take Metro Line 1 to Seomyeon, transfer to Line 2 for Haeundae, then use L7's published address for the final walk.", "sources": ["stanford", "seoul_metro", "korail", "visitkorea_rail", "busan_metro", "l7"]},
       "stops": [
         {"period": "After arrival", "place": "l7", "why": "L7 publishes 15:00 check-in. The name in the notes does not establish a reservation or early-room access.", "optional": false},
         {"period": "Evening meal option", "place": "haeundae_market", "why": "A walkable food market in the Haeundae area; vendor menus, prices and individual hours vary.", "optional": true},
         {"period": "If time and energy allow", "place": "haeundae_beach", "why": "A shoreline stroll, not a November swimming suggestion. The tourism listing's 09:00–18:00 hours have unspecified scope.", "optional": true}
       ],
-      "return": {"text": "Use the published L7 address to walk back from the Haeundae area. Any onward trip after this Busan arrival falls outside the nine supplied days; do not assume a return train or flight.", "sources": ["l7", "haeundae_market", "haeundae_beach"]},
+      "return": {"text": "Use the published L7 address (55 Haeun-daero 570beon-gil) to walk back from the Haeundae beachfront and market. Day 9 is printed both at the end of Week 1 and at the top of Week 2 in the supplied brief and serves as the arrival base for Days 9–15.", "sources": ["l7", "haeundae_market", "haeundae_beach"]},
       "note": "The submitted 45-minute early KTX boarding rule and 2h45 journey estimate are not asserted as verified. Confirm train inventory, station/platform guidance and the Busan hotel reservation independently.",
-      "flags": ["train_booking", "korail_window", "hotels", "after_trip", "haeundae_hours", "lotte_closed", "dates"]
+      "flags": ["day9_duplicate", "train_booking", "korail_window", "hotels", "haeundae_hours", "lotte_closed", "dates"]
+    },
+    {
+      "number": 10, "date": "2026-11-10", "city": "Busan", "title": "Haeundae, Dongbaek & Sky Capsule", "subtitle": "Walk the beachfront and Dongbaek Coastal Trail to Nurimaru, then ride the Sky Capsule to Cheongsapo.", "theme": "EAST COASTLINE", "hotel": "l7", "overnight": "Busan · L7 reservation not confirmed",
+      "depart": {"text": "Start on foot from L7 Haeundae toward Haeundae Beach and the west-end Dongbaekseom peninsula (or use Line 2 Haeundae → Dongbaek Exit 1). After Nurimaru APEC House, head to the east end of Haeundae Beach for Blueline Park Mipo Station; the brief mentions taking a bus to Mipo, though Mipo is also walkable along the beachfront and no bus number or duration is verified.", "sources": ["l7", "haeundae_beach", "dongbaek_trail", "nurimaru", "blueline_course", "busan_metro"]},
+      "stops": [
+        {"period": "Morning", "place": "haeundae_beach", "why": "Walk the beachfront and nearby cafés/shops. The tourism listing's 09:00–18:00 hours have unspecified scope.", "optional": false},
+        {"period": "Early lunch option", "place": "amso_galbi", "why": "MICHELIN Guide Selected (not starred) beef rib restaurant opening at 11:30. Afternoon break hours conflict across official listings (14:00–17:00 daily vs 15:15–16:30 weekends), and the 'arrive 30 min early' tip is traveler advice.", "optional": true},
+        {"period": "Late morning", "place": "dongbaek", "why": "Follow the 950 m Dongbaek Coastal Trail around Dongbaekseom Island (spelled 'Dongbaekseon' in the brief).", "optional": false},
+        {"period": "Midday", "place": "nurimaru", "why": "Free APEC summit pavilion inside Dongbaekseom. Closed first Monday of the month (Nov 10 is Tuesday); closing hour conflicts between 17:00 and 18:00 on official Visit Busan pages.", "optional": false},
+        {"period": "Afternoon", "place": "sky_capsule", "why": "Ride Mipo → Cheongsapo (~30 min, 2 km). Operator sells one-way departures only, not a single round-trip Sky Capsule ticket; book both directions separately or return by Beach Train. Online release is Tuesdays at 07:00 four weeks ahead.", "optional": false},
+        {"period": "Afternoon", "place": "daritdol", "why": "Walk the free curved overwater skywalk near Cheongsapo Port (09:00–18:00; weather permitting).", "optional": false},
+        {"period": "Return option", "place": "beach_train", "why": "Optional coastal rail return from Cheongsapo to Mipo if not booking a separate return Sky Capsule.", "optional": true},
+        {"period": "Late afternoon option", "place": "x_the_sky", "why": "Optional LCT observatory stop (also scheduled on Day 12 morning). Official adult price conflicts (₩29,000 vs ₩27,000); the brief's $17.59 Klook rate is unverified.", "optional": true},
+        {"period": "Evening", "place": "haeundae_market", "why": "Dinner and evening browse around Haeundae Market; individual stall hours and prices vary.", "optional": false}
+      ],
+      "return": {"text": "From Mipo / BUSAN X the SKY or Haeundae Market, walk back along Haeundae Beach and Gunam-ro to L7 Haeundae.", "sources": ["l7", "haeundae_market", "xthesky_kto"]},
+      "note": "The brief instructs travelers to 'book round trip tickets' on the Sky Capsule, but Haeundae Blueline Park sells Sky Capsule rides as one-way departures only (Mipo→Cheongsapo or Cheongsapo→Mipo). BUSAN X the SKY is listed both here as optional and on Day 12 at 10:00–11:30.",
+      "flags": ["sky_capsule_roundtrip", "blueline_fare", "amso_galbi_michelin", "nurimaru_hours", "xthesky_conflict", "haeundae_hours"]
+    },
+    {
+      "number": 11, "date": "2026-11-11", "city": "Busan", "title": "Gamcheon, Songdo & Nampo-dong", "subtitle": "Hillside alleys in Gamcheon, the overwater skywalk and cable car at Songdo, and old downtown markets.", "theme": "WEST & OLD DOWNTOWN", "hotel": "l7", "overnight": "Busan · L7 reservation not confirmed",
+      "depart": {"text": "The brief mentions taking '2 buses (1 hr & 17 min)' to Gamcheon without route numbers. The verified rail-and-bus route from L7 Haeundae is Metro Line 2 Haeundae → Seomyeon, transfer to Line 1 Seomyeon → Toseong Station Exit 6, then village bus Saha 1-1, Seo-gu 2 or Seo-gu 2-2 up to Gamcheon Culture Village.", "sources": ["l7", "busan_metro", "gamcheon"]},
+      "stops": [
+        {"period": "Morning (2–3 hrs)", "place": "gamcheon", "why": "Wander the hillside alleys, viewpoints and shops. Visitor facilities operate 09:00–17:00 in Nov–Feb; respect residential quiet rules.", "optional": false},
+        {"period": "Lunch", "place": "biff", "why": "Descend from Gamcheon toward Nampo/Jagalchi for street food at BIFF Square (also revisited in the late-afternoon downtown loop).", "optional": false},
+        {"period": "Midday walk", "place": "jagalchi", "why": "Walk from BIFF Square to Jagalchi Fish Market. Two Visit Busan pages disagree on whether fifth Tuesdays are closed (Nov 11 is a Wednesday); the brief's '9 min. walk' is unverified.", "optional": false},
+        {"period": "Afternoon", "place": "songdo_beach", "why": "From Jagalchi Station Exit 2 take Bus 7, 26, 30, 71 or 96 to Songdo Beach. The brief's '13 min bus ride, 9 min walk' is unverified.", "optional": false},
+        {"period": "Afternoon", "place": "songdo_skywalk", "why": "Walk the free Songdo Cloud Trails overwater skywalk (06:00–23:00; weather permitting).", "optional": false},
+        {"period": "Afternoon option", "place": "songdo_cablecar", "why": "Optional Songdo Marine Cable Car (Busan Air Cruise, 09:00–21:00; Air Cruise ₩17,000 RT, Crystal ₩22,000 RT per adult).", "optional": true},
+        {"period": "Late afternoon", "place": "gukje", "why": "Return to old downtown for Gukje Market (spelled 'Gukje Marker' in the brief; 09:00–20:00, closed Sundays, varies by shop).", "optional": false},
+        {"period": "Late afternoon / evening", "place": "nampo_shopping", "why": "Browse Nampo-dong shopping streets (Gwangbok-ro Fashion Street) alongside BIFF Square and Jagalchi.", "optional": false}
+      ],
+      "return": {"text": "From Nampo Station or Jagalchi Station take Metro Line 1 to Seomyeon, transfer to Line 2 for Haeundae Station, and walk to L7 Haeundae.", "sources": ["busan_metro", "l7", "nampo_shopping"]},
+      "note": "The brief names 'Coffee It House (2 minute walk)' near Gamcheon, which has no official tourism or operator listing and stays on the unverified shortlist. Note that the brief visits BIFF Square and Jagalchi before Songdo and lists them again in the late-afternoon downtown block, plus ends with a blank item '9.'.",
+      "flags": ["day11_transit_claims", "coffee_it_house", "jagalchi_closure", "gukje_typo"]
+    },
+    {
+      "number": 12, "date": "2026-11-12", "city": "Busan", "title": "BUSAN X the SKY & SEA LIFE Aquarium", "subtitle": "High-rise coastal views at LCT Landmark Tower followed by the Haeundae beachfront aquarium.", "theme": "HAEUNDAE COAST", "hotel": "l7", "overnight": "Busan · L7 reservation not confirmed",
+      "depart": {"text": "Walk from L7 Haeundae along the beachfront toward the east end of Haeundae Beach (30 Dalmaji-gil) for BUSAN X the SKY at Haeundae LCT Landmark Tower.", "sources": ["l7", "xthesky_kto", "haeundae_beach"]},
+      "stops": [
+        {"period": "10:00–11:30", "place": "x_the_sky", "why": "Observatory on floors 98–100 of Haeundae LCT Landmark Tower (spelled 'LCT Landmaek Tower' in the brief). Operating hours 10:00–21:00 (last entry 20:30) match the brief; adult KRW price conflicts (₩29,000 vs ₩27,000).", "optional": false},
+        {"period": "Lunch / beachfront", "place": "haeundae_beach", "why": "The brief leaves breakfast, beachfront lunch and shopping open around Haeundae Beach.", "optional": true},
+        {"period": "Afternoon", "place": "sealife", "why": "SEA LIFE Busan Aquarium at 266 Haeundaehaebyeon-ro. Weekday hours 10:00–19:00 (last entry 18:00) match the brief; the '$15 ticket' claim is unverified.", "optional": false},
+        {"period": "Evening option", "place": "haeundae_market", "why": "The brief leaves '5. Dinner:' blank; Haeundae Market is the nearby sourced evening food street.", "optional": true}
+      ],
+      "return": {"text": "Walk from SEA LIFE Busan Aquarium (266 Haeundaehaebyeon-ro) back to L7 Haeundae (55 Haeun-daero 570beon-gil).", "sources": ["sealife_busan", "l7"]},
+      "note": "Breakfast, lunch and the trailing '5. Dinner:' line on Day 12 are unspecified in the supplied brief. Confirm aquarium ticket pricing on the operator checkout rather than relying on the '$15' note.",
+      "flags": ["xthesky_conflict", "sealife_price", "busan_open_days"]
+    },
+    {
+      "number": 13, "date": "2026-11-13", "city": "Busan", "title": "Busan Friday, left open", "subtitle": "The supplied outline includes a Day 13 Friday heading with no listed activities.", "theme": "OPEN DAY", "hotel": "l7", "overnight": "Busan · L7 reservation not confirmed",
+      "depart": {"text": "No destination was submitted for Day 13. If choosing an optional east-coast outing from L7 Haeundae, walk to Haeundae Station Exit 7 and board city bus 181, 100 or Haeundae 9 toward Haedong Yonggungsa Temple.", "sources": ["l7", "busan_metro", "temple"]},
+      "stops": [
+        {"period": "Optional editorial outing", "place": "temple", "why": "Not in the submitted brief; included only as a sourced optional Busan coastal stop if you want to fill the blank Friday (04:30–19:20, last entry 18:50, free).", "optional": true},
+        {"period": "Optional local stay", "place": "haeundae_beach", "why": "Keep the day as a rest buffer around Haeundae Beach if preferred.", "optional": true}
+      ],
+      "return": {"text": "Return by bus 181, 100 or Haeundae 9 to Haeundae Station and walk back to L7 Haeundae.", "sources": ["temple", "l7"]},
+      "note": "Day 13 in the supplied itinerary is a blank heading ('Day 13: Friday'). Any stop shown here is an optional editorial suggestion, not a confirmed traveler plan.",
+      "flags": ["busan_open_days", "hotels"]
+    },
+    {
+      "number": 14, "date": "2026-11-14", "city": "Busan", "title": "Gwangalli Beach & Drone Light Show", "subtitle": "An open daytime followed by a 17:00 arrival at Gwangalli Beach for the 19:00 winter drone show.", "theme": "SATURDAY NIGHT SHOW", "hotel": "l7", "overnight": "Busan · L7 reservation not confirmed",
+      "depart": {"text": "Daytime before 17:00 is left open in the brief. For the 17:00 evening plan, walk from L7 Haeundae to Haeundae Station and ride Busan Metro Line 2 five stops west to Gwangan Station (Exit 5), then walk about 13 minutes to Gwangalli Beach.", "sources": ["l7", "busan_metro", "gwangalli", "drone"]},
+      "stops": [
+        {"period": "From 17:00", "place": "gwangalli", "why": "Arrive at Gwangalli Beach (spelled 'Gwangali' in the brief) for an early dinner or snack and a beachfront viewing spot.", "optional": false},
+        {"period": "19:00 show (or 21:00)", "place": "drone", "why": "Gwangalli M Drone Light Show winter schedule (Oct–Feb) runs Saturdays at 19:00 and 21:00. Visit Busan notes ~10 minutes per show (brief says 12 minutes); subject to weather cancellation.", "optional": false}
+      ],
+      "return": {"text": "Walk from Gwangalli Beach back to Gwangan Station (Exit 5) and ride Metro Line 2 east to Haeundae Station for L7 Haeundae.", "sources": ["drone", "busan_metro", "l7"]},
+      "note": "No daytime activities before 17:00 or specific Gwangalli dinner restaurant were supplied. Always recheck the Suyeong-gu / Gwangalli drone show notice on the day of travel, as wind or rain can cancel or reschedule performances.",
+      "flags": ["drone_schedule", "busan_open_days"]
+    },
+    {
+      "number": 15, "date": "2026-11-15", "city": "Busan", "title": "Busan Sunday, left open", "subtitle": "The supplied outline includes a Day 15 Sunday heading with no listed activities before Monday's train north.", "theme": "OPEN DAY", "hotel": "l7", "overnight": "Busan · L7 reservation not confirmed",
+      "depart": {"text": "No destination was submitted for Day 15. Keep the day open near Haeundae or, for an optional evening market visit, ride Line 2 Haeundae → Seomyeon and Line 1 Seomyeon → Jagalchi Exit 3 for Bupyeong Kkangtong Night Market (note Gukje Market retail is closed Sundays).", "sources": ["l7", "busan_metro", "bupyeong", "gukje"]},
+      "stops": [
+        {"period": "Optional local buffer", "place": "haeundae_market", "why": "Unassigned Sunday in the brief; stay near Haeundae and prepare for Monday's 11:00 hotel checkout if preferred.", "optional": true},
+        {"period": "Optional evening alternative", "place": "bupyeong", "why": "Editorial option not in the submitted brief: Bupyeong Kkangtong Night Market operates 19:30–00:00 daily except traditional holidays.", "optional": true}
+      ],
+      "return": {"text": "Return to L7 Haeundae via Metro Line 1 → Seomyeon → Line 2 Haeundae and prepare for Monday's checkout before 11:00.", "sources": ["busan_metro", "l7"]},
+      "note": "Day 15 in the supplied itinerary is a blank heading ('Day 15: Sunday'). Confirm Monday KTX return tickets and pack before the 11:00 L7 checkout.",
+      "flags": ["busan_open_days", "train_booking", "hotels"]
+    },
+    {
+      "number": 16, "date": "2026-11-16", "city": "Busan → Seoul", "title": "Return KTX to Seoul & Hongdae", "subtitle": "Check out of L7 Haeundae by 11:00, take the KTX to Seoul Station, and ride the AREX All-Stop train to Hongik Univ. Station.", "theme": "RETURN TO SEOUL", "hotel": "l7", "end_hotel": "mercure_hongdae", "overnight": "Seoul Hongdae · Mercure reservation not confirmed",
+      "depart": {"text": "Check out of L7 Haeundae before 11:00 (matches Lotte's published 11:00 checkout). The brief suggests an Uber to Busan Station ('1 hour ride, $20-$30', duration and fare unverified); the public-transit alternative is Busan Metro Line 2 Haeundae → Seomyeon, transfer to Line 1 Seomyeon → Busan Station. Take a separately booked KTX train to Seoul Station, then board the AREX All-Stop Train (일반열차) two stops to Hongik Univ. Station (AREX Express runs non-stop to Incheon Airport and does NOT stop at Hongik Univ.).", "sources": ["l7", "busan_metro", "korail", "arex_allstop", "arex", "mercure_hongdae"]},
+      "stops": [
+        {"period": "Before 11:00", "place": "l7", "why": "Published check-out is by 11:00. Breakfast venue and the '1 hour / $20–$30' Uber estimate to Busan Station are unverified.", "optional": false},
+        {"period": "After KTX + AREX All-Stop", "place": "mercure_hongdae", "why": "Exit 9 at Hongik Univ. Station. Accor lists a 2-minute (100 m) walk to 144 Yanghwa-ro, conflicting with the brief's '8 minute walk'; check-in starts at 15:00.", "optional": false}
+      ],
+      "return": {"text": "Arrive at Mercure Ambassador Seoul Hongdae (144 Yanghwa-ro, Mapo-gu) via Hongik Univ. Station Exit 9. No onward airport transfer or departure flight after Day 16 is supplied in the brief.", "sources": ["mercure_hongdae", "arex_allstop"]},
+      "note": "Critical rail note: at Seoul Station, use the AREX All-Stop Train (일반열차) to reach Hongik Univ. Station — the AREX Express Train is non-stop to Incheon Airport and skips Hongdae. No KTX ticket, Mercure hotel booking, or post-Day-16 flight home is confirmed.",
+      "flags": ["arex_hongdae", "mercure_walk", "day16_uber", "train_booking", "hotels", "after_trip"]
     }
   ]
 }

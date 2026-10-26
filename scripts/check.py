@@ -20,6 +20,7 @@ ALLOWED_HOSTS = {
     "www.shinsegae.com", "www.stanford-hotel.com", "www.lottehotel.com", "www.korail.com",
     "myeongdongtown.oliveyoung.com", "en.blueelephant.co",
     "www.seoulmetro.co.kr", "www2.humetro.busan.kr", "www.airportrailroad.com", "www.bluelinepark.com",
+    "www.visitsealife.com", "all.accor.com",
 }
 
 
@@ -38,16 +39,21 @@ def validate_data() -> set[str]:
     review = load("review")["items"]
     itinerary = load("itinerary")
     days = itinerary["days"]
-    require(len(sources) >= 40, "Source registry unexpectedly sparse")
-    require(len(days) == 9, "Exactly nine proposed days are required")
-    require(len(places) >= 30, "Place ledger unexpectedly sparse")
-    require(len(review) >= 20, "Review register unexpectedly sparse")
+    require(len(sources) >= 55, "Source registry unexpectedly sparse")
+    require(len(days) == 16, "Exactly sixteen proposed days are required")
+    require(len(places) >= 45, "Place ledger unexpectedly sparse")
+    require(len(review) >= 35, "Review register unexpectedly sparse")
     require(len({x["id"] for x in places}) == len(places), "Duplicate place IDs")
     require(len({x["id"] for x in review}) == len(review), "Duplicate review IDs")
     require("2026" in itinerary["trip"]["date_note"] and "not confirmed" in itinerary["trip"]["date_note"].lower(), "Working year must be flagged")
     ids = {x["id"] for x in places}
     flags = {x["id"] for x in review}
-    require({"dates", "flights", "hotels", "train_booking", "after_trip", "open_days", "haeundae_hours", "blueline_fare", "jagalchi_closure", "onion_weekend_hours"} <= flags, "Core review issues missing")
+    require({
+        "dates", "flights", "hotels", "train_booking", "after_trip", "open_days", "haeundae_hours",
+        "blueline_fare", "jagalchi_closure", "onion_weekend_hours",
+        "day9_duplicate", "sky_capsule_roundtrip", "amso_galbi_michelin", "nurimaru_hours",
+        "xthesky_conflict", "sealife_price", "busan_open_days", "arex_hongdae", "mercure_walk", "coffee_it_house"
+    } <= flags, "Core review issues missing")
     official_urls = set()
     for sid, source in sources.items():
         require(sid and all(source.get(k) for k in ("title", "url", "scope")), f"Bad source: {sid}")
@@ -69,6 +75,11 @@ def validate_data() -> set[str]:
             require(place.get(field) is None or isinstance(place[field], str), f"Invalid {field}: {place['id']}")
     by_id = {x["id"]: x for x in places}
     require(by_id["sky_capsule"]["price"] is None and by_id["beach_train"]["price"] is None, "Conflicting Blueline fare must stay blank")
+    require(by_id["x_the_sky"]["price"] is None, "Conflicting BUSAN X the SKY adult fare and third-party Klook price must stay blank")
+    require(by_id["sealife"]["price"] is None, "Unverified SEA LIFE Busan adult ticket price must stay blank")
+    require(by_id["amso_galbi"]["price"] is None and "afternoon break unverified" in by_id["amso_galbi"]["hours"], "Amso Galbi afternoon break conflict must remain flagged")
+    require("MICHELIN Guide Selected" in by_id["amso_galbi"]["note"] and "not Michelin-starred" in by_id["amso_galbi"]["note"], "Amso Galbi MICHELIN distinction must be explicit")
+    require("17:00 vs 18:00" in by_id["nurimaru"]["hours"], "Conflicting Nurimaru closing hours must remain flagged")
     require(by_id["jagalchi"]["days"] is None, "Conflicting Jagalchi Tuesday pattern must stay blank")
     require(by_id["haeundae_beach"]["hours"] is None, "Ambiguous beach listing hours must stay blank")
     require("weekend opening unverified" in by_id["onion_seongsu"]["hours"], "Conflicting Onion weekend hour must remain flagged")
@@ -77,9 +88,12 @@ def validate_data() -> set[str]:
     require(by_id["oliveyoung_n_seongsu"]["address"] == "13 Yeonmujang 7-gil, Seongdong-gu, Seoul" and by_id["oliveyoung_n_seongsu"]["hours"] == "10:00–22:00", "Olive Young N Seongsu must retain its exact KTO branch details")
     require("Guie Shopping Street 10:00–19:00" in by_id["gwangjang"]["hours"] and "closed Sundays" in by_id["gwangjang"]["days"], "Gwangjang section schedules must remain distinct")
     require("oliveyoung_myeongdong_global" in by_id["oliveyoung_town"]["sources"], "Myeongdong Global needs its direct operator source")
+    require(by_id["mercure_hongdae"]["address"] == "144 Yanghwa-ro, Mapo-gu, Seoul", "Mercure Hongdae must match its official Accor address")
     review_by_id = {x["id"]: x for x in review}
     require(review_by_id["hanjungsun"]["source_role"] == "evidence" and review_by_id["hanjungsun"]["tier"] == "correction", "Hanjungsun's sourced listing and caveats must remain visible for review")
     require(review_by_id["blue_elephant"]["source_role"] == "evidence" and review_by_id["blue_elephant"]["tier"] == "discrepancy", "Blue Elephant's unresolved official branch conflict must remain flagged")
+    require(review_by_id["sky_capsule_roundtrip"]["source_role"] == "evidence" and review_by_id["sky_capsule_roundtrip"]["tier"] == "correction", "Sky Capsule one-way ticket correction must remain flagged")
+    require(review_by_id["arex_hongdae"]["source_role"] == "evidence" and review_by_id["arex_hongdae"]["tier"] == "correction", "AREX All-Stop vs Express Hongdae correction must remain flagged")
     for item in review:
         check_sources(item, "review item")
         require(item["source_role"] in {"evidence", "context_only"}, f"No source role: {item['id']}")
@@ -92,11 +106,16 @@ def validate_data() -> set[str]:
     require(days[5]["stops"][0]["place"] == "insadong", "Source outline keeps Ikseon/Insadong on Day 6")
     require(days[6]["city"] == "Seoul" and days[7]["city"] == "Seoul", "Original Days 7–8 must remain in Seoul")
     require(all(stop["optional"] for day in days[6:8] for stop in day["stops"]), "Source outline leaves Days 7–8 open")
-    require(days[8]["city"] == "Seoul → Busan" and days[8]["hotel"] == "stanford" and days[8].get("end_hotel") == "l7", "The original final day travels from Stanford to Busan")
-    require([stop["place"] for stop in days[8]["stops"]] == ["l7", "haeundae_market", "haeundae_beach"], "Day 9 ends at Haeundae, not a return to Seoul")
+    require(days[8]["city"] == "Seoul → Busan" and days[8]["hotel"] == "stanford" and days[8].get("end_hotel") == "l7", "Day 9 travels from Stanford to L7 Haeundae")
+    require([stop["place"] for stop in days[8]["stops"]] == ["l7", "haeundae_market", "haeundae_beach"], "Day 9 arrives at L7 Haeundae")
+    require({"dongbaek", "nurimaru", "sky_capsule", "daritdol"} <= {stop["place"] for stop in days[9]["stops"]}, "Day 10 must cover Dongbaek, Nurimaru, Sky Capsule and Daritdol")
+    require({"gamcheon", "biff", "jagalchi", "songdo_beach", "songdo_skywalk", "gukje", "nampo_shopping"} <= {stop["place"] for stop in days[10]["stops"]}, "Day 11 must cover Gamcheon, Songdo and Nampo/Gukje")
+    require({"x_the_sky", "sealife"} <= {stop["place"] for stop in days[11]["stops"]}, "Day 12 must cover BUSAN X the SKY and SEA LIFE Aquarium")
+    require(all(stop["optional"] for idx in (12, 14) for stop in days[idx]["stops"]), "Days 13 and 15 have no submitted activities and must remain optional")
+    require([stop["place"] for stop in days[13]["stops"]] == ["gwangalli", "drone"], "Day 14 Saturday covers Gwangalli Beach and the M Drone Light Show")
+    require(days[15]["city"] == "Busan → Seoul" and days[15]["hotel"] == "l7" and days[15].get("end_hotel") == "mercure_hongdae", "Day 16 travels from L7 Haeundae to Mercure Ambassador Seoul Hongdae")
     extension_ids = {x["id"] for x in places if x.get("extension")}
-    require(extension_ids and all(by_id[pid]["city"] == "Busan" for pid in extension_ids), "Unassigned extensions must be Busan-only")
-    require(not any(stop["place"] in extension_ids for day in days for stop in day["stops"]), "Post-Day-9 extensions cannot be assigned inside nine days")
+    require(extension_ids == {"temple", "bupyeong"}, "Only editorial Busan options not in the submitted brief should carry the extension flag")
     for number, day in enumerate(days, start=1):
         dt = date.fromisoformat(day["date"])
         require(day["number"] == number and dt == date(2026, 11, 1) + timedelta(days=number - 1), f"Broken proposed date sequence: {number}")
@@ -183,7 +202,7 @@ class AuditHTML(HTMLParser):
 
 def validate_site(out: Path, official_urls: set[str]) -> None:
     files = sorted(out.rglob("*.html"))
-    require(len(files) == 18, f"Expected 18 generated pages, got {len(files)}")
+    require(len(files) == 25, f"Expected 25 generated pages, got {len(files)}")
     parsed: dict[Path, AuditHTML] = {}
     for file in files:
         parser = AuditHTML(file, official_urls)
@@ -207,14 +226,15 @@ def validate_site(out: Path, official_urls: set[str]) -> None:
             require(local.exists(), f"Broken local link or asset: {file} → {href}")
             if split.fragment:
                 require(local in parsed and unquote(split.fragment) in parsed[local].ids, f"Broken anchor: {file} → {href}")
-    require(rows >= 125, f"Too few source-linked table rows: {rows}")
+    require(rows >= 230, f"Too few source-linked table rows: {rows}")
     require((out / ".nojekyll").exists(), "Missing GitHub Pages .nojekyll")
     require("assets/site.css" in (out / "index.html").read_text(encoding="utf-8"), "Missing stylesheet")
-    require("After Day 9 · unassigned extension" in (out / "sights.html").read_text(encoding="utf-8"), "Extension labels absent from sights")
-    require("After Day 9 · unassigned extension" in (out / "food.html").read_text(encoding="utf-8"), "Extension labels absent from food")
-    final_day = (out / "days" / "09.html").read_text(encoding="utf-8")
-    require("ARRIVAL BASE · NOT BOOKED" in final_day and "L7 Haeundae" in final_day, "Day 9 Busan arrival-base label missing")
-    require("Northbound / conditional" not in (out / "transport.html").read_text(encoding="utf-8"), "Superseded Seoul return route reintroduced")
+    require("Editorial option · blank Busan day" in (out / "sights.html").read_text(encoding="utf-8"), "Editorial option label absent from sights")
+    require("Editorial option · blank Busan day" in (out / "food.html").read_text(encoding="utf-8"), "Editorial option label absent from food")
+    day9 = (out / "days" / "09.html").read_text(encoding="utf-8")
+    require("ARRIVAL BASE · NOT BOOKED" in day9 and "L7 Haeundae" in day9, "Day 9 Busan arrival-base label missing")
+    day16 = (out / "days" / "16.html").read_text(encoding="utf-8")
+    require("ARRIVAL BASE · NOT BOOKED" in day16 and "Mercure Ambassador Seoul Hongdae" in day16, "Day 16 Hongdae arrival-base label missing")
     print(f"PASS: {len(files)} pages, {rows} data rows with official links, {links} links/assets checked, {len(official_urls)} registered official URLs")
 
 
