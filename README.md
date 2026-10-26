@@ -2,12 +2,12 @@
 
 A dependency-free, responsive travel dashboard for two adult travelers. Published with GitHub Pages from `main` at the repository root.
 
-- `index.html`: landing dashboard
-- `itinerary.html?day=1` through `?day=9`: daily plans
+- `index.html`: landing dashboard (16 days: Seoul week 1, Busan week 2, Hongdae return)
+- `itinerary.html?day=1` through `?day=16`: daily plans
 - `places.html`, `transport.html`, `stays.html`: category pages
 - `review.html`: all incomplete entries and major conflicts
 - `sources.html`, `SOURCES.md`: official evidence and limits
-- `data.js`: all 62 original plan entries, confirmed fields and findings
+- `data.js`: original Days 1–9 entries (P001–P062) plus Week 2 Days 10–16 (P063–P097)
 
 ## Run
 

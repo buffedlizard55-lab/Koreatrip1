@@ -8,11 +8,19 @@ The traveler brief now includes **Week 2 (Days 10–16)**: Haeundae / Dongbaek /
 
 | ID | Task | Status | Owner | File scope |
 |---|---|---|---|---|
-| W2-RESEARCH | Line-by-line official verification of Days 10–16 named stops, hours, locations, transit, hotels | in progress | 3615cef7 | `data.js` (append P063+ only), `SOURCES.md` (append Week 2 ledger) |
-| W2-SITE | Extend root dashboard to 16 days; keep Days 1–9 rows intact | unclaimed until research commit | 3615cef7 | `app.js`, `index.html`, `styles.css`, `README.md`, `tests/site.test.cjs` |
-| W2-INTEGRATION | Tests, PR to main, merge, Pages deploy confirmation | unclaimed | 3615cef7 | `COORDINATION.md`, PR |
+| W2-RESEARCH | Line-by-line official verification of Days 10–16 named stops, hours, locations, transit, hotels | done | 3615cef7 | `data.js` (append P063–P097 only), `SOURCES.md` (append Week 2 ledger) |
+| W2-SITE | Extend root dashboard to 16 days; keep Days 1–9 rows intact | done | 3615cef7 | `app.js`, `index.html`, `itinerary.html`, `places.html`, `transport.html`, `stays.html`, `review.html`, `sources.html`, `README.md`, `tests/site.test.cjs` |
+| W2-INTEGRATION | Tests, PR to main, merge, Pages deploy confirmation | in progress | 3615cef7 | `COORDINATION.md`, PR |
 
-Rules this session will follow: never overwrite P001–P062; never invent hours/prices/locations; blank + Flagged for Review when an official page does not state the value; every new table row has an official-source URL; companion sites (`docs/`, `field-guide/`, `verified-guide/`) are not edited.
+Rules this session followed: never overwrite P001–P062; never invent hours/prices/locations; blank + Flagged for Review when an official page does not state the value; every new table row has an official-source URL; companion sites (`docs/`, `field-guide/`, `verified-guide/`) were not edited.
+
+### Week 2 research record — 2026-10-26
+
+35 new rows (P063–P097) cover every named Week 2 stop, empty day, transfer and hotel. 27 new official-source records. Direct retrieval: Busan Metropolitan Government (Haeundae Beach, Nurimaru, 2026 drone event), MICHELIN Guide (Haeundae Rib Barbecue), Blueline Park, BUSAN X the SKY, SEA LIFE Busan, Busan Air Cruise, AREX fare table, Accor Mercure Hongdae, VISITKOREA (Amso, Jagalchi, Daritdol, drone). Visit Busan used for Gamcheon, Songdo Beach/Cloud Trails, BIFF, markets, Dongbaek.
+
+Irregularities published on `review.html` (do not block merge): Sky Capsule one-way vs “round trip”; X the Sky Day 10/12 duplicate and ₩29,000 vs $17.59 Klook; AREX Express does not stop at Hongdae (all-stop ₩1,550); Mercure 100 m vs “8 min walk”; Coffee It House unofficial; aquarium $15 unconfirmed; Amso and Daritdol hour conflicts; Days 13 and 15 empty; taxi dollar estimates blank; trip year unresolved.
+
+`node --test tests/site.test.cjs`: 7/7 pass. No conflict markers. Companion sites untouched.
 
 ---
 

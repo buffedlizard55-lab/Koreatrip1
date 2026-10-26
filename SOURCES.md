@@ -802,3 +802,111 @@ Observed: Context / review starting point only; no venue-specific claim verified
 ## Parallel-session evidence discrepancy
 
 The previous main snapshot is preserved in `prior-site/`. Its dataset assumes travel year 2026 and records different child admission rules for Gyeongbokgung. This session's direct retrieval of Royal Palaces and Tombs Center E702000000 explicitly states free ages 18 and below and ages 65 and above. Current rows follow that source and leave travel year unresolved. Prior research is not represented as reverified or included in current counts. See COORDINATION.md for conflict resolution and retained historical log.
+
+
+---
+
+# Week 2 expansion — session 3615cef7 (checked 2026-10-26 UTC)
+
+Days 10–16 were added from the traveler brief. P001–P062 were not edited. Confirmed columns contain only facts observed on official operator, government or tourism-board pages (or official-domain excerpts where a Visit Busan page is JS-heavy). Unestablished values remain blank. No row is fully verified.
+
+## Method
+
+- Operator pages retrieved directly: Nurimaru (busan.go.kr), BUSAN X the SKY, Blueline Park Sky Capsule hours/course, SEA LIFE Busan hours/tickets, Busan Air Cruise hours/fares, AREX all-stop fare table, Accor Mercure Ambassador Seoul Hongdae, Busan Metropolitan Government Haeundae Beach, MICHELIN Guide Haeundae Rib Barbecue Restaurant, VISITKOREA (Amso Galbi, Jagalchi, Daritdol, drone show).
+- Visit Busan listings used for Gamcheon, Songdo Beach, Songdo Cloud Trails, BIFF Square, Haeundae Market, Dongbaek walking tour, Gwangalli Beach (official tourism domain; some pages are JS-rendered).
+- Directory-only `busan` / `seoul` links remain context, not row verification.
+
+## New sources
+
+### haeundaeBeach
+https://www.busan.go.kr/eng/beaches/1325815
+264 Haeundaehaebyeon-ro; free; Line 2 Haeundae exit 3 or 5, ~5 min walk.
+
+### amsoKto
+https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=73814
+11:30–22:00; weekend break 15:15–16:30; 해운대해변로 333.
+
+### amsoMichelin
+https://guide.michelin.com/us/en/busan-region/busan_1025838/restaurant/haeundae-rib-barbecue-restaurant
+Daily 11:30–14:00 and 17:00–22:00; 333 Haunedahaebyeon-ro. Break times conflict with VISITKOREA.
+
+### nurimaru
+https://www.busan.go.kr/nurimaru/english/Design/sub0101.jsp
+09:00–18:00, last admission 17:00; closed first Monday of the month; free.
+
+### dongbaek
+https://www.visitbusan.net/en/index.do?menuCd=DOM_000000302004001000&uc_seq=284&lang_cd=en
+99 Dongbaek-ro; area open all year. Nurimaru hours on this page (09:00–17:00) conflict with the operator.
+
+### skyTime / skyCourse / skyBook
+https://www.bluelinepark.com/eng/skyCapsuleTime.do
+https://www.bluelinepark.com/eng/skyCapsuleCourse.do
+https://www.bluelinepark.com/eng/booking.do
+Winter 08:30–18:00; 2.0 km one-way Mipo↔Cheongsapo ~30 min. Course table is one-way, not round-trip. Fare left blank (operator fare pages conflict).
+
+### daritdol
+https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=112698
+167 Cheongsapo-ro; free. Hours conflict with Visit Busan 09:00–18:00 vs VISITKOREA Sep–Nov 09:00–21:00 — hours blank.
+
+### xthesky
+https://www.busanxthesky.com/
+Daily 10:00–21:00; adult 13+ ₩29,000 on-site. Address 30 Dalmaji-gil, LCT Landmark Tower.
+
+### gamcheon
+https://www.visitbusan.net/index.do?menuCd=DOM_000000301001001000&uc_seq=365&lang_cd=en
+203 Gamnae 2-ro; Nov–Feb visitor hours 09:00–17:00; free. VISITKOREA “Open 24 hr” refers to the lived-in village.
+
+### jagalchi
+https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=69318
+52 Jagalchihaean-ro; 05:00–22:00; closed 1st & 3rd Tuesdays.
+
+### gukje
+https://english.visitkorea.or.kr/svc/contents/contentsView.do?menuSn=929&dataSetId=263&vcontsId=249917
+25 Gukjesijang 2-gil; 09:00–20:00; closed 1st and 3rd Sundays.
+
+### songdoBeach
+https://visitbusan.net/index.do?lang_cd=en&menuCd=DOM_000000301001001000&uc_seq=286
+100 Songdohaebyeon-ro; 06:00–23:00; free.
+
+### songdoCloud
+https://www.visitbusan.net/index.do?menuCd=DOM_000000301001001000&uc_seq=282&lang_cd=en
+129-4 Amnam-dong; 06:00–23:00; free.
+
+### airCruiseTime / airCruisePrice
+https://en.busanaircruise.co.kr/info/time?rank=2
+https://en.busanaircruise.co.kr/info/price?rank=1
+Sep–Nov 09:00–21:00. Air Cruise adult RT ₩19,000 / OW ₩15,000.
+
+### sealifeHours / sealifeTickets
+https://www.visitsealife.com/busan/en/plan-your-visit/before-you-visit/opening-hours/
+https://www.visitsealife.com/busan/en/tickets-passes/
+Weekdays 10:00–19:00 last entry 18:00. Adult on-site fare and traveler $15 not confirmed from the English tickets extract.
+
+### droneKto / droneCity
+https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=194990
+https://www.busan.go.kr/eng/bsevents/1713160
+Saturday winter 19:00 and 21:00; ~12 minutes; free; weather cancellation.
+
+### mercure
+https://all.accor.com/hotel/B696/index.en.shtml
+144 Yanghwa Ro, Mapo Gu; check-in 15:00 / checkout 12:00; Hongik Univ Station 100 m.
+
+### arexAll / arexHongik
+https://www.airportrailroad.com/train/normal/fare
+https://www.airportrailroad.com/train/normal/info/030/0
+Adult transit-card Seoul↔Hongik ₩1,550 on the all-stop train. Express does not stop at Hongdae.
+
+## Irregularities added (non-blocking)
+
+1. Sky Capsule “round trip tickets” vs official one-way course table.
+2. Busan X the Sky listed on Day 10 (optional) and Day 12 (10:00–11:30).
+3. Operator adult fare ₩29,000 vs traveler $17.59 Klook vs Visit Busan ₩27,000.
+4. AREX Express cannot serve Hongdae; all-stop required.
+5. Mercure “8 minute walk” vs hotel 100 m / 1–2 minutes.
+6. Coffee It House has no official page; hours conflict across third parties.
+7. Aquarium $15 not on operator English tickets page; adult fare listings conflict.
+8. Amso Galbi break-time conflict (MICHELIN 14:00–17:00 vs VISITKOREA weekend 15:15–16:30).
+9. Daritdol hours conflict (VISITKOREA vs Visit Busan).
+10. Day 13 and Day 15 empty in the brief.
+11. Hotel–station taxi times and dollar fares unverified.
+12. Trip year still unresolved (2006 typo vs 2026 weekday match).
