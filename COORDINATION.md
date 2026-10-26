@@ -10,7 +10,7 @@ The traveler brief now includes **Week 2 (Days 10–16)**: Haeundae / Dongbaek /
 |---|---|---|---|---|
 | W2-RESEARCH | Line-by-line official verification of Days 10–16 named stops, hours, locations, transit, hotels | done | 3615cef7 | `data.js` (append P063–P097 only), `SOURCES.md` (append Week 2 ledger) |
 | W2-SITE | Extend root dashboard to 16 days; keep Days 1–9 rows intact | done | 3615cef7 | `app.js`, `index.html`, `itinerary.html`, `places.html`, `transport.html`, `stays.html`, `review.html`, `sources.html`, `README.md`, `tests/site.test.cjs` |
-| W2-INTEGRATION | Tests, PR to main, merge, Pages deploy confirmation | in progress | 3615cef7 | `COORDINATION.md`, PR |
+| W2-INTEGRATION | Tests, PR to main, merge, Pages deploy confirmation | done | 3615cef7 | `COORDINATION.md`, PR #22 |
 
 Rules this session followed: never overwrite P001–P062; never invent hours/prices/locations; blank + Flagged for Review when an official page does not state the value; every new table row has an official-source URL; companion sites (`docs/`, `field-guide/`, `verified-guide/`) were not edited.
 
@@ -27,6 +27,15 @@ Irregularities published on `review.html` (do not block merge): Sky Capsule one-
 `origin/main` advanced through PR #20/#21 while this session worked: that session also expanded the root dashboard to 16 days (98 rows) and added the `full-trip/` companion. Nothing from `full-trip/` or `research/full-trip-verification.md` was discarded.
 
 Integration choice for shared root files: keep the already-published 98-row dashboard and tests from `75247ef9` as the live table (their extra public-transit row P095 is unique). Operator pages this session retrieved (AREX all-stop ₩1,550 Seoul↔Hongik, BUSAN X the SKY on-site adult ₩29,000, Busan Air Cruise fares, Busan city Haeundae Beach address, MICHELIN Amso hours) are applied onto that 98-row table where the published row had left the field blank, with the conflict still flagged in the finding. This session’s 97-row ID scheme is not used. Nav link to `full-trip/` is retained.
+
+### Final publication record — session `3615cef7`
+
+- PR #22: https://github.com/buffedlizard55-lab/Koreatrip1/pull/22 — **MERGED** 2026-10-26 05:56:32 UTC, merge commit `255980d2f1168e59494acbd757d57e1cbaea7b68`.
+- GitHub Pages build for that exact merge commit: **built** (Pages builds API). No deployment error.
+- Live URL fetched after deploy: https://buffedlizard55-lab.github.io/Koreatrip1/ — dashboard renders **16 days**, **98 entries**, **3 hotels**. Day 10 table renders source-linked rows including Haeundae Beach (busan.go.kr), Sky Capsule one-way flag, and operator X the Sky ₩29,000.
+- Companion `full-trip/` from session `75247ef9` remains at https://buffedlizard55-lab.github.io/Koreatrip1/full-trip/
+- Flagged irregularities are on `review.html` and do not block the live site.
+- All tasks for this session: **done**.
 
 ---
 
